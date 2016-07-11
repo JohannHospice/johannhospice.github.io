@@ -1,0 +1,14 @@
+color: {
+	blue:{
+		200: 90CAF9,
+		500: 2196F3
+	}
+	gray: {
+		50: FAFAFA,
+		900: 212121
+	}
+	amber: {
+		500: FFC107
+	}
+}
+GET IN TOUCH
