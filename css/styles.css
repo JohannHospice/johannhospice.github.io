@@ -58,7 +58,7 @@ a, a:hover { color: #fff; }
   text-decoration: none;
   border-bottom-color: rgba(255,255,255,.25);
 }
-.contact > span {
+.contact_sub {
     position: absolute;
     display: block;
     margin-top: 16px;
@@ -70,4 +70,24 @@ a, a:hover { color: #fff; }
     opacity: 0;
     transition: .3s;
 }
-.contact:hover > span{ opacity: 1; transform: translateY(15px) }
+.contact:hover > .contact_sub{ opacity: 1; transform: translateY(15px) }
+.lang-list{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+}
+.lang { 
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.lang-active{ text-decoration: underline }
+.lang + .lang::before {
+    display: inline-block;
+    height: 12px;
+    width: 1px;
+    margin-right: 4px;
+    background-color: #fff;
+    content: ' ';
+}

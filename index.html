@@ -4,34 +4,46 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Site en construction · Johann Hospice</title>
+    <title id="page_title"> Site en construction · Johann Hospice</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
     <header class="container">
+        <div class="lang-list">
+            <a class="lang">en</a>
+            <a class="lang">fr</a>
+        </div>
         <nav class="contact-list">
-            <a class="contact" href="http://www.github.com/johannhospice">GitHub<span>github.com/johannhospice</span></a>
-            <a class="contact" href="http://www.linkedin.com/in/johann-hospice-972">LinkedIn<span>linkedin.com/in/johann-hospice-972</span></a>
-            <a class="contact" href="mailto:johannhospice.dev@gmail.com">Email<span>johannhospice.dev@gmail.com</span></a>
-            <a class="contact" href="tel:+33781700715">Téléphone<span>+33 7 81 70 07 15</span></a>
+            <a class="contact" href="http://www.github.com/johannhospice">GitHub<span class="contact_sub">github.com/johannhospice</span></a>
+            <a class="contact" href="http://www.linkedin.com/in/johann-hospice-972">LinkedIn<span class="contact_sub">linkedin.com/in/johann-hospice-972</span></a>
+            <a class="contact" href="mailto:johannhospice.dev@gmail.com">Email<span class="contact_sub">johannhospice.dev@gmail.com</span></a>
+            <a class="contact" href="tel:+33781700715"><span id="phone"></span><span class="contact_sub">+33 7 81 70 07 15</span></a>
         </nav>
     </header>
+    
     <main class="container">
-        <div class="col-md-6 col-md-offset-3 text-center">
+        <div class="col-md-6 col-md-offset-3">
             <div class="row">
-                <h1>Site en construction.</h1>
-                <p class="lead">Je m'appelle Johann Hospice et je suis développeur junior.<br/>Ce site est en cours de développement, il servira de support permettant d'exposer mon cursus, mes compétences et mes expériences.</p>
-                <a href="assets/cv-johann_hospice.pdf" class="btn btn-lg btn-default">En savoir plus</a>
+                <h1><span id="title"></span></h1>
+                <p class="lead">
+                    <span id="description_1"></span>
+                    <br/>
+                    <span id="description_2"></span>
+                </p>
+                <a href="assets/cv-johann_hospice.pdf" class="btn btn-lg btn-default"><span id="btn_info"></span></a>
             </div>
         </div>
     </main>
     <footer class="container">
-        <div class="col-md-6 col-md-offset-3 text-center">
-            <p>Copyright 2016, <a href="#">Johann Hospice</a></p>
+        <div class="col-md-6 col-md-offset-3">
+            <div class="row">
+                <p>Copyright 2016, <a href="#">Johann Hospice</a></p>
+            </div>
         </div>
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
