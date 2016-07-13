@@ -17,7 +17,9 @@ body{
   background-position: center;
   background-attachment: fixed;
   background-color: #212121;
+  background-size: auto;
   box-shadow: inset 0 0 100px rgba(0,0,0,.8);
+  overflow: hidden;
   
   color: #fff;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -26,7 +28,7 @@ body{
 
 footer { color: rgba(255,255,255,.45) }
 
-a { color: #fff; }
+a, a:hover { color: #fff; }
 
 .btn-default, .btn-default:hover, .btn-default:focus {
   color: #333;
