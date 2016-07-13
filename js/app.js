@@ -28,5 +28,5 @@ const TEXT = {
 	$('.lang').click(function(obj){
 		setLanguage(obj.currentTarget.text.toLowerCase());
 	});
-	setLanguage('en');
+	setLanguage('fr');
 })(jQuery)
