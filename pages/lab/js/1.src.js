@@ -125,8 +125,6 @@ var Behavior = function() {
  * @constructor
  */
 var Block = function(focus) {
-
-
     this.act = function(delta) {
         this.behavior.act(this.shape.position, this.focus);
         var motion = this.behavior.motion;
@@ -153,10 +151,7 @@ var Block = function(focus) {
 
     this.swapState = function() {
         this.behavior.swapState();
-        if (this.behavior.state)
-            this.changeColor(RED);
-        else
-            this.changeColor(BLUE);
+        this.behavior.state? this.changeColor(RED): this.changeColor(BLUE);
     };
 
     this.setProperties = function(properties) {
@@ -178,7 +173,11 @@ var Block = function(focus) {
 var Shape = function(className) {
 
     this.act = function() {
-        this.body.style.transform = "translateX(" + (this.position.x - this.size / 2) + "px) translateY(" + (this.position.y - this.size / 2) + "px)";
+        var translate = `translate(${this.position.x - midsize}px,${this.position.y - midsize}px)`;
+        this.body.style['-webkit-transform'] = translate;
+        this.body.style['-moz-transform'] = translate;
+        this.body.style['-o-transform'] = translate;
+        this.body.style['transform'] = translate;
     };
 
     this.createBody = function(className) {
@@ -190,11 +189,13 @@ var Shape = function(className) {
     this.move = function(x, y) {
         this.position.set(x, y);
     };
-
     this.position = new Vector();
     this.body = this.createBody(className);
+
     this.size = 8;
+    var midsize = this.size/2;
 };
+
 /**
  * Groupe de Blocs, leurs permettants d'avoir un comportement similaire entre eux
  * @constructor
@@ -240,10 +241,10 @@ var BlockGroup = function(nbBlocks, focus) {
     };
 
     this.setProperties = function(velocity, inertia, detection, bounce) {
-        this.properties['velocity'] = velocity;
-        this.properties['inertia'] = inertia;
-        this.properties['detection'] = detection;
-        this.properties['bounce'] = bounce;
+        this.properties.velocity = velocity;
+        this.properties.inertia = inertia;
+        this.properties.detection = detection;
+        this.properties.bounce = bounce;
         for (var index = 0; index < this.blocks.length; index++)
             this.blocks[index].setProperties(this.properties);
     };
@@ -316,7 +317,7 @@ var Viewport = function(viewport) {
 
     this.resize = function() {
         this.size.set(viewport.clientWidth, viewport.clientHeight);
-        this.marge.set((window.innerWidth - this.size.x) * .5, (window.innerHeight - this.size.y) * .5 + 28);
+        this.marge.set((window.innerWidth - this.size.x) , (window.innerHeight - this.size.y) );
     };
 
     this.size = new Vector();
@@ -364,7 +365,7 @@ var Application = function(world, viewport) {
     };
 
     this.mouseUpdate = function(x, y) {
-        this.cursor.position.set(x - this.viewport.marge.x, y - this.viewport.marge.y);
+        this.cursor.position.set(x ,y);
     };
 
     this.swapState = function() {
@@ -381,9 +382,8 @@ var Application = function(world, viewport) {
         return this.blocksGroup.getProperties();
     };
 
-    var now, last;
-    const FPS = 60;
-    var loopID = 0;
+    var now, last,
+        loopID = 0;
 
     this.blocksGroup = new BlockGroup();
     this.stage = new Stage(world);
@@ -393,9 +393,10 @@ var Application = function(world, viewport) {
 };
 
 
-const BLUE = "#2196F3",
+var BLUE = "#2196F3",
     RED = "#F44336",
-    TIME = 1000;
+    TIME = 1000,
+    FPS = 60;
 
 var app = new Application(document.getElementById('world'), document.getElementById('viewport'));
 

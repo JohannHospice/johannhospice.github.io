@@ -3,10 +3,11 @@
 
 .viewport {
     position: absolute;
-    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+    top: 0;
+    overflow: hidden;
 }
 
 .world {
@@ -17,34 +18,31 @@
     cursor: none;
 }
 
-.cursor {
-    position: absolute;
-    height: 2px;
-    width: 2px;
-    margin: 3px;
-    background-color: #FFF;
-    border-radius: 100%;
-}
-
-.cursor::after {
+.block, .cursor{
     position: absolute;
     height: 8px;
     width: 8px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.2);
-    border: solid 1px #FFF;
+    border: solid 1px;
     border-radius: 100%;
-    content: " ";
 }
 
 .block {
-    position: absolute;
-    height: 8px;
-    width: 8px;
     background-color: #424242;
-    transition: 0.2s color;
-    border: solid 1px;
+    transition: .2s color;
+}
+
+.cursor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #fff;
+}
+
+.cursor::after {
+    height: 2px;
+    width: 2px;
+    background-color: #fff;
     border-radius: 100%;
+    content: ' ';
 }
