@@ -25,8 +25,5 @@ const TEXT = {
 		$(`.lang:not(:contains('${lang}'))`).removeClass('lang-active')
 		translateAll(TEXT[lang]) 
 	}	
-	$('.lang').click(function(obj){
-		setLanguage(obj.currentTarget.text.toLowerCase());
-	});
-	setLanguage('fr');
+	$('.lang').click(function(obj){ setLanguage(obj.currentTarget.text.toLowerCase())});
 })(jQuery)
