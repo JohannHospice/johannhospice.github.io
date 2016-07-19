@@ -1,3 +1,5 @@
+Sitemap: https://johannhospice.github.io/sitemap.xml
+
 User-agent: *
 Disallow: /assets/
 Disallow: /img/
