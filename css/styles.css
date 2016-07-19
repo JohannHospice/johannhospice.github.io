@@ -47,7 +47,7 @@ a:active { color: #42A5F5 }
 .contact {
     padding-bottom: 14px;
     padding-top: 14px;
-    margin: 18px;
+    margin: 0 18px;
     font-size: 16px;
     font-weight: bold;
     color: #BDBDBD;
