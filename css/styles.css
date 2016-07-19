@@ -32,7 +32,7 @@ main {
 footer {
     background-color: #424242;
     color: #FAFAFA;
-    padding: 64px 0;
+    padding: 64px 0 48px;
 }
 footer a { color: rgba(255,255,255,.6) }
 footer a:hover { color: #fff }
