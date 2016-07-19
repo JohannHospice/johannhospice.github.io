@@ -1,0 +1,53 @@
+<!-- TODO: display experience informations (title, desciption, ...) and diffrents advencement states  -->
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+    <title> Experience · Johann Hospice </title>
+    <meta name="author" content="Johann Hospice">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Johann Hospice, un étudiant developpeur junior...">
+    <meta name="keywords" content="johann hospice, johann, hospice, programmeur, developpeur, portfolio, front-end, frontend, backend, back-end, fullstack, full-stack, web, application">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8">
+    <style type="text/css">
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: 0
+        }
+        iframe {
+            border: 2px solid #fff;
+            border-radius: 4px;
+            height: 80%;
+            width: 80%;
+            z-index: 999
+        }
+        .layer {
+            z-index: 0;
+            display: block;
+            background-color: #000;
+            position:absolute;
+            top:0;
+            right: 0;
+            bottom: 0;
+            left:0;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+        .layer:hover{ opacity: .4 }
+    </style>
+</head>
+<body>
+    <a class="layer" href="../../lab.html#experience-1"></a>
+    <iframe src="1.html"></iframe>
+    <script type="text/javascript">
+        // TODO: get route for the iframe
+    </script>
+</body>
+</html>
