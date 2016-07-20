@@ -2,5 +2,7 @@ Sitemap: https://johannhospice.github.io/sitemap.xml
 
 User-agent: *
 Disallow: /assets/
-Disallow: /assets/cv-johannhospice.pdf
 Disallow: /img/
+
+User-agent: Googlebot
+Disallow: /assets/cv-johannhospice.pdf
