@@ -42,10 +42,24 @@
     </style>
 </head>
 <body>
-    <a class="layer" href="../../lab.html#experience-1"></a>
-    <iframe src="1.html"></iframe>
+    <a class="layer" id="back"></a>
+    <iframe id="iframe"></iframe>
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
     <script type="text/javascript">
-        // TODO: get route for the iframe
+        function getRouteParam(){
+            var obj = {},
+                items = window.location.search.split('?')[1].split('&');
+            items.forEach(function(item){
+                item = item.split('=');
+                obj[item[0]] = item[1];
+            });
+            return obj;
+        }
+        var params = getRouteParam();
+        (function(){
+            $('#iframe').attr('src', params.id+'.html');
+            $('#back').attr('href', "../../"+params.source+"#"+params.type+'-'+params.id);
+        })(jQuery)
     </script>
 </body>
 </html>
