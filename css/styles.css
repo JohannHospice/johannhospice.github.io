@@ -279,7 +279,15 @@ section { padding: 64px 0 }
 /*
     Workthrought
 */
+.item-teal { background-color: #009688 }
+.item-bluelight { background-color: #039BE5 }
+.item-amber { background-color: #FFB300 }
+.item-red { background-color: #F44336 }
+.item-indigo { background-color: #3F51B5 }
+.item-bluegrey { background-color: #78909C }
+
 .item_list {}
+
 .item_info {
     color: #fafafa;
     text-align: center;
@@ -297,12 +305,6 @@ section { padding: 64px 0 }
     z-index: 990;
     text-align: center;
 }
-
-.item-teal {background-color: #009688;}
-
-.item-bluelight { background-color: #039BE5 }
-.item-amber { background-color: #FFB300 }
-.item-red { background-color: #F44336 }
 
 .item_img {
     max-width: 800px;
