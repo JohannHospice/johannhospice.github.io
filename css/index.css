@@ -1,0 +1,23 @@
+.transition,
+.logo-header,
+.nav_item {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    opacity: .6;
+    transition: opacity .3s;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.logo-header {
+    height: 20px;
+    width: 20px;
+}
