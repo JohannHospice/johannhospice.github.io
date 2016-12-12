@@ -1,132 +1,22 @@
-/**/
-::-webkit-scrollbar {
-  width: 8px;
-  background: #424242; }
+section { padding: 50px 0 }
+footer { padding: 40px 0 }
 
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 2px; }
-
-/**/
-@font-face {
-  font-family: 'Dosis';
-  src: url("../fonts/Dosis/Dosis-Regular.ttf"); }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto/Roboto-Regular.ttf"); }
-
-/**/
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Roboto', 'Open-sans', 'Arial', sans-serif;
-  color: #212121;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased; }
-main {
-    /*
-  background-color: #2962ff;
-  -webkit-background-image: radial-gradient(50% top, circle, #2196F3 0%, transparent 75%), radial-gradient(right top, circle, #1565C0 0%, transparent 57%);
-  -moz-background-image: radial-gradient(50% top, circle, #2196F3 0%, transparent 75%), radial-gradient(right top, circle, #1565C0 0%, transparent 57%);
-  -ms-background-image: radial-gradient(50% top, circle, #2196F3 0%, transparent 75%), radial-gradient(right top, circle, #1565C0 0%, transparent 57%);
-  -o-background-image: radial-gradient(50% top, circle, #2196F3 0%, transparent 75%), radial-gradient(right top, circle, #1565C0 0%, transparent 57%);
-  background-image: radial-gradient(50% top, circle, #2196F3 0%, transparent 75%), radial-gradient(right top, circle, #1565C0 0%, transparent 57%);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  animation: MoveBG 60s ease infinite;
-  */ 
-  background-color: #42A5F5;}
-footer {
-    background: #424242;
-    color: #fafafa;
-    padding: 48px 0 48px; }
-
-/**/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Dosis'; }
-
-hr {
-  height: 1px;
-  margin: 2em 0;
-  border: 0;
-  background: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 90%, transparent);
-  background: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 90%, transparent);
-  background: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 90%, transparent);
-  background: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 90%, transparent);
-  background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 90%, transparent); }
-
-footer hr {
-  background: -webkit-linear-gradient(left, transparent, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.1) 90%, transparent);
-  background: -moz-linear-gradient(left, transparent, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.1) 90%, transparent);
-  background: -ms-linear-gradient(left, transparent, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.1) 90%, transparent);
-  background: -o-linear-gradient(left, transparent, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.1) 90%, transparent);
-  background: linear-gradient(left, transparent, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.1) 90%, transparent); }
-
-a {
-  -webkit-transition: color 0.1s linear;
-  -moz-transition: color 0.1s linear;
-  -ms-transition: color 0.1s linear;
-  -o-transition: color 0.1s linear;
-  transition: color 0.1s linear; }
-
-p {
-  font-family: inherit;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; }
-
-/**/
-.btn {
-  border: 0;
-  background-color: #2196F3;
-  border-radius: 3px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1;
-  padding: 0.9em;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color .3s; }
-.btn:hover {
-    background-color: #64b5f6;
-    color: #fafafa; }
-
-.transition,
-.brand-header,
-.nav_item {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+@media (min-width: 768px) {
+  section { padding: 90px 0 }
 }
 
-.brand {
-    opacity: .6;
-    transition: opacity .3s;
+@media (min-width: 1220px) {
+  section { padding: 120px 0 }
 }
 
-.brand:hover {
-    opacity: 1;
-}
+.uk-navbar { background: transparent; }
+.uk-navbar-nav > li.uk-active > a { background-color: transparent }
 
-.brand-header {
-    height: 20px;
-    width: 20px;
-}
+.uk-padding-large-top { padding-top: 50px!important }
+.uk-padding-large-bottom { padding-bottom: 50px!important }
+
+.uk-padding-medium-top { padding-top: 20px!important }
+.uk-padding-medium-bottom { padding-bottom: 20px!important }
+
+.uk-padding-small-top { padding-top: 5px!important }
+.uk-padding-small-bottom { padding-bottom: 5px!important }
