@@ -10,41 +10,56 @@
 
     <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/uikit.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/components/sticky.css">
+    <link rel="stylesheet" type="text/css" href="css/components/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/components/tooltip.css">
+
+    <link rel="stylesheet" type="text/css" href="css/components/slidenav.css">
+    <link rel="stylesheet" type="text/css" href="css/components/placeholder.css">
+
+    <script type="text/javascript" src="js/components/sticky.min.js"></script>
+    <script type="text/javascript" src="js/components/slider.min.js"></script>
+    <script type="text/javascript" src="js/components/tooltip.min.js"></script>
 </head>
 <body>
 
 <main id="main">
 
     <header id="header">
-    	<div class="uk-sticky-placeholder" data-uk-sticky="{'top': '.uk-block', 'animation': 'uk-animation-slide-top'}">
-	        <nav class="uk-navbar uk-navbar-attached">
-	            <div class="uk-container uk-container-center" >
-					<a class="uk-navbar-brand uk-visible-large" href="#"><img src="" width="30" height="30" title="JH" alt="JH"></a>
-	                <div class="uk-navbar-flip uk-visible-large">
-	                    <ul class="uk-navbar-nav uk-hidden-small uk-text-uppercase">
-	                        <li class="uk-active"><a href="#home">accueil</a></li>
-	                        <li><a href="#about">à propos</a></li>
-	                        <li><a href="#works">réalisations</a></li>
-	                        <li><a href="#services">services</a></li>
-	                        <li><a href="#contact">contact</a></li>
-	                    </ul>
-	                </div>
+        <div class="uk-sticky-placeholder">
+            <nav class="uk-navbar" data-uk-sticky="{'media':767,'showup':true,'animation':'uk-animation-slide-top'}">
+                <div class="uk-container uk-container-center">
+                    <a class="uk-navbar-brand uk-visible-medium" href="#"><img src="" width="30" height="30" title="JH"
+                                                                              alt="JH"></a>
+                    <div class="uk-navbar-flip uk-visible-medium">
+                        <ul class="uk-navbar-nav uk-hidden-small uk-text-uppercase">
+                            <li class="uk-active"><a href="#home" data-uk-smooth-scroll>accueil</a></li>
+                            <li><a href="#about" data-uk-smooth-scroll>à propos</a></li>
+                            <li><a href="#works" data-uk-smooth-scroll>réalisations</a></li>
+                            <li><a href="#services" data-uk-smooth-scroll>services</a></li>
+                            <li><a href="#contact" data-uk-smooth-scroll>contact</a></li>
+                        </ul>
+                    </div>
 
-	                <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas=""></a>
+                    <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-medium" data-uk-offcanvas=""></a>
 
-	                <div class="uk-navbar-brand uk-navbar-center uk-hidden-large">
-	                	<img src="" width="90" height="30" title="JH" alt="JH">
-	            	</div>
-	            </div>
-	        </nav>
-    	</div>
+                    <div class="uk-navbar-brand uk-navbar-center uk-hidden-medium">
+                        <img src="" width="90" height="30" title="JH" alt="JH">
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <!-- uk-flex uk-flex-middle  -->
+
     <section class="uk-cover-background" id="home">
         <div class="uk-container uk-container-center">
             <div class="uk-width-large-1-2 ">
                 <div class="uk-margin-large uk-text-left uk-text-uppercase">
-                    <h4 class="uk-h1 uk-heading-large uk-margin-small-bottom uk-margin-large-top">Bonjour, je suis Johann</h4>
+                    <h4 class="uk-h1 uk-heading-large uk-margin-small-bottom uk-margin-large-top">Bonjour, je suis
+                        Johann</h4>
                     <h1 class="uk-h2 uk-margin-remove uk-text-muted">Un développeur informatique</h1>
                 </div>
             </div>
@@ -53,127 +68,183 @@
 
     <section class="uk-block-primary uk-contrast" id="about">
         <div class="uk-container uk-container-center uk-text-center">
-	        <h2 class="uk-heading-large uk-margin-large-bottom">À propos</h2>
-	        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, consequuntur
-	            deleniti distinctio doloremque dolores et eum possimus recusandae repellat saepe.
-	        </p>
-	        <h3>Mes experiences</h3>
-	        <h3>Mes Formation</h3>
-	        <h3>Mes Competences</h3>
-	        <h3>Au plus simple</h3>
-	        <p>Allez voir mon curriculum vitae résumant ma formation, mes experiences et mes compétences.</p>
-	        <a class="uk-button uk-button-primary" href="assets/cv-johannhospice.pdf" role="button">Télécharger
-	            mon cv</a>
+            <h2 class="uk-heading-large uk-margin-large-bottom">À propos</h2>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, consequuntur
+                deleniti distinctio doloremque dolores et eum possimus recusandae repellat saepe.
+            </p>
+            <h3>Mes experiences</h3>
+            <h3>Mes Formation</h3>
+            <h3>Mes Competences</h3>
+            <h3>Au plus simple</h3>
+
+            <p>Allez voir mon curriculum vitae résumant ma formation, mes experiences et mes compétences.</p>
+            <a class="uk-button" href="assets/cv-johannhospice.pdf" role="button">
+                <i class="uk-icon-file-pdf-o"></i>
+                Télécharger mon cv</a>
+            <h3>Liens</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, quasi?</p>
+            <div class="uk-button-group">
+                <a class="uk-button" href="https://github.com/johannhospice" data-uk-tooltip="{pos:'top','animation':'uk-animation-slide-top'}"
+                   title="github.com/johannhospice" target="_bank">
+                    <i class="uk-icon-github"></i>
+                    github
+                </a>
+                <a class="uk-button" href="https://www.linkedin.com/in/johannhospice" data-uk-tooltip="{pos:'top','animation':'uk-animation-slide-top'}"
+                   title="linkedin.com/in/johannhospice" target="_bank">
+                    <i class="uk-icon-linkedin"></i>
+                    linkedin
+                </a>
+            </div>
         </div>
     </section>
 
     <section class="uk-block-default" id="works">
 
-	    <div class="uk-container uk-container-center uk-text-center">
-	        
-	        <h2 class="uk-heading-large uk-margin-large-bottom">Réalisations</h2>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta, voluptates ut cumque quasi porro nesciunt mollitia autem harum labore.</p>
+        <div class="uk-container uk-container-center uk-text-center">
 
-			            <!--
-			            <li class="uk-panel uk-panel-space">
-			                -->
-	        <div data-uk-slider>
+            <h2 class="uk-heading-large uk-margin-large-bottom">Réalisations</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta, voluptates ut cumque quasi porro
+                nesciunt mollitia autem harum labore.</p>
+            <!--
+                        <div class="uk-container-center">
+                            <ul class="uk-subnav uk-subnav-line">
+                                <li data-uk-filter="" class="uk-active"><a>Tout</a></li>
+                                <li data-uk-filter="professional" class=""><a>Professionnel</a></li>
+                                <li data-uk-filter="universitary" class=""><a>Universitaire</a></li>
+                                <li data-uk-filter="personnal" class=""><a>Personnel</a></li>
+                            </ul>
+                        </div>
+            -->
+            <div class="uk-slidenav-position" data-uk-slider>
+                <div class="uk-slider-container">
+                    <ul class="uk-slider uk-grid-width-medium-1-1">
+                        <li class="">
+                            <h3>Gestionnaire pédagogique de stage</h3>
+                            <h4 class="uk-margin-remove">Site web</h4>
+                            <p>Ce projet a pour but de développer un site permettant de dématerialiser la gestion des
+                                procédures administrative.</p>
+                            <a class="uk-button uk-button-primary" target="_bank" role="button" href="#">Détail de
+                                l'application</a>
+                        </li>
 
-			    <div class="uk-slider-container">
-			        <ul class="uk-slider uk-grid-width-medium-1-4">
-			            <li>
-			                <h3>Gestionnaire pédagogique de stage</h3>
-			                <h4>Site web</h4>
-			                <p>Ce projet a pour but de développer un site permettant de dématerialiser la gestion des procédures administrative.</p>
-			                <a class="uk-button uk-button-primary" target="_bank" role="button" href="#">Détail de l'application</a>
-			            </li>
+                        <li class="">
+                            <h3>Chat socket</h3>
+                            <h4>Boite de chat</h4>
+                            <p>Systeme de chat client - serveur.</p>
+                            <a class="uk-button uk-button-primary" target="_bank" role="button" href="#">Détail de
+                                l'application</a>
+                        </li>
 
-			            <li>
-			                <h3>Chat socket</h3>
-			                <h4>Boite de chat</h4>
-			                <p>Systeme de chat client - serveur.</p>
-			                <a class="uk-button uk-button-primary" target="_bank" role="button" href="#">Détail de l'application</a>
-			            </li>
+                        <li class="">
+                            <h3>The Game</h3>
+                            <h4>Jeu video</h4>
+                            <p>The game est un jeu développer durant mon deuxieme semestre à l'IUT d'Orsay, en tant que
+                                projet de fin d'année.<br>Il est développé avec le framework libGDX permettant une
+                                portabilité de l'application sur de multiples supports (Windows, Web, Mobile, ...)</p>
+                            <a class="uk-button uk-button-primary" target="_bank" role="button" href="#">Détail de
+                                l'application</a>
+                        </li>
 
-			            <li>
-			                <h3>The Game</h3>
-			                <h4>Jeu video</h4>
-			                <p>The game est un jeu développer durant mon deuxieme semestre à l'IUT d'Orsay, en tant que projet de fin d'année.<br>Il est développé avec le framework libGDX permettant une portabilité de l'application sur de multiples supports (Windows, Web, Mobile, ...)<p>
-			                <a class="uk-button uk-button-primary" target="_bank" role="button" href="#">Détail de l'application</a>
-			            </li>
+                        <li class="">
+                            <h3>Parki</h3>
+                            <h4>Application mobile</h4>
+                            <p>Parki est une application mettant en relation des particuliers dans un système permettant
+                                de trouver des place de parkinge dans de grandes aglomérations.</p>
+                            <a class="uk-button uk-button-primary" target="_bank" role="button" href="#">Détail de
+                                l'application</a>
+                        </li>
 
-			            <li>
-			                <h3>Parki</h3>
-			                <h4>Application mobile</h4>
-			                <p>Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.</p>
-			                <a class="uk-button uk-button-primary" target="_bank" role="button" href="#">Détail de l'application</a>
-			            </li>
-			        </ul>
+                        <li data-uk-filter="personnal">
+                            <h3>Expérience #1</h3>
+                            <h4>Pure Javascript / Application</h4>
+                            <p>Cette experience fut réalisée lors de ma candidature dans l'entreprise netdevices pour un
+                                test de comptence JS</p>
+                            <a class="uk-button uk-button-primary"
+                               href="pages/lab/index.html?source=lab.html&type=experience&id=1">Lancer l'expérience</a>
+                        </li>
 
-			    </div>
+                        <li data-uk-filter="personnal">
+                            <h3>PreOSS.js</h3>
+                            <h4>Preprocesseur css en js</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ducimus enim facere
+                                facilis libero neque officia optio reprehenderit similique sint.</p>
+                            <a class="uk-button uk-button-primary" href="#">Détail de l'application</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slider-item="previous"></a>
+                <a href="" class="uk-slidenav uk-slidenav-next" data-uk-slider-item="next"></a>
+            </div>
 
-                <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slider-item="previous"></a>
-                <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slider-item="next"></a>
-
-			</div>
-
-	    </div>
+        </div>
 
     </section>
 
     <section class="uk-block-muted" id="services">
-	    <div class="uk-container uk-container-center uk-text-center">
-	        <h2 class="uk-heading-large">Services</h2>
-	        <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna blandit.<br class="uk-hidden-small"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	        <div class="uk-grid uk-margin-large-top" data-uk-grid-margin>
-	            <div class="uk-width-medium-1-3 uk-row-first">
-	                <div class="uk-panel">
-	                	<div class="uk-margin">
-							<i class="uk-icon-large uk-icon-html5"></i>
-							<i class="uk-icon-large uk-icon-css3"></i>
-	                	</div>
-	                    <h3 class="uk-panel-title">Site web</h3>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor lectus ac tellus tincidunt ullamcorper. Quisque sit amet sapien posuere.</p>
-	                </div>
-	            </div>
-	            <div class="uk-width-medium-1-3">
-	                <div class="uk-panel">
-	                	<div class="uk-margin">
-							<i class="uk-icon-large uk-icon-android"></i>
-							<i class="uk-icon-large uk-icon-apple"></i>
-	                	</div>
-	                    <h3 class="uk-panel-title">Application mobile</h3>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra tempor ex, ac eleifend turpis.</p>
-	                </div>
-	            </div>
-	            <div class="uk-width-medium-1-3">
-	                <div class="uk-panel">
-	                	<div class="uk-margin">
-							<i class="uk-icon-linux uk-icon-large"></i>
-							<i class="uk-icon-windows uk-icon-large"></i>
-	                	</div>
-	                    <h3 class="uk-panel-title">Logiciel de bureau</h3>
-	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed turpis at est fermentum consectetur vitae vitae augue.</p>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
+        <div class="uk-container uk-container-center uk-text-center">
+            <h2 class="uk-heading-large">Services</h2>
+            <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna blandit.<br
+                    class="uk-hidden-small"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="uk-grid uk-margin-large-top" data-uk-grid-margin>
+                <div class="uk-width-medium-1-3 uk-row-first">
+                    <div class="uk-panel">
+                        <div class="uk-margin">
+                            <i class="uk-icon-large uk-icon-html5"></i>
+                            <i class="uk-icon-large uk-icon-css3"></i>
+                        </div>
+                        <h3 class="uk-panel-title">Site web</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor lectus ac tellus
+                            tincidunt ullamcorper. Quisque sit amet sapien posuere.</p>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-3">
+                    <div class="uk-panel">
+                        <div class="uk-margin">
+                            <i class="uk-icon-large uk-icon-android"></i>
+                            <i class="uk-icon-large uk-icon-apple"></i>
+                        </div>
+                        <h3 class="uk-panel-title">Application mobile</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra tempor ex, ac
+                            eleifend turpis.</p>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-3">
+                    <div class="uk-panel">
+                        <div class="uk-margin">
+                            <i class="uk-icon-linux uk-icon-large"></i>
+                            <i class="uk-icon-windows uk-icon-large"></i>
+                        </div>
+                        <h3 class="uk-panel-title">Logiciel de bureau</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed turpis at est
+                            fermentum consectetur vitae vitae augue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="uk-block-default" id="contact">
-	    <div class="uk-container uk-container-center uk-text-center">
-	    	<div class="uk-width-large-3-4 uk-container-center uk-text-center uk-margin-large">
-		        <h2 class="uk-heading-large uk-margin-large-bottom">Contact</h2>
-		        <p class="uk-width-medium-5-6 uk-container-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>
-		        <ul class="uk-list uk-flex uk-flex-center" data-uk-margin="'cls':'uk-margin-right '">
-				    <li><a class="uk-button uk-button-link" href="https://github.com/johannhospice" data-uk-tooltip="{pos:'bottom'}" title="github.com/johannhospice" target="_bank"><i class="uk-icon-github uk-margin-right"></i>github</a></li>
-				    <li><a class="uk-button uk-button-link" href="https://www.linkedin.com/in/johannhospice" data-uk-tooltip="{pos:'bottom'}" title="linkedin.com/in/johannhospice" target="_bank"><i class="uk-icon-linkedin uk-margin-right"></i>linkedin</a></li>
-				    <li><a class="uk-button uk-button-link" href="skype:johannhospice?add" data-uk-tooltip="{pos:'bottom'}" title="johannhospice" target="_parent"><i class="uk-icon-skype uk-margin-right"></i>skype</a></li>
-				    <li><a class="uk-button uk-button-link" href="mailto:johannhospice.dev@gmail.com" data-uk-tooltip="{pos:'bottom'}" title="johannhospice.dev@gmail.com" target="_parent"><i class="uk-icon-envelope uk-margin-right"></i>mail</a></li>
-				    <li><a class="uk-button uk-button-link" href="tel:+33781700715" data-uk-tooltip="{pos:'bottom'}" title="+33781700715" target="_parent"><i class="uk-icon-phone uk-margin-right"></i>téléphone</a></li>
-			    </ul>
-	    	</div>
-	    </div>
+        <div class="uk-container uk-container-center uk-text-center">
+            <div class="uk-container-center uk-width-large-3-4 uk-text-center uk-margin-large">
+                <h2 class="uk-heading-large uk-margin-large-bottom">Contact</h2>
+                <p class="uk-container-center uk-width-medium-5-6">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit. Aenean commodo
+                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                    consequat massa quis enim. Donec pede justo.</p>
+                <ul class="uk-list uk-flex uk-flex-center" data-uk-margin="'cls':'uk-margin-right '">
+                    <li><a class="uk-button uk-button-link" href="skype:johannhospice?add"
+                           data-uk-tooltip="{pos:'bottom-left'}" title="johannhospice" target="_parent"><i
+                            class="uk-icon-skype uk-margin-right"></i>skype</a></li>
+                    <li><a class="uk-button uk-button-link" href="mailto:johannhospice.dev@gmail.com"
+                           data-uk-tooltip="{pos:'bottom-left'}" title="johannhospice.dev@gmail.com" target="_parent"><i
+                            class="uk-icon-envelope uk-margin-right"></i>mail</a></li>
+                    <li><a class="uk-button uk-button-link" href="tel:+33781700715"
+                           data-uk-tooltip="{pos:'bottom-left'}" title="+33781700715" target="_parent"><i
+                            class="uk-icon-phone uk-margin-right"></i>téléphone</a></li>
+                </ul>
+            </div>
+        </div>
     </section>
 
 </main>
@@ -181,42 +252,39 @@
 <footer class="uk-block-secondary uk-contrast" id="footer">
     <div class="uk-container uk-container-center">
         <div class="uk-grid">
-	        <div class="uk-width-1-2">
-		        <p class="uk-margin-bottom-remove">© 2016 <a href="#home">Johann Hospice</a>. Tous droits réservés.</p>
-	        </div>
-	        <div class="uk-width-1-2">
-		        <ul class="uk-subnav uk-flex-right uk-text-uppercase">
-		            <li><a href="#home">accueil</a></li>
-		            <li><a href="#about">à propos</a></li>
-		            <li><a href="#works">réalisations</a></li>
-		            <li><a href="#services">services</a></li>
-		            <li><a href="#contact">contact</a></li>
-		        </ul>
-	        </div>
+            <div class="uk-width-1-2">
+                <p class="uk-margin-bottom-remove">© 2016 <a href="#home">Johann Hospice</a>. Tous droits réservés.</p>
+            </div>
+            <div class="uk-width-1-2">
+                <ul class="uk-subnav uk-flex-right uk-text-uppercase">
+                    <li><a href="#home">accueil</a></li>
+                    <li><a href="#about">à propos</a></li>
+                    <li><a href="#works">réalisations</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </footer>
-        <!--<a href="#home"><img class="" src="images/logo/logo-white.png" height="48px" width="48px"/></a>-->
-<div id="particles-js"></div>
-
+<!--<a href="#home"><img class="" src="images/logo/logo-white.png" height="48px" width="48px"/></a>-->
 
 <div class="uk-offcanvas" id="offcanvas">
     <div class="uk-offcanvas-bar uk-text-center uk-offcanvas-bar-show">
         <a class="uk-panel" href="#"><img src="" alt="JH"></a>
         <ul class="uk-nav uk-nav-offcanvas uk-text-uppercase">
-            <li><a href="#home">accueil</a></li>
-            <li><a href="#about">à propos</a></li>
-            <li><a href="#works">réalisations</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#home" data-uk-smooth-scroll>accueil</a></li>
+            <li><a href="#about" data-uk-smooth-scroll>à propos</a></li>
+            <li><a href="#works" data-uk-smooth-scroll>réalisations</a></li>
+            <li><a href="#services" data-uk-smooth-scroll>services</a></li>
+            <li><a href="#contact" data-uk-smooth-scroll>contact</a></li>
         </ul>
     </div>
 </div>
 
+<!--
 <script type="text/javascript" src="js/particles.min.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/uikit.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
-
+-->
 </body>
 </html>
