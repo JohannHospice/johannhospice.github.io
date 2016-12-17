@@ -1,22 +1,51 @@
-section { padding: 50px 0 }
-footer { padding: 40px 0 }
+section {
+    padding: 50px 0
+}
+
+footer {
+    padding: 40px 0
+}
 
 @media (min-width: 768px) {
-  section { padding: 90px 0 }
+    section {
+        padding: 90px 0
+    }
 }
 
 @media (min-width: 1220px) {
-  section { padding: 120px 0 }
+    section {
+        padding: 120px 0
+    }
 }
 
-.uk-navbar { background: transparent; }
-.uk-navbar-nav > li.uk-active > a { background-color: transparent }
+.particles-js-canvas-el {
+    background: #333;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
 
-.uk-padding-large-top { padding-top: 50px!important }
-.uk-padding-large-bottom { padding-bottom: 50px!important }
+.uk-padding-large-top {
+    padding-top: 50px !important
+}
 
-.uk-padding-medium-top { padding-top: 20px!important }
-.uk-padding-medium-bottom { padding-bottom: 20px!important }
+.uk-padding-large-bottom {
+    padding-bottom: 50px !important
+}
 
-.uk-padding-small-top { padding-top: 5px!important }
-.uk-padding-small-bottom { padding-bottom: 5px!important }
+.uk-padding-medium-top {
+    padding-top: 20px !important
+}
+
+.uk-padding-medium-bottom {
+    padding-bottom: 20px !important
+}
+
+.uk-padding-small-top {
+    padding-top: 5px !important
+}
+
+.uk-padding-small-bottom {
+    padding-bottom: 5px !important
+}
