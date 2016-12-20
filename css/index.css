@@ -1,3 +1,4 @@
+/*
 section {
     padding: 50px 0
 }
@@ -16,6 +17,100 @@ footer {
     section {
         padding: 120px 0
     }
+}
+*/
+.screencast {
+    margin-top: 2.5em;
+    padding: 0 1em;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 6px 6px 0 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.screencast > a {
+    font-weight: bold;
+    color: #fff;
+    padding: 1em;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.screencast > a:after {
+    content: '';
+    position: absolute;
+    margin-left: -9px;
+    left: 50%;
+    bottom: -3px;
+    height: 0;
+    width: 0;
+    border-bottom: 9px solid rgba(255, 255, 255, 0.9);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+}
+
+.video-wrapper {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+}
+
+.timeline > li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+}
+
+.timeline-image > span:first-child {
+    margin-top: 15px;
+}
+
+.timeline-image > span {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+.timeline > li .timeline-panel {
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline > li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    margin-left: 0;
+    border: 5px solid #fafafa;
+    text-align: center;
+    color: #fff;
+    background-color: #2d7091;
+    border-image: initial;
+    border-radius: 100%;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 35px;
+    width: 2px;
+    margin-left: 0;
+    background-color: #fafafa;
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .particles-js-canvas-el {
@@ -48,4 +143,32 @@ footer {
 
 .uk-padding-small-bottom {
     padding-bottom: 5px !important
+}
+
+@media (max-width: 768px) {
+
+    .uk-padding-large-top {
+        padding-top: 20px !important
+    }
+
+    .uk-padding-large-bottom {
+        padding-bottom: 20px !important
+    }
+
+    .uk-padding-medium-top {
+        padding-top: 5px !important
+    }
+
+    .uk-padding-medium-bottom {
+        padding-bottom: 5px !important
+    }
+
+    .uk-padding-small-top {
+        padding-top: 5px !important
+    }
+
+    .uk-padding-small-bottom {
+        padding-bottom: 5px !important
+    }
+
 }
