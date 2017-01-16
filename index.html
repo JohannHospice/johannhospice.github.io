@@ -15,12 +15,12 @@
     <link rel="stylesheet" type="text/css" href="css/components/placeholder.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/uikit.min.js"></script>
-    <script type="text/javascript" src="js/components/sticky.min.js"></script>
-    <script type="text/javascript" src="js/components/slider.min.js"></script>
-    <script type="text/javascript" src="js/components/tooltip.min.js"></script>
-    <script type="text/javascript" src="js/components/grid.min.js"></script>
-    <script type="text/javascript" src="js/components/parallax.min.js"></script>
+    <script type="text/javascript" src="js/uikit/uikit.min.js"></script>
+    <script type="text/javascript" src="js/uikit/components/sticky.min.js"></script>
+    <script type="text/javascript" src="js/uikit/components/slider.min.js"></script>
+    <script type="text/javascript" src="js/uikit/components/tooltip.min.js"></script>
+    <script type="text/javascript" src="js/uikit/components/grid.min.js"></script>
+    <script type="text/javascript" src="js/uikit/components/parallax.min.js"></script>
 </head>
 <body id="body">
 
@@ -70,9 +70,7 @@
             <div class="uk-grid">
                 <div class="uk-width-large-1-2">
                     <div class="uk-margin-large uk-text-left uk-text-uppercase">
-                        <h4 class="uk-h1 uk-heading-large uk-margin-small-bottom uk-margin-large-top">Bonjour, je
-                            suis
-                            Johann
+                        <h4 class="uk-h1 uk-heading-large uk-margin-small-bottom uk-margin-large-top">Bonjour, je suis Johann
                         </h4>
                         <h1 class="uk-h2 uk-margin-remove uk-text-muted">Un développeur informatique</h1>
                     </div>
@@ -83,12 +81,12 @@
     <section class="uk-block uk-block-default" id="resume">
         <div class="uk-container uk-container-center">
             <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
-                <div class="uk-width-1-1 uk-width-large-1-2">
+                <div class="uk-width-1-1 uk-width-medium-1-2">
                     <div class="uk-margin-large uk-text-left uk-text-uppercase">
                         <h2>Resume</h2>
                     </div>
                 </div>
-                <div class="uk-width-1-1 uk-width-large-1-2">
+                <div class="uk-width-1-1 uk-width-medium-1-2">
                     <div class="uk-panel">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas. Commodi
                             cumque
@@ -150,8 +148,10 @@
                 <li>
                     <div class="uk-grid" data-uk-grid-margin="">
                         <div class="uk-width-1-1 uk-width-medium-2-5">
-                            <h3 class="uk-h4 uk-margin-bottom-remove">DUT Informatique, Université Paris-Sud (IUT
-                                Orsay)
+                            <h3 class="uk-h4 uk-margin-bottom-remove">
+                                <span>DUT Informatique, Université Paris-Sud</span>
+                                <br>
+                                <small>IUT Orsay</small>
                             </h3>
                             <span class="tm-text-lead uk-display-block uk-text-muted">2014 - 2016</span>
                         </div>
@@ -167,7 +167,7 @@
                 <li>
                     <div class="uk-grid" data-uk-grid-margin="">
                         <div class="uk-width-1-1 uk-width-medium-2-5">
-                            <h3 class="uk-h4 uk-margin-bottom-remove">Licence Informatique, Université
+                            <h3 class="uk-h4 uk-margin-bottom-remove">Licence 3 Informatique, Université
                                 Paris-Diderot
                             </h3>
                             <span class="tm-text-lead uk-display-block uk-text-muted">2016 - 2017</span>
@@ -415,17 +415,7 @@
             <div class="uk-width-1-2">
                 <ul class="uk-subnav uk-flex-right uk-text-uppercase">
                     <li><a href="#home" data-uk-smooth-scroll="{offset: 0}">accueil</a></li>
-                    <li>
-                        <div class="uk-button-dropdown" data-uk-dropdown>
-                            <a href="#about" data-uk-smooth-scroll="{offset: 60}">à propos</a>
-                            <div class="uk-dropdown uk-dropdown-small">
-                                <ul class="uk-nav uk-nav-dropdown">
-                                    <li><a href="#experiences">Mes experiences</a></li>
-                                    <li><a href="#education">Ma formation</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
+                    <li><a href="#about" data-uk-smooth-scroll="{offset: 60}">à propos</a></li>
                     <li><a href="#works" data-uk-smooth-scroll="{offset: 60}">réalisations</a></li>
                     <li><a href="#services" data-uk-smooth-scroll="{offset: 60}">services</a></li>
                     <li><a href="#contact" data-uk-smooth-scroll="{offset: 60}">contact</a></li>
