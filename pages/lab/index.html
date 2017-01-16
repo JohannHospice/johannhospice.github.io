@@ -58,7 +58,8 @@
         var params = getRouteParam();
         (function(){
             $('#iframe').attr('src', params.id+'.html');
-            $('#back').attr('href', "../../"+params.source+"#"+params.type+'-'+params.id);
+            //$('#back').attr('href', "../../"+params.source+"#"+params.type+'-'+params.id);
+            $('#back').attr('href', "../../index.html");
         })(jQuery)
     </script>
 </body>
