@@ -1,0 +1,17 @@
+
+<div class="uk-card uk-card-default uk-width-1-2@m" data-uk-filter="personnal,mobile,android">
+    <div class="uk-card">
+        <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <h3 class="uk-card-title uk-margin-remove-bottom"><%= work.title %> <small><%= work.type %></small></h3>
+                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00"><%= work.date %></time></p>
+            </div>
+        </div>
+        <div class="uk-card-body">
+            <p><%= work.description %></p>
+        </div>
+        <div class="uk-card-footer">
+            <a class="uk-button uk-button-text" href="#modal-work-preoss" uk-toggle>En savoir plus</a>
+        </div>
+    </div>
+</div>

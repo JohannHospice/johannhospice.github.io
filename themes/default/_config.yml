@@ -1,0 +1,16 @@
+menu:
+  - home
+  - about
+  - works
+  - services
+  - contact
+
+work_type:
+  - all
+  - personal
+  - professional
+  - universitary
+
+language:
+  - fr
+  - en

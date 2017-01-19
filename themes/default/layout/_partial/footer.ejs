@@ -1,0 +1,22 @@
+<footer class="uk-section uk-section-secondary uk-dark">
+    <div class="uk-container">
+        <div uk-grid>
+            <div class="uk-width-1-1">
+                <hr>
+            </div>
+        </div>
+        <div uk-grid>
+            <div class="uk-width-1-2">
+                <p class="uk-margin-remove-bottom">© 2016 <a href="#home"><%= config.author %></a>. Tous droits réservés.
+                </p>
+            </div>
+            <div class="uk-width-1-2">
+                <ul class="uk-subnav uk-flex-right uk-text-uppercase">
+                    <% for (var i in theme.menu){ %>
+                        <li><a href="#<%- theme.menu[i] %>" uk-scroll="{offset: 0}"><%= theme.menu[i] %></a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
