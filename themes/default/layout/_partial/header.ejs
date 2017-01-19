@@ -1,0 +1,21 @@
+<header id="header">
+  <nav class="uk-navbar-container" uk-navbar uk-sticky="{top: '.uk-section', animation: 'uk-animation-slide-top'}">
+    <div class="uk-navbar-left">
+      <a class="uk-navbar-item uk-logo" href="#">
+        <img src="" width="30" height="30" title="JH" alt="JH">
+      </a>
+    </div>
+    <div class="uk-navbar-right">
+      <div class="uk-visible@s">
+        <ul class="uk-navbar-nav uk-text-uppercase">
+          <% for (var i in theme.menu){ %>
+            <li><a href="#<%- theme.menu[i] %>" uk-scroll="{offset: 0}"><%= theme.menu[i] %></a></li>
+          <% } %>
+        </ul>
+      </div>
+      <div class="uk-hidden@s">
+        <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon></a>
+      </div>
+    </div>
+  </nav>
+</header>

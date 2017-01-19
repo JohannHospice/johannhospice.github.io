@@ -1,0 +1,11 @@
+<div uk-grid>
+    <div class="uk-width-1-1 uk-width-medium-2-5">
+        <h3 class="uk-h4 uk-margin-remove-bottom">
+            <%= post.education.title %><br><%= post.education.place %>
+        </h3>
+        <span class="tm-text-lead uk-display-block uk-text-muted"><%= post.education.date-begin %> - <%= post.education.date-end %></span>
+    </div>
+    <div class="uk-width-1-1 uk-width-medium-3-5">
+        <p class="uk-text-muted"><%= post.education.description %></p>
+    </div>
+</div>
