@@ -1,0 +1,81 @@
+GET IN TOUCH
+Vous pouvez voir l'avancement du site sur github( gource video)
+share: {
+	github:	github.com/johannhospice,
+	linkedin: linkedin.com/in/johannhospice,
+	phone: +33781700715,
+	email: johannhospice.dev@gmail.com
+}
+
+about: green
+contact: yellow 
+lab: blue
+work: red
+
+// for referencement
+add: {
+	<a title="...">
+	<img alt="..."
+}  
+
+color: {
+	gray: {
+		50: FAFAFA,
+		900: 212121
+	}
+	red: {
+		100: #FFCDD2
+		500: #F44336
+		700: #D32F2F
+		A100: #FF8A80
+		A200: #FF5252
+		A400: #FF1744
+	},
+	blue: {
+		100: #BBDEFB
+		200: #90CAF9,
+		300: #64b5f6,
+		400: #42a5f5
+		500: #2196F3
+		700: #1976D2
+		A100: #82B1FF
+		A200: #448AFF
+		A400: #2979FF
+	},
+	amber:{
+		100: #FFECB3
+		500: #FFC107
+		700: #FFA000
+		A100: #FFE57F
+		A200: #FFD740
+		A400: #FFC400
+	},
+	teal{
+		200: 80CBC4;
+		500: 009688;
+		700: #00796B
+ 		A100: #A7FFEB
+		A200: #64FFDA
+		A400: #1DE9B6
+	}
+	green {
+		100: #c8e6c9
+		200: #a5d6a7
+		300: #81c784
+		400: #66bb6a
+		500: #4caf50
+		600: #43a047
+		700: #388e3c
+	}
+}
+text_color: {
+	light: {
+		primary: rgba(255,255,255,.87);
+		secondary: rgba(255,255,255,.54);
+		disable: rgba(255,255,255,.38);
+	}
+	dark: {
+		primary: rgb(0,0,0);
+		secondary: rgba(0,0,0,.7);
+		disable: rgba(0,0,0,.5);
+	}
