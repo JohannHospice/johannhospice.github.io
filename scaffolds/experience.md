@@ -1,5 +1,6 @@
 ---
 title: {{ title }}
+name: 
 organisation: 
 status: 
 description: 

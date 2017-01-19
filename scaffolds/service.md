@@ -1,5 +1,7 @@
 ---
 title: {{ title }}
-icon: 
+name: 
+icons: 
 description:
+order: 
 ---

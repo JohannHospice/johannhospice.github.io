@@ -1,7 +1,8 @@
 ---
 title: {{ title }}
+name: 
 description: 
 place: 
-date-begin: 
-date-end: 
+date_begin: 
+date_end: 
 ---

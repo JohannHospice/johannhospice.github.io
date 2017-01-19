@@ -1,5 +1,6 @@
 ---
 title: {{ title }}
+name: 
 type: 
 description:
 state:
