@@ -1,5 +1,7 @@
 ---
 title: PreOSS.js
+name: preossjs
+type: commande nodejs
 description: Preprocesseur CSS en JS
 state: hot
 links: 
