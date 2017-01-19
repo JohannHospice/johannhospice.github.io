@@ -10,7 +10,7 @@ work_type:
   - personal
   - professional
   - universitary
+  
+work_modal: modal_work_
 
-language:
-  - fr
-  - en
+language: fr

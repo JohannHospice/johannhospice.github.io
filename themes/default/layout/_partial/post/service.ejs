@@ -1,0 +1,12 @@
+<% if(service != null) { %>
+    <div class="uk-card">
+        <div class="uk-margin">
+            <% service.icons
+                .forEach( icon => { %>
+                <span uk-icon="ratio: 4; icon: <%= icon %>"></span>
+            <% }) %>
+        </div>
+        <h3><%= service.title %></h3>
+        <p><%= service.description %></p>
+    </div>
+<% } %>

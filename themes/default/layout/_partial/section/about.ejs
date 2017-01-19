@@ -8,75 +8,21 @@
 	        <article class="uk-article" id="education">
 	            <h3 class="uk-article-title uk-margin-large-bottom uk-text-center">Ma Formation</h3>
 	            <ul class="tm-list-luna uk-list uk-list-divider">
-	                <li>
-	                    <div class="uk-grid" uk-grid="">
-	                        <div class="uk-width-1-1 uk-width-medium-2-5">
-	                            <h3 class="uk-h4 uk-margin-remove-bottom">
-	                                <span>BAC Général Scientifique</span><br><span>Lycée Clement Ader</span>
-	                            </h3>
-	                            <span class="tm-text-lead uk-display-block uk-text-muted">2011 - 2014</span>
-	                        </div>
-	                        <div class="uk-width-1-1 uk-width-medium-3-5">
-	                            <p class="uk-text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-	                                nonumy eirmod
-	                                tempor invidunt ut
-	                            </p>
-	                        </div>
-	                    </div>
-	                </li>
-	                <li>
-	                    <div class="uk-grid" uk-grid="">
-	                        <div class="uk-width-1-1 uk-width-medium-2-5">
-	                            <h3 class="uk-h4 uk-margin-remove-bottom">
-	                                <span>DUT Informatique</span><br><span>Université Paris-Sud <small>IUT Orsay</small></span>
-	                            </h3>
-	                            <span class="tm-text-lead uk-display-block uk-text-muted">2014 - 2016</span>
-	                        </div>
-	                        <div class="uk-width-1-1 uk-width-medium-3-5">
-	                            <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-	                                commodo ligula eget
-	                                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-	                                nascetur.
-	                            </p>
-	                        </div>
-	                    </div>
-	                </li>
-	                <li>
-	                    <div class="uk-grid" uk-grid="">
-	                        <div class="uk-width-1-1 uk-width-medium-2-5">
-	                            <h3 class="uk-h4 uk-margin-remove-bottom">
-	                                <span>Licence 3 Informatique</span><br><span>Université Paris-Diderot</span>
-	                            </h3>
-	                            <span class="tm-text-lead uk-display-block uk-text-muted">2016 - 2017</span>
-	                        </div>
-	                        <div class="uk-width-1-1 uk-width-medium-3-5">
-	                            <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-	                                facilis harum
-	                                laudantium, necessitatibus pariatur perspiciatis sequi sint soluta suscipit
-	                                voluptatibus.
-	                            </p>
-	                        </div>
-	                    </div>
-	                </li>
+					<% site.posts
+						.filter(o => o.layout == 'education')
+						.each((post) => { %>
+	                	<li><%- partial('../post/education', {education: post}, {local: true}) %></li>
+					<% }) %>
 	            </ul>
 	        </article>
 	        <article class="uk-article" id="experiences">
 	            <h3 class="uk-article-title uk-margin-large-bottom uk-text-center">Mes experiences</h3>
 	            <ul class="tm-list-luna uk-list uk-list-divider">
-	                <li>
-	                    <div class="uk-grid" uk-grid="">
-	                        <div class="uk-width-1-1 uk-width-medium-2-5">
-	                            <h3 class="uk-h4 uk-margin-remove-bottom">Stage - Developpeur fullstack, Netdevices</h3>
-	                            <span class="tm-text-lead uk-display-block uk-text-muted">11 Avril 2014 - 31 Juillet 2016</span>
-	                        </div>
-	                        <div class="uk-width-1-1 uk-width-medium-3-5">
-	                            <p class="uk-text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-	                                nonumy eirmod
-	                                tempor invidunt ut
-	                            </p>
-	                        </div>
-	                    </div>
-	                </li>
+					<% site.posts
+						.filter(o => o.layout == 'experience')
+						.each((post) => { %>
+	                	<li><%- partial('../post/experience', {experience: post}, {local: true}) %></li>
+					<% }) %>
 	            </ul>
 	        </article>
 	        <article class="uk-article" id="skills">
