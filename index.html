@@ -4,27 +4,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title id="page_title">Johann Hospice</title>
-    <link href="images/icons/faviconx16.png" rel="icon" type="image/x-icon">
-    <link href="images/icons/faviconx32.png" rel="icon" type="image/x-icon">
+    <title>Johann Hospice</title>
     <link rel="stylesheet" href="css/uikit.min.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/uikit.min.js"></script>
 </head>
-<body>
-    <section class="uk-section uk-section-muted uk-padding uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
-        <section class="uk-section uk-section-secondary" uk-height-viewport="offset-top: true; offset-bottom: true">
-            <div class="uk-container">
-                <ul class="uk-subnav uk-subnav-divider">
-                    <li>Johann Hospice</li>
-                    <li>IT student</li>
-                    <li><a class="uk-link-muted" href="tel:+33781700715">+33 7 81 70 07 15</a></li>
-                    <li><a class="uk-link-muted" href="http://www.github.com/johannhospice" target="_bank">github.com/johannhospice</a></li>
-                    <li><a class="uk-link-muted" href="http://www.linkedin.com/in/johannhospice" target="_bank">linkedin.com/in/johannhospice</a></li>
-                    <li><a class="uk-link-muted" href="mailto:johannhospice.dev@gmail.com">johannhospice.dev@gmail.com</a></li>
-                </ul>
-            </div>
-        </section>
+<body class="uk-background-default uk-height-viewport" uk-height-viewport>
+    <section class="uk-card uk-card-secondary uk-card-small uk-card-body uk-position-small uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+        <div class="uk-card-badge uk-label uk-label-warning">Site en construction</div>
+            <div class="uk-text-center uk-child-width-1-1" uk-grid>
+                <div class="uk-margin-large-bottom">
+                    <h1 class="uk-heading-primary uk-heading-line"><span>Johann Hospice</span></h1>
+                    <h2>Étudiant en informatique</h2>
+                </div>
+                <div class="uk-margin-large-bottom">
+                    <a class="uk-button uk-button-default" title="Daté du 24/07/2016" uk-tooltip="pos: bottom" href="assets/cv-johannhospice.pdf">curriculum vitae</a>
+                </div>
+                <div class="uk-flex uk-flex-center">
+                    <ul class="uk-width-large@s uk-flex-around" uk-grid>
+                        <li><a class="uk-icon-button" title="linkedin.com/in/johannhospice" uk-tooltip="pos: bottom" uk-icon='icon: linkedin' href="http://www.linkedin.com/in/johannhospice" target="_bank"></a></li>
+                        <li><a class="uk-icon-button" title="github.com/johannhospice" uk-tooltip="pos: bottom" uk-icon='icon: github' href="http://github.com/johannhospice" target="_bank"></a></li>
+                        <li><a class="uk-icon-button" title="johannhospice.dev@gmail.com" uk-tooltip="pos: bottom" uk-icon='icon: mail' href="mailto:johannhospice.dev@gmail.com"></a></li>
+                        <li><a class="uk-icon-button" title="+33 7 81 70 07 15" uk-tooltip="pos: bottom" uk-icon='icon: phone' href="tel:+33781700715"></a></li>
+                    </ul>
+                </div>
+        </div>
     </section>
     <script type="text/javascript" src="js/analytics.js"></script>
 </body>
