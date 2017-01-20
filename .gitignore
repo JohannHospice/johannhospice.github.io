@@ -27,3 +27,4 @@ chrome-user-data
 *.iml
 .vscode
 .sass-cache/
+db.json
