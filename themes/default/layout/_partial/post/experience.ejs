@@ -1,12 +1,12 @@
 <% if(experience != null) { %>
     <div uk-grid>
-        <div class="uk-width-1-1 uk-width-medium-2-5">
+        <div class="uk-width-1-4@m">
             <h3 class="uk-h4 uk-margin-remove-bottom">
-                <%= experience.title %><br><%= experience.organisation %>
+                <%= experience.title %> - <%= experience.status %><br><%= experience.organisation %>
             </h3>
-            <span class="tm-text-lead uk-display-block uk-text-muted"><%= experience.date_begin %> - <%= experience.date_end %></span>
+            <p class="tm-text-lead uk-display-block uk-text-muted"><time><%= experience.date_begin %></time> - <time><%= experience.date_end %></time></p>
         </div>
-        <div class="uk-width-1-1 uk-width-medium-3-5">
+        <div class="uk-width-expand@m">
             <p class="uk-text-muted"><%= experience.description %></p>
         </div>
     </div>
