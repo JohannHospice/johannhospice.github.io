@@ -1,3 +1,12 @@
+scripts:
+    - js/jquery.min.js
+    - js/uikit.min.js
+    - https://getuikit.com/migrate.min.js
+
+styles:
+    - css/uikit.min.css
+    - css/index.css
+
 menu:
   - home
   - about
