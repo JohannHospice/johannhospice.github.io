@@ -1,0 +1,86 @@
+"Good Morning!
+I’m Thibault Pailloux, a French 24-year-old digital art director based in Paris.
+I’m available for nice freelance works in design and development.
+Don’t hesitate to contact me, we have many things to talk about!"
+
+
+"HELLO, I'M JULIEN
+RENVOYE
+A FRENCH PRODUCT DESIGNER AND ART DIRECTOR
+I am a product designer and art director based in Austin currently having a great time working at Mixpanel. I also freelance for many companies on my spare time and help them create joyful digital experiences and unique visual identities. You can see a sneak peek of my most recent work on Dribbble & Behance."
+
+
+"Hello, my name is Rafael Caferati.
+I am an 
+award winning
+ Full Stack Web Developer and UI/UX enthusiast.
+Check out my latest web components and brackets.io extensions at my 
+lab page
+.
+Feel free to take a look at my most recent projects on my 
+work page
+.
+Also you can stop and say hello at 
+rafael@caferati.me"
+
+edenpulse: {
+	"Hi, I’m Matthieu.
+	I'm a french art director and product designer, based in Strasbourg (France), currently working at WP Media.
+	I focus on keeping things clean, simple and elegant on websites, apps or visual identities I design.
+
+	I am passionate about the creative alliance of technology and design, my motto is : Keep it simple, stupid. The user experience is at the center of my design process.
+
+	Oh, and I like coffee, burgers and Star Wars stuff."
+	"Say Hi !
+	As simple as sending an email.
+	Or reaching out via one of the networks below.
+
+	TWITTER - INSTAGRAM - DRIBBBLE - LINKEDIN
+	Let's do some
+	awesome work together
+
+	You have a project and think that we could
+	do awesome work together?
+	Don't hesitate and write me an email about it !
+
+	—
+
+	I am also always interested to work on side projects
+	with developers or designers.
+	 I look forward to hearing from you.
+	WRITE ME AN EMAIL
+	don't like direct email links ?"
+}
+
+gaelfoppolo: {
+	"Étudiant 3A informatique à Polytech Marseille, j’adore les séries fantastiques, le rock, le métal et les projets alliant idées novatrices et nouvelles technologies. Mon manga préféré est One Piece et je suis fan des raviolis en boîte. À mes heures perdues, j’essaie désespérément de finir Ghosts'n Goblins sur CPS. Un nouveau site personnel est en préparation, il arrivera avant 2017. Promis."
+	"Développeur iOS (stage)
+	KeepCore
+	L’application HandiCarParking a pour objectif de localiser rapidement les places de stationnement réservées aux personnes handicapées dans le monde entier. Elle se base sur les données d’OpenStreetMap.
+	 
+	Analyse, conception, développement et déploiement de l’application
+	Disponible dans 6 langues
+	Gratuit – App Store
+	Maître de stage : Jérémy Reynaud
+	Rapport de stage disponible sur GitHub, n’hésitez pas à le parcourir pour en apprendre plus :)"
+}
+
+pierre.io: {
+	"PIERRE.IO
+	Hello! My name is Pierre Nel, and I'm a London-based freelancer. If I'm not freelancing at some of London's finest digital agencies, I'm working remotely on projects for clients all over the world.
+
+	I have a diverse set of skills, ranging from design, to HTML + CSS + Javascript, all the way to PHP, custom Drupal module development and Linux server administration.
+	   
+	Projects
+	This is a sample of the projects that I've worked on in the last six years. Most of these sites were developed using an open source content management system called Drupal, and experience a large amount of traffic on a daily basis.
+
+	I enjoy working on design-driven projects, and specialise in developing sites in the luxury and entertainment sectors.
+
+	Skills
+	The crossover between design and programming has always been of interest to me, and since moving to London six years ago, I've been lucky enough to work alongside some talented teams on a number of high profile websites.
+
+	I have a wide range of skills that include design (and working closely with designers), front-end development (HTML5, CSS3, Javascript, Responsive, UX), back-end development using open source technologies (PHP, Drupal, Django and Ruby on Rails), Linux server system administration, load balancing (Varnish and Memcached), deployment and performance tuning (Apache, MySQL and NGinx).
+
+	Contact
+	I'm available for freelance contracts, so get in touch: hello@pierre.io"
+}
