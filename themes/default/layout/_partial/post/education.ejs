@@ -1,8 +1,14 @@
 <% if(education) { %>
     <div uk-grid>
         <div class="uk-width-1-4@m">
-            <h3 class="uk-h4 uk-margin-remove-bottom"><%= education.title %><br><%= education.place %></h3>
-            <p class="tm-text-lead uk-display-block uk-text-muted"><time><%= education.date_begin %></time> - <time><%= education.date_end %></time></p>
+            <h3 class="uk-h4 uk-margin-remove-bottom">
+                <%= education.title %><br><%= education.place %>
+            </h3>
+            <p class="tm-text-lead uk-display-block uk-text-muted">
+                <time><%= moment(education.date_begin).format("YYYY") %></time>
+                <span> - </span>
+                <time><%= moment(education.date_end).format("YYYY") %></time>
+            </p>
         </div>
         <div class="uk-width-expand@m">
             <p class="uk-text-muted"><%= education.description %></p>

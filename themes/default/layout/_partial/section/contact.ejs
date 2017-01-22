@@ -1,4 +1,3 @@
-
 <section class="uk-section uk-section-secondary" id="contact">
     <div class="uk-container uk-text-center">
         <h2 class="uk-heading-primary">Contact</h2>
@@ -13,18 +12,11 @@
             consequat massa quis enim. Donec pede justo.
         </p>
         <ul class="uk-child-width-expand@s uk-text-center" uk-grid>
-            <li><a class="uk-button uk-button-default" uk-tooltip="pos: bottom" title="johannhospice" href="skype:johannhospice?add" target="_parent">
-                    <span uk-icon="icon: skype"></span>
-                    <span class="uk-margin-left">skype</span>
-            </a></li>
-            <li><a class="uk-button uk-button-default" uk-tooltip="pos: bottom" title="johannhospice.dev@gmail.com" href="mailto:johannhospice.dev@gmail.com" target="_parent">
-                    <span uk-icon="icon: mail"></span>
-                    <span class="uk-margin-left">mail</span>
-            </a></li>
-            <li><a class="uk-button uk-button-default" uk-tooltip="pos: bottom" title="+33781700715" href="tel:+33781700715" target="_parent">
-                    <span uk-icon="icon: phone"></span>
-                    <span class="uk-margin-left">téléphone</span>
-            </a></li>
+            <% site.posts
+                .filter(o => o.layout == 'contact')
+                .each(post => { %>
+                <li><%- partial('../post/contact', {contact: post}, {local: true}) %></li>
+            <% }) %>
         </ul>
     </div>
 </section>

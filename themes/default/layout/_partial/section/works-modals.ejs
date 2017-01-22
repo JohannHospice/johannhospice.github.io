@@ -1,0 +1,5 @@
+<% site.posts
+    .filter(o => o.layout == 'work')
+    .each((post) => { %>
+    <%- partial('../post/work-modal', {work: post}, {local: true}) %>
+<% }) %>

@@ -1,5 +1,5 @@
-<section id="home">
-    <section class="uk-section uk-section-large uk-height-viewport uk-background-cover">
+<section>
+    <section class="uk-section uk-section-large uk-height-viewport uk-background-cover" id="home">
         <div class="uk-container">
             <div class="uk-grid">
                 <div class="uk-width-large-1-2">
@@ -34,17 +34,12 @@
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
                         </p>
                         <p class="uk-margin-large-top">Liens</p>
-                        <div class="uk-button-group">
-                            <a class="uk-button uk-button-default" href="https://github.com/johannhospice"
-                               uk-tooltip="pos: bottom" title="github.com/johannhospice" target="_bank">
-                                <span uk-icon="icon: github"></span>
-                                <span>github</span>
-                            </a>
-                            <a class="uk-button uk-button-default" href="https://www.linkedin.com/in/johannhospice"
-                               uk-tooltip="pos: bottom" title="linkedin.com/in/johannhospice" target="_bank">
-                                <span uk-icon="icon: linkedin"></span>
-                                <span>linkedin</span>
-                            </a>
+                        <div uk-grid uk-margin>
+                            <% site.posts
+                                .filter(post => post.layout == 'link')
+                                .each(post => {%>
+                                <div><%- partial('../post/link', {link: post}, {local: true})%></div>
+                            <% }) %>
                         </div>
                     </div>
                 </div>

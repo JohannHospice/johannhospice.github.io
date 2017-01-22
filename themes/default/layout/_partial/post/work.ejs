@@ -1,18 +1,21 @@
-<% if(work != null) { %>
-    <div class="uk-card uk-card-default uk-width-1-2@m" data-uk-filter="personnal,mobile,android">
+<% if(work) { 
+    var tags = 'p';  %>
+    <div class="uk-card uk-card-hover uk-card-default" data-uk-filter="<%= tags %>">
         <div class="uk-card">
             <div class="uk-card-header">
-                <div class="uk-card-badge uk-label">Badge</div>
+                <% if(work.state){ %>
+                    <div class="uk-card-badge uk-label uk-label-warning"><%= work.state %></div>
+                <% } %>
                 <div class="uk-grid-small uk-flex-middle" uk-grid>
                     <h3 class="uk-card-title uk-margin-remove-bottom"><%= work.title %><br><small><%= work.type %></small></h3>
-                    <p class="uk-text-meta uk-margin-remove-top"><%= work.date %></p>
+                    <p class="uk-text-meta uk-margin-remove-top"><%= moment(work.date).format("DD/MM/YYYY") %></p>
                 </div>
             </div>
             <div class="uk-card-body">
                 <p><%= work.description %></p>
             </div>
             <div class="uk-card-footer">
-                <a class="uk-button uk-button-text" href="#<%= theme.work_modal + work.name %>"><%=__('read_more')%></a>
+                <button class="uk-button uk-button-text" type="button" uk-toggle="target: #<%= theme.work_modal + work.name %>"><%=__('read_more')%></button>
             </div>
         </div>
     </div>

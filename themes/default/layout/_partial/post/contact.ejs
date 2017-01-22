@@ -1,0 +1,6 @@
+<% if(contact != null) { %>
+    <a class="uk-button uk-button-default" uk-tooltip="pos: bottom" title="<%= contact.name %>" href="<%= contact.href %>" target="_parent">
+            <span uk-icon="icon: <%= contact.title %>"></span>
+            <span class="uk-margin-left"><%= __(contact.title) %></span>
+    </a>
+<% } %>
