@@ -6,5 +6,9 @@ description: Ce projet a pour but de développer un site permettant de démateri
 state:
 links:
 date:
-tags: universitary,web,site
+tags: 
+    - universitary
+    - web
+    - site
+demo: false
 ---

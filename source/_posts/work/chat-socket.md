@@ -6,5 +6,9 @@ description:
 state:
 links:
 date:
-tags: universitary,software
+tags: 
+    - universitary
+    - software
+    - chat
+demo: false
 ---

@@ -6,5 +6,10 @@ description: "The game est un jeu développer durant mon deuxieme semestre à l'
 state:
 links:
 date: 2014-06-01
-tags: universitary,software
+tags: 
+    - universitary
+    - personnal
+    - software
+    - game
+demo: false
 ---

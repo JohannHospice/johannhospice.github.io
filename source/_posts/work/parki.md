@@ -16,4 +16,5 @@ tags:
 	- react-native
 	- android
 	- ios
+demo: false
 ---

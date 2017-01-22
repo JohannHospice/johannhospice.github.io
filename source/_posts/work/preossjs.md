@@ -1,8 +1,8 @@
 ---
 title: PreOSS.js
 name: preossjs
-type: commande nodejs
-description: Preprocesseur CSS en JS
+type: Preprocesseur CSS en JS
+description: 
 state: hot
 links: 
 	- https://www.npmjs.com/package/preoss
@@ -11,4 +11,5 @@ date:
 tags: 
 	- personnal
 	- software
+demo: false
 ---
