@@ -7,4 +7,5 @@ state:
 links: 
 date:
 tags:
+demo:
 ---
