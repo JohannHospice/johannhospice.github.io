@@ -1,12 +1,14 @@
 <% if(work) { %>
-    <div id="<%= theme.work_modal + work.name %>" uk-modal> 
-        <% if(work.demo) { %>
-            <div class="uk-modal-dialog uk-modal-dialog-blank">
-                <button class="uk-modal-close uk-close-large" type="button"></button>
-                <div class="uk-grid uk-flex-middle" uk-grid>
-                    <iframe class="uk-width-medium-1-2 uk-height-viewport uk-background-cover"
-                            src="demo/work/<%= work.name %>/index.html"></iframe>
-                    <div class="uk-width-medium-1-2">
+    <% if(work.demo) { %>
+        <div id="<%= theme.work_modal + work.name %>" class="uk-modal-full" uk-modal> 
+            <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" uk-close></button>
+                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                    <div class="uk-background-cover" uk-height-viewport>
+                        <div id="<%= work.name %>"></div>
+                        <script type="text/javascript" src="script/<%=work.name%>/index.src.js"></script>
+                    </div>
+                    <div class="uk-padding-large">
                         <h1><%= work.title %></h1>
                         <div class="uk-width-medium-2-3">
                             <h2>Description</h2>
@@ -23,16 +25,18 @@
                                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <a class="uk-button uk-button-default uk-button-large" href="<%= work.link %>" target="_bank">détail de l'application</a>
+                            <a class="uk-button uk-button-default uk-button-large" href="<%= work.link %>" target="_bank"><%= __('app_detail') %></a>
                         </div>
                     </div>
                 </div>
             </div>
-        <% } else { %>
+        </div>
+    <% } else { %>
+        <div id="<%= theme.work_modal + work.name %>" uk-modal> 
             <div class="uk-modal-dialog">
                 <h4><%= work.title %></h4>
                 <a class="uk-button uk-button-default uk-button-large" href="<%= work.link %>" target="_bank">détail de l'application</a>
             </div> 
-        <% } %>
-    </div>
+        </div>
+    <% } %>
 <% } %>

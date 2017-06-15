@@ -5,13 +5,13 @@ type: Pure Javascript / Application
 description: Cette experience fut réalisée lors de ma candidature dans l'entreprise netdevices pour un test de comptence JS
 state:
 links:
-date:
+date: 2016-02-20
 tags: 
-	- personnal
-	- web
-	- game
-	- javascript
-	- css
-	- html
+- personnal
+- web
+- game
+- javascript
+- css
+- html
 demo: true
 ---

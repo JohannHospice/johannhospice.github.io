@@ -173,7 +173,9 @@ var Block = function(focus) {
 var Shape = function(className) {
 
     this.act = function() {
-        var translate = `translate(${this.position.x - midsize}px,${this.position.y - midsize}px)`;
+        var modx = this.position.x - midsize,
+            mody = this.position.y - midsize;
+        var translate = "translate(" + modx + "px," + mody + "px)";
         this.body.style['-webkit-transform'] = translate;
         this.body.style['-moz-transform'] = translate;
         this.body.style['-o-transform'] = translate;
@@ -392,26 +394,38 @@ var Application = function(world, viewport) {
     this.cursor.position.set(-this.viewport.size.x, -this.viewport.size.y);
 };
 
+function createStyle(css){
+    head = document.head || document.getElementsByTagName('head')[0],
+    style = document.createElement('style');
+    style.type = 'text/css';
+    style.title = 'experience-1';
+    if (style.styleSheet)
+        style.styleSheet.cssText = css;
+    else 
+        style.appendChild(document.createTextNode(css));
+    head.appendChild(style);
+}
 
-var 
-    BLUE = "#2196F3",
-    RED = "#F44336",
+const 
+    FPS = 60,
     TIME = 1000,
-    FPS = 60;
+    RED = "#F44336",
+    BLUE = "#2196F3",
+    cssMinified = "#experience-1{display:block;width:100%;height:100%;overflow:hidden}#world{display:block;width:100%;height:100%;background-color:#212121;cursor:none}.block,.cursor{position:absolute;height:8px;width:8px;border:solid 1px;border-radius:100%}.block{background-color:#424242;transition:.2s color}.cursor{display:flex;align-items:center;justify-content:center;background-color:rgba(255,255,255,0.2);border-color:#fff}.cursor::after{height:2px;width:2px;background-color:#fff;border-radius:100%;content:' '}";
 
-var app = new Application(document.getElementById('world'), document.getElementById('viewport'));
+var viewport = document.getElementById('experience-1');
+if(!viewport)
+    throw "experience id not found";
+    
+var world = document.createElement("div")
+world.setAttribute("id", "world");
+viewport.appendChild(world);
+createStyle(cssMinified);
 
-document.getElementById('viewport').addEventListener('click', function() {
-    app.swapState();
-});
-
-window.addEventListener('resize', function() {
-    app.resize();
-});
-
-document.getElementById('viewport').addEventListener('mousemove', function(e) {
-    app.mouseUpdate(e.clientX, e.clientY);
-});
-
+var app = new Application(world, viewport);
+viewport.addEventListener('mousemove', function(e) { app.mouseUpdate(e.clientX, e.clientY) });
+viewport.addEventListener('click', function() { app.swapState() });
+window.addEventListener('resize', function() { app.resize() });
 app.create();
 app.start();
+

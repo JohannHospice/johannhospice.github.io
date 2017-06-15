@@ -5,10 +5,12 @@ type: Application chat client/Server
 description:
 state:
 links:
-date:
+date: 2016-01-06
 tags: 
-    - universitary
-    - software
-    - chat
+- universitary
+- software
+- socket
+- chat
+- c
 demo: false
 ---
