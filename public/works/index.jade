@@ -1,0 +1,31 @@
+-var data = public.works._data
+
+section.uk-section.uk-section-large
+    div.uk-container
+        div.uk-text-center
+            h2.uk-heading-primary=data.title 
+            p.uk-text-large=data.resume
+        ul.uk-subnav.uk-subnav-divider.uk-flex-center#work-grid
+            each value in data.type
+                li(uk-filter=value)
+                    a(href)=value
+        ul(class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid uk-margin)
+            each work in data.posts
+                li
+                    div.uk-card.uk-card-default.uk-card-hover(data-uk-filter=work.tags)
+                        div.uk-card-header
+                            if work.label
+                                div.uk-card-badge.uk-label(class="uk-label-"+work.label.type)= work.label.value
+                            div.uk-grid-small.uk-flex-middle(uk-grid)
+                                h3.uk-card-title.uk-margin-remove-bottom
+                                    = work.title
+                                    br
+                                    small= work.type
+                                p.uk-margin-remove-top
+                                    span= work.dateBegin
+                                    span  - 
+                                    span= work.dateEnd
+                        div.uk-card-body
+                            p= work.description
+                        div.uk-card-footer
+                            button.uk-button.uk-button-text(type="button" uk-toggle="target: #modal-work-" + work.name)='voir plus'

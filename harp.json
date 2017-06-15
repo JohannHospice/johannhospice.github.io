@@ -1,0 +1,18 @@
+{
+	"globals": {
+		"title": "Johann Hospice",
+		"uri": "https://johannhospice.github.io/",
+		"menu": {
+			"values": [
+				"/about",
+				"/works",
+				"/services"
+			],
+			"names": [
+				"À propos",
+				"Réalisation",
+				"Services"
+			]
+		}
+	}
+}

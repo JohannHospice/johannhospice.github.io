@@ -1,0 +1,11 @@
+include _includes/mixins
+
+div.uk-section
+	div.uk-container
+		div.uk-child-width-1-2.uk-grid-divider(uk-grid)
+			div
+				h1.uk-heading-primary Johann Hospice
+				h2.uk-heading- Etudiant informaticien
+			div
+				ul.uk-nav-primary.uk-text-right(uk-nav)
+					+list(menu.values, menu.names)

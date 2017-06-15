@@ -1,0 +1,41 @@
+-var data = public.about._data
+section.uk-section.uk-section-large.uk-section-default
+	div.uk-container.uk-text-center
+		h1.uk-heading-primary=data.title
+		p.uk-text-large!= data.resume
+- var type =["primary", "muted", "default"]
+- var i = 0
+each content in data.content
+	- var preserve = type[i] == "primary" || type[i] == "secondary"
+	section.uk-section.uk-section-large(class="uk-section-" + type[i] + (preserve ? " uk-preserve-color" : ""))
+		div.uk-container
+			div(class=(preserve ? "uk-light" : ""))
+				h2.uk-text-center=content.title
+				p.uk-text-center!= content.resume
+			each edu in content.content
+				div.uk-card.uk-card-default(uk-grid).uk-card-body
+					div(class="uk-width-1-3@m")
+						h4.uk-text-lead=edu.name
+							if edu.mention
+								|, 
+								=edu.mention
+						p=edu.place
+						p.uk-text-muted
+							span=edu.dateEnd
+							| -
+							span=edu.dateBegin
+					div(class="uk-width-expand@m")
+						p!=edu.resume
+	- i = i + 1
+	if i>=type.length
+		- i = 0
+		fds fdskfjsofji
+	
+section.uk-section.uk-section-large(class="uk-section-" + type[i])
+	div.uk-container.uk-container-center.uk-text-center
+		h2.uk-text-center Au plus simple
+		p.uk-text-center Allez voir mon curriculum vitae résumant ma formation, mes experiences et mes compétences.
+		a.uk-button.uk-button-primary(role="button" href="assets/cv-johannhospice.pdf")
+			span(uk-icon="icon: file-edit")
+			span  Télécharger mon cv
+			

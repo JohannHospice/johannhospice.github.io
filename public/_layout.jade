@@ -1,0 +1,9 @@
+extends _layout-base
+
+block body
+    include _includes/partials/header
+    
+    main(uk-height-viewport="offset-bottom: true;offset-top: true")
+        != yield
+
+    include _includes/partials/footer

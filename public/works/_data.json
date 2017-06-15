@@ -1,0 +1,56 @@
+{
+    "index": {
+        "title": "Réalisations - Johann Hospice"
+    },
+    "title": "Mes réalisations",
+    "resume": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta, voluptates ut cumque quasiporronesciunt mollitia autem harum labore.",
+    "type": [
+        "all",
+        "personal",
+        "professional",
+        "universitary"
+    ],
+    "posts": [{
+            "title": "Parki",
+            "name": "parki",
+            "type": "Application mobile",
+            "description": "Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.",
+            "state": null,
+            "links": [
+                "https://www.netdevices.fr/",
+                "https://www.netdevices.fr/portfolio-works/parki/"
+            ],
+            "dateBegin": "11-04-2016",
+            "dateEnd": "01-07-2016",
+            "tags": [
+                "professionnal",
+                "application",
+                "mobile",
+                "javascript",
+                "react-native",
+                "android",
+                "ios"
+            ],
+            "demo": false
+        },
+        {
+            "title": "Expérience #1",
+            "name": "experience-1",
+            "type": "Pure Javascript / Application",
+            "description": "Cette experience fut réalisée lors de ma candidature dans l'entreprise netdevices pour un test de comptence JS",
+            "state": "",
+            "links": "",
+            "dateBegin": "13-02-2016",
+            "dateEnd": "20-02-2016",
+            "tags": [
+                "personnal",
+                "web",
+                "game",
+                "javascript",
+                "css",
+                "html"
+            ],
+            "demo": true
+        }
+    ]
+}

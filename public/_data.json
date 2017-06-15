@@ -1,0 +1,29 @@
+{
+	"index": {
+		"layout": "_layout-index"
+	},
+	"share": [
+		{
+			"icon": "phone",
+			"title": "+33781700715",
+			"href": "tel:+33781700715"
+		},
+		{
+			"icon": "mail",
+			"title": "johannhospice.dev@gmail.com",
+			"href": "mailto:johannhospice.dev@gmail.com"
+		},
+		{
+			"icon": "github",
+			"title": "github.com/johannhospice",
+			"href": "https://github.com/johannhospice",
+			"target": "_blank"
+		},
+		{
+			"icon": "linkedin",
+			"title": "www.linkedin.com/in/johannhospice",
+			"href": "https://www.linkedin.com/in/johannhospice",
+			"target": "_blank"
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+    "index": {
+        "title": "Mes services - Johann Hospice"
+    },
+    "title": "Mes services professionnels",
+    "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "contents": [{
+            "icon": "desktop",
+            "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed turpis at est fermentum consectetur vitae vitae augue.",
+            "title": "Logiciel de bureau"
+        },
+        {
+            "icon": "phone",
+            "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra tempor ex, ac eleifend turpis.",
+            "title": "Application mobile"
+        },
+        {
+            "icon": "desktop",
+            "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor lectus ac tellus tincidunt ullamcorper. Quisque sit amet sapien posuere.",
+            "title": "Site web"
+        }
+    ]
+}

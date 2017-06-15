@@ -1,0 +1,24 @@
+extends _layout-base
+
+block body
+    div.uk-background-default.uk-dark
+        main.uk-flex.uk-flex-column.uk-flex-center(uk-height-viewport="offset-bottom: true")
+            != yield
+
+        footer.uk-section.uk-container.uk-container-center
+        
+            div(uk-grid)
+                div.uk-width-1-1
+                    hr.uk-divider-icon
+
+            div.uk-child-width-1-2(uk-grid)
+                div
+                    p
+                        | © 2016 
+                        a.uk-link-reset(href="/index") Johann Hospice
+                        | . Tous droits réservés
+                div
+                    ul.uk-text-center(class="uk-child-width-expand" uk-grid)
+                        each share in public._data.share
+                            li
+                                a.uk-icon-button(uk-icon="icon:"+share.icon title=share.title uk-tooltip="pos: top" href=share.href target=share.target)
