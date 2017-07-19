@@ -17,7 +17,7 @@
     "url": "https://github.com/JohannHospice/johannhospice.github.io/issues"
   },
   "homepage": "https://github.com/JohannHospice/johannhospice.github.io#readme",
-  "dependencies": {
+  "devDependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "harp": "^0.24.0"
