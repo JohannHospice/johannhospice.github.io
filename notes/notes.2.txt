@@ -1,0 +1,146 @@
+color: {
+	white: {
+		FAFAFA, // B
+		F5F5F5, // B
+		EEEEEE, // B
+	},
+	black: {
+		616161, // W
+		424242, // W
+		212121, // W
+	},
+	blue: {
+		42A5F5, // B
+		2196F3, // W
+		1E88E5, // W
+	},
+	amber: {
+		FFD740, // B
+		FFC400, // B
+		FFAB00, // B
+	}
+}
+
+fonts: {
+	disos: {
+		titre
+	},
+	roboto: {
+		paragraphe,
+		other
+	}
+}
+
+nav: {
+	form: "
+		logo				item item item_colored
+		__________________________________________
+	"
+}
+background:{
+	transparent_blurry,
+	"
+		t e x
+		t i n
+		c o l
+		u m n
+	"
+	black: {
+		text_w: {
+			title: darker,
+			text: light
+		},
+	},
+	white: {
+		text_b: {
+			title: light,
+			text: darker
+		},
+	}
+}
+
+title: {
+	styles
+	desc: {
+		"sentence on top and small surline on bottom"
+		"ptit truc mettant en avant | display: block",
+		"on top numerotation with ",
+		"one word with enhance color; on top or at left"
+	}
+}
+
+section_item: {
+	opt: {
+		||     | |
+	}
+}
+
+hero{
+	blue,
+	gradient,
+	backgroud_items: {
+		shape: { ? }
+		repeat,
+	},
+}
+
+images: {
+	overflow: hiden,
+	borderradius,
+	opt: {
+		colored,
+		blurry,
+	},
+	cadre: {
+		opacity: .5
+	}
+}
+title: {
+	big with small text like "what we do"
+}
+
+graphs: {
+	desc: "border contain color"	
+}
+
+arrow: {
+	got to top,
+	desc: "small, right bottom, margin"	
+}
+
+contact: {
+	linedin,
+	github,
+	skype,
+	email
+}
+
+portfolio: {
+	! left_right,
+	{
+		div
+			img   text
+		div
+	}
+}
+
+footer: {
+	"
+ 		left
+			title
+			sentence
+			share
+		left
+		right
+			contact
+		right
+	"
+	"logo| copyright				items share"
+	website_link/ ../ ../ ../
+}
+comparaison : {
+	cadre
+	 _______
+	|___|___|
+	|___|___|
+}
