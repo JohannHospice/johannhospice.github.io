@@ -2,10 +2,9 @@
   "name": "johannhospice.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "harp server"
   },
   "repository": {
     "type": "git",
@@ -18,8 +17,6 @@
   },
   "homepage": "https://github.com/JohannHospice/johannhospice.github.io#readme",
   "dependencies": {
-    "browser-sync": "^2.18.12",
-    "gulp": "^3.9.1",
     "harp": "^0.24.0"
   }
 }
