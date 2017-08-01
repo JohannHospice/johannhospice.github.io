@@ -1,0 +1,17 @@
+a.uk-link-reset(href="/works/"+work.name)
+    div.uk-card.uk-card-hover.uk-card-default
+        div.uk-card-body
+            if work.label
+                div.uk-card-badge.uk-label(class="uk-label-"+work.label.type)= work.label.value
+            
+            h4.uk-card-title=work.title
+            
+            p=work.description
+
+            p.uk-text-uppercase
+                span=work.category
+                br
+                span.uk-text-meta
+                    time(datetime=work.dateStart)=work.dateStartFormated
+                    | -
+                    time(datetime=work.dateEnd)=work.dateEndFormated
