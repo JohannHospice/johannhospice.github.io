@@ -1,6 +1,6 @@
 {
     "index": {
-        "title": "Réalisations - Johann Hospice"
+        "title": "Mes Réalisations - Johann Hospice"
     },
     "title": "Mes réalisations",
     "resume": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta, voluptates ut cumque quasiporronesciunt mollitia autem harum labore.",
@@ -16,21 +16,25 @@
             "type": "Application de bureau",
             "description": "Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.",
             "code": "https://github.com/johannhospice/iportbook",
-            "dateStart": "01-06-2017",
-            "dateStartFormated": "1 Juin 2017",
+            "dateStart": "25-03-2017",
+            "dateStartFormated": "25 Mars 2017",
+            "dateEnd": "01-06-2017",
+            "dateEndFormated": "1 Juin 2017",
             "category": "universitaire"
         },{
             "title": "Parki",
             "name": "parki",
             "type": "Application mobile",
             "description": "Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.",
+            "dateStart": "11-04-2016",
+            "dateStartFormated": "11 Avril 2016",
+            "dateEnd": "01-07-2016",
+            "dateEndFormated": "1 Juillet 2016",
+            "category": "professionnal",
             "links": [
                 "https://www.netdevices.fr/",
                 "https://www.netdevices.fr/portfolio-works/parki/"
-            ],
-            "dateStart": "01-07-2016",
-            "dateStartFormated": "1 Aout 2016",
-            "category": "professionnal"
+            ]
         },
         {
             "title": "Expérience javascript",
@@ -38,9 +42,11 @@
             "type": "Pure Javascript / Application",
             "description": "Cette experience fut réalisée lors de ma candidature dans l'entreprise netdevices pour un test de comptence JS",
             "state": "",
-            "links": "",
-            "dateStart": "20-02-2016",
-            "dateStartFormated": "20 Fevrier 2016",
+            "links": [],
+            "dateStart": "13-02-2016",
+            "dateStartFormated": "13 Fevrier 2016",
+            "dateEnd": "20-02-2016",
+            "dateEndFormated": "20 Fevrier 2016",
             "category": "personnel"
         }
     ]

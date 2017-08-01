@@ -1,3 +1,19 @@
+
+//-
+    div.uk-card.uk-card-default.uk-card-hover(data-uk-filter=work.tags)
+        a.uk-link-reset(href="/works/" + work.name + "/")
+            div.uk-card-body
+                if work.label
+                    div.uk-card-badge.uk-label(class="uk-label-" + work.label.type)= work.label.value
+                article.uk-article
+                    h3.uk-article-title.uk-margin= work.title
+                    h4=work.type
+                    p.uk-article-meta
+                        = work.dateBegin
+                        |  - 
+                        = work.dateEnd
+                    p= work.description
+
 a.uk-link-reset(href="/works/"+work.name)
     div.uk-card.uk-card-hover.uk-card-default
         div.uk-card-body
