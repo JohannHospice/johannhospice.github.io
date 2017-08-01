@@ -1,5 +1,21 @@
 -var data = public.works._data
 
+
+mixin work(work)
+    div.uk-card.uk-card-default.uk-card-hover(data-uk-filter=work.tags)
+        a.uk-link-reset(href="/works/" + work.name + "/")
+            div.uk-card-body
+                if work.label
+                    div.uk-card-badge.uk-label(class="uk-label-" + work.label.type)= work.label.value
+                article.uk-article
+                    h3.uk-article-title.uk-margin= work.title
+                    h4=work.type
+                    p.uk-article-meta
+                        = work.dateBegin
+                        |  - 
+                        = work.dateEnd
+                    p= work.description
+
 section.uk-section.uk-section-large
     div.uk-container
         div.uk-text-center
@@ -10,22 +26,6 @@ section.uk-section.uk-section-large
                 li(uk-filter=value)
                     a(href)=value
         ul(class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid uk-margin)
-            each work in data.posts
+            each w in data.posts
                 li
-                    div.uk-card.uk-card-default.uk-card-hover(data-uk-filter=work.tags)
-                        div.uk-card-header
-                            if work.label
-                                div.uk-card-badge.uk-label(class="uk-label-" + work.label.type)= work.label.value
-                            div.uk-grid-small.uk-flex-middle(uk-grid)
-                                h3.uk-card-title.uk-margin-remove-bottom
-                                    = work.title
-                                    br
-                                    small= work.type
-                                p.uk-margin-remove-top
-                                    span= work.dateBegin
-                                    span  - 
-                                    span= work.dateEnd
-                        div.uk-card-body
-                            p= work.description
-                        div.uk-card-footer
-                            button.uk-button.uk-button-text(type="button" uk-toggle="target: #modal-work-" + work.name)='voir plus'
+                    +work(w)
