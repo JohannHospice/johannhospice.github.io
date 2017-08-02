@@ -1,15 +1,19 @@
 -var data = public.works._data
 
-section.uk-section.uk-section-large
+section.uk-section.uk-section-primary
     div.uk-container
         div.uk-text-center
-            h2.uk-heading-primary=data.title 
+            h1=data.title 
             p.uk-text-large=data.resume
-        ul.uk-subnav.uk-subnav-divider.uk-flex-center#work-grid
-            each value in data.type
-                li(uk-filter=value)
-                    a(href="#")=value
-        ul(class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid uk-margin)
+        //-
+            ul.uk-subnav.uk-subnav-divider.uk-flex-center#work-grid
+                each value in data.type
+                    li(uk-filter=value)
+                        a(href="#")=value
+    
+section.uk-section.uk-section-default.uk-preserve-color
+    div.uk-container
+        div.uk-grid-match(class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid)
             each w in data.posts
-                li
+                div
                     != partial("_work-card", { work: w })

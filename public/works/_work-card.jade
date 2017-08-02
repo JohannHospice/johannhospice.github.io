@@ -1,33 +1,17 @@
+a.uk-link-reset.uk-card.uk-card-hover.uk-card-default(href="/works/"+work.name)
+    // .uk-background-cover.uk-background-blend-multiply.uk-background-primary(style="background-image: url(/assets/works/"+work.name+".jpg);")
+    div.uk-card-body
+        if work.label
+            div.uk-card-badge.uk-label(class="uk-label-"+work.label.type)= work.label.value
+    
+        h4=work.title
 
-//-
-    div.uk-card.uk-card-default.uk-card-hover(data-uk-filter=work.tags)
-        a.uk-link-reset(href="/works/" + work.name + "/")
-            div.uk-card-body
-                if work.label
-                    div.uk-card-badge.uk-label(class="uk-label-" + work.label.type)= work.label.value
-                article.uk-article
-                    h3.uk-article-title.uk-margin= work.title
-                    h4=work.type
-                    p.uk-article-meta
-                        = work.dateBegin
-                        |  - 
-                        = work.dateEnd
-                    p= work.description
+        p=work.description
 
-a.uk-link-reset(href="/works/"+work.name)
-    div.uk-card.uk-card-hover.uk-card-default
-        div.uk-card-body
-            if work.label
-                div.uk-card-badge.uk-label(class="uk-label-"+work.label.type)= work.label.value
-            
-            h4.uk-card-title=work.title
-            
-            p=work.description
-
-            p.uk-text-uppercase
-                span=work.category
-                br
-                span.uk-text-meta
-                    time(datetime=work.dateStart)=work.dateStartFormated
-                    | -
-                    time(datetime=work.dateEnd)=work.dateEndFormated
+        p.uk-text-uppercase
+            span=work.category
+            br
+            span.uk-text-meta
+                time(datetime=work.dateStart)=work.dateStartFormated
+                |  - 
+                time(datetime=work.dateEnd)=work.dateEndFormated

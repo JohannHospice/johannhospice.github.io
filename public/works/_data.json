@@ -16,11 +16,22 @@
             "type": "Application de bureau",
             "description": "Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.",
             "code": "https://github.com/johannhospice/iportbook",
-            "dateStart": "25-03-2017",
-            "dateStartFormated": "25 Mars 2017",
+            "dateStart": "25-05-2017",
+            "dateStartFormated": "25 May 2017",
             "dateEnd": "01-06-2017",
             "dateEndFormated": "1 Juin 2017",
-            "category": "universitaire"
+            "category": "logiciel de bureau"
+        },{
+            "title": "Metro",
+            "name": "metro",
+            "type": "Site web",
+            "description": "L’objectif de ce devoir est de réaliser une application utile de calcul de trajet sur le réseau de métro de la RATP dans l’agglomération parisienne.",
+            "code": "https://github.com/johannhospice/metro",
+            "dateStart": "11-04-2017",
+            "dateStartFormated": "11 Avril 2017",
+            "dateEnd": "17-04-2017",
+            "dateEndFormated": "17 Avril 2017",
+            "category": "Site web"
         },{
             "title": "Parki",
             "name": "parki",
@@ -30,7 +41,7 @@
             "dateStartFormated": "11 Avril 2016",
             "dateEnd": "01-07-2016",
             "dateEndFormated": "1 Juillet 2016",
-            "category": "professionnal",
+            "category": "application mobile",
             "links": [
                 "https://www.netdevices.fr/",
                 "https://www.netdevices.fr/portfolio-works/parki/"
@@ -39,15 +50,12 @@
         {
             "title": "Expérience javascript",
             "name": "experience-javascript",
-            "type": "Pure Javascript / Application",
             "description": "Cette experience fut réalisée lors de ma candidature dans l'entreprise netdevices pour un test de comptence JS",
-            "state": "",
-            "links": [],
             "dateStart": "13-02-2016",
             "dateStartFormated": "13 Fevrier 2016",
             "dateEnd": "20-02-2016",
             "dateEndFormated": "20 Fevrier 2016",
-            "category": "personnel"
+            "category": "application web"
         }
     ]
 }
