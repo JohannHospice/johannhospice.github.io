@@ -3,8 +3,10 @@ header.uk-navbar-container(uk-sticky)
     div.uk-container.uk-container-expand
         nav(uk-navbar)
             div.uk-navbar-left
-                a.uk-logo(href="/") logo
-                // a.uk-navbar-toggle(uk-navbar-toggle-icon)
+                a.uk-navbar-item.uk-logo(href="/") 
+                    img(src="/assets/logo/logo-grey.png" alt="logo" style="height:50%")
             div.uk-navbar-right
                 ul.uk-navbar-nav
                     +list(menu.values, menu.names)
+
+                // a.uk-navbar-toggle(uk-navbar-toggle-icon)

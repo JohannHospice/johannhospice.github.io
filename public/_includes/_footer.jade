@@ -34,13 +34,13 @@ footer.uk-section.uk-section-secondary
                 hr.uk-divider-icon
                 
         div.uk-child-width-1-2(uk-grid)
-                div
-                    p
-                        | © 2016 
-                        a.uk-link-reset(href="/index") Johann Hospice
-                        | . Tous droits réservés
-                div
-                    ul.uk-text-center(class="uk-child-width-expand" uk-grid)
-                        each share in public._data.share
-                            li
-                                a.uk-icon-button(uk-icon="icon:"+share.icon title=share.title uk-tooltip="pos: top" href=share.href target=share.target)
+            div
+                p
+                    | © 2016 
+                    a.uk-link-reset(href="/index") Johann Hospice
+                    | . Tous droits réservés
+            div
+                ul.uk-text-center(class="uk-child-width-expand" uk-grid)
+                    each share in public._data.share
+                        li
+                            a.uk-icon-button(uk-icon="icon:"+share.icon title=share.title uk-tooltip="pos: top" href=share.href target=share.target)
