@@ -1,8 +1,19 @@
 -var data = public.about._data
+
 section.uk-section.uk-section-large.uk-section-default
 	div.uk-container.uk-text-center
 		h1.uk-heading-primary=data.title
-		p.uk-text-large!= data.resume
+		p.uk-text-large!=data.resume
+		div.uk-position-center
+			ul.uk-subnav
+				li
+					a(href="#objectif") objectif
+				li
+					a(href="#education") formation
+				li
+					a(href="#experience") experience
+
+
 - var type =["primary", "muted", "default"]
 - var i = 0
 each content in data.content

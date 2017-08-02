@@ -12,17 +12,31 @@
     ],
     "posts": [{
             "title": "Iportbook",
+            "subtitle": "Projet de programmation réseaux",
             "name": "iportbook",
             "type": "Application de bureau",
             "description": "Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.",
             "code": "https://github.com/johannhospice/iportbook",
             "dateStart": "25-05-2017",
-            "dateStartFormated": "25 May 2017",
+            "dateStartFormated": "25 Mai 2017",
             "dateEnd": "01-06-2017",
             "dateEndFormated": "1 Juin 2017",
             "category": "logiciel de bureau"
+        }, {
+            "title": "Ungoliant",
+            "subtitle": "Robot d’Indexation et Moteur de Recherche",
+            "name": "ungoliant",
+            "type": "logiciel de bureau",
+            "description": "Le but de ce projet est d’implémenter en langage C un moteur de recherche, un programme capable d’explorer récursivement le contenu d’un ensemble de pages HTML ou de sites Web, de les indexer, et de permettre à un utilisateur d’effectuer une recherche sur leur contenu.",
+            "code": "https://github.com/johannhospice/ungoliant",
+            "dateStart": "15-01-2017",
+            "dateStartFormated": "15 Janvier 2017",
+            "dateEnd": "14-05-2017",
+            "dateEndFormated": "14 Mai 2017",
+            "category": "Site web"
         },{
             "title": "Metro",
+            "subtitle": "Calcul de trajets en métro",
             "name": "metro",
             "type": "Site web",
             "description": "L’objectif de ce devoir est de réaliser une application utile de calcul de trajet sur le réseau de métro de la RATP dans l’agglomération parisienne.",
@@ -32,7 +46,7 @@
             "dateEnd": "17-04-2017",
             "dateEndFormated": "17 Avril 2017",
             "category": "Site web"
-        },{
+        }, {
             "title": "Parki",
             "name": "parki",
             "type": "Application mobile",
