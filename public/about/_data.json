@@ -5,37 +5,42 @@
     "title": "À propos",
     "resume": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas.",
     "content": [{
+        "id": "objective",
         "title": "Mon objectif",
         "section": "primary",
         "resume": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas. Commodi cumque explicabo harum illo laborum nobis optio quidem tempora veniam voluptate? Culpa eos ipsum laborum nisi optio quo.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
         "content": []
     }, {
+        "id": "education",
         "title": "Ma formation",
         "section": "muted",
         "resume": "",
         "content": [{
-            "name": "Licence",
-            "mention": "Informatique",
+            "name": "Licence Informatique",
             "place": "Université Paris Diderot",
+            "placeLink": "https://universite.univ-paris-diderot.fr/",
+            "link": "http://www.informatique.univ-paris-diderot.fr/wiki/doku.php/enseignement/licence",
             "dateBegin": "2016",
             "dateEnd": "2017",
             "resume": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi facilis harum laudantium, necessitatibus pariatur perspiciatis sequi sint soluta suscipit voluptatibus."
         }, {
-            "name": "Diplôme universitaire technologique",
-            "mention": "Informatique",
-            "place": "Université Paris Saclay",
+            "name": "DUT Informatique",
+            "place": "Université Paris Saclay - IUT d'Orsay",
+            "placeLink": "https://www.universite-paris-saclay.fr/fr",
+            "link": "http://www.iut-orsay.u-psud.fr/fr/formations/dut/info_dut_fi.html",
             "dateBegin": "2014",
             "dateEnd": "2016",
             "resume": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur."
         }, {
-            "name": "Baccalauréat",
-            "mention": "Scientifique",
+            "name": "Baccalauréat scientifique",
+            "mention": "Science de l'ingenieur",
             "place": "Lycée Clement Ader",
             "dateBegin": "2011",
             "dateEnd": "2014",
             "resume": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
         }]
     }, {
+        "id": "experience",
         "title": "Mon expérience",
         "section": "default",
         "resume": "",

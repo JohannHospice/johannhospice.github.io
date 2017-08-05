@@ -4,17 +4,10 @@
     },
     "title": "Mes réalisations",
     "resume": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta, voluptates ut cumque quasiporronesciunt mollitia autem harum labore.",
-    "type": [
-        "tous",
-        "personnel",
-        "professionnel",
-        "universitaire"
-    ],
     "posts": [{
+            "name": "iportbook",
             "title": "Iportbook",
             "subtitle": "Projet de programmation réseaux",
-            "name": "iportbook",
-            "type": "Application de bureau",
             "description": "Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.",
             "code": "https://github.com/johannhospice/iportbook",
             "dateStart": "25-05-2017",
@@ -23,22 +16,20 @@
             "dateEndFormated": "1 Juin 2017",
             "category": "logiciel de bureau"
         }, {
+            "name": "ungoliant",
             "title": "Ungoliant",
             "subtitle": "Robot d’Indexation et Moteur de Recherche",
-            "name": "ungoliant",
-            "type": "logiciel de bureau",
             "description": "Le but de ce projet est d’implémenter en langage C un moteur de recherche, un programme capable d’explorer récursivement le contenu d’un ensemble de pages HTML ou de sites Web, de les indexer, et de permettre à un utilisateur d’effectuer une recherche sur leur contenu.",
             "code": "https://github.com/johannhospice/ungoliant",
             "dateStart": "15-01-2017",
             "dateStartFormated": "15 Janvier 2017",
             "dateEnd": "14-05-2017",
             "dateEndFormated": "14 Mai 2017",
-            "category": "Site web"
+            "category": "logiciel de bureau"
         },{
+            "name": "metro",
             "title": "Metro",
             "subtitle": "Calcul de trajets en métro",
-            "name": "metro",
-            "type": "Site web",
             "description": "L’objectif de ce devoir est de réaliser une application utile de calcul de trajet sur le réseau de métro de la RATP dans l’agglomération parisienne.",
             "code": "https://github.com/johannhospice/metro",
             "dateStart": "11-04-2017",
@@ -46,10 +37,24 @@
             "dateEnd": "17-04-2017",
             "dateEndFormated": "17 Avril 2017",
             "category": "Site web"
+        },{
+            "name": "preoss",
+            "title": "Preoss.js",
+            "subtitle": "Preprocesseur CSS en JS",
+            "description": "Module node permettant de coder des feuilles de style CSS avec le plaisir de programmer en Javascript.",
+            "label": {
+                "value": "abandonné",
+                "type": "danger"
+            },
+            "code": "https://github.com/johannhospice/preoss.js",
+            "dateStart": "07-08-2016",
+            "dateStartFormated": "7 Août 2016",
+            "dateEnd": "26-07-2016",
+            "dateEndFormated": "26 Juillet 2016",
+            "category": "Module node"
         }, {
-            "title": "Parki",
             "name": "parki",
-            "type": "Application mobile",
+            "title": "Parki",
             "description": "Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.",
             "dateStart": "11-04-2016",
             "dateStartFormated": "11 Avril 2016",
@@ -62,8 +67,8 @@
             ]
         },
         {
-            "title": "Expérience javascript",
             "name": "experience-javascript",
+            "title": "Expérience javascript",
             "description": "Cette experience fut réalisée lors de ma candidature dans l'entreprise netdevices pour un test de comptence JS",
             "dateStart": "13-02-2016",
             "dateStartFormated": "13 Fevrier 2016",
