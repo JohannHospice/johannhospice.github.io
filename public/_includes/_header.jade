@@ -1,12 +1,27 @@
 include _mixins
+
+- var i = 0
+- var size = 4
+
 header.uk-navbar-container(uk-sticky)
     div.uk-container.uk-container-expand
         nav(uk-navbar)
             div.uk-navbar-left
+                ul.uk-navbar-nav(class="uk-visible@s")
+                    while i < size / 2
+                        +item(menu.values[i], menu.names[i])
+                        -i++
+
+            div.uk-navbar-center
                 a.uk-navbar-item.uk-logo(href="/") 
                     img(src="/assets/logo/logo-grey.png" alt="logo" style="height:50%")
-            div.uk-navbar-right
-                ul.uk-navbar-nav
-                    +list(menu.values, menu.names)
 
-                // a.uk-navbar-toggle(uk-navbar-toggle-icon)
+            div.uk-navbar-right
+                a.uk-navbar-toggle(class="uk-hidden@s" href="#offcanvas" uk-toggle uk-navbar-toggle-icon)
+                ul.uk-navbar-nav(class="uk-visible@s")
+                    while i < size
+                        +item(menu.values[i], menu.names[i])
+                        -i++
+                        div(class="uk-offcanvas-content")
+
+    include /_includes/_offcanvas-header.jade
