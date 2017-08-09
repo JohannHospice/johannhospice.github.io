@@ -1,0 +1,12 @@
+include _mixins
+
+- var i = 0
+- var size = 4
+
+div#offcanvas(uk-offcanvas="overlay: true; mode: push")
+    div.uk-offcanvas-bar.uk-flex.uk-flex-column
+        ul.uk-nav.uk-nav-primary.uk-nav-center.uk-margin-auto-vertical
+            -i = 0
+            while i < size
+                +item(menu.values[i], menu.names[i])
+                -i++

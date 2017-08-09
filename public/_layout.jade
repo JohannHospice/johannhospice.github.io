@@ -1,9 +1,13 @@
 extends _layout-base
 
 block body
-    include _includes/_header
-    
-    main(uk-height-viewport="offset-bottom: true;offset-top: true")
-        != yield
+    div.uk-offcanvas-content
 
-    include _includes/_footer
+        include _includes/_header
+        
+        main(uk-height-viewport="offset-bottom: true;offset-top: true")
+            != yield
+
+        include _includes/_footer
+
+        include _includes/_offcanvas-header
