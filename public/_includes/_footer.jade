@@ -1,46 +1,34 @@
 include _mixins
 
+mixin short(values, names)
+    - var i = 0
+    while i < 4
+        +item(values[i], names[i])
+        -i++
+
 footer.uk-section.uk-section-secondary
 
-    div.uk-container.uk-container-expand
-        div
-            ul.uk-text-center(class="uk-child-width-expand" uk-grid)
+    div.uk-container
+        
         div(uk-grid)
-            div.uk-text-center
-                h2.uk-heading-primary Contact
-                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
-                ul.uk-text-center.uk-grid.uk-grid-stack(class="uk-child-width-expand@s" uk-grid)
-                    each share in public._data.share
-                        li
-                            a.uk-button.uk-button-default(uk-tooltip="pos:bottom" title=share.title href=share.href target=share.target)
-                                span.uk-icon(uk-icon="icon:"+share.icon)
-                                span.uk-margin-left=share.icon
-                //
-                    li
-                        a.uk-button.uk-button-default(uk-tooltip="pos: bottom" href="tel:+33781700715" target="_parent")
-                            span.uk-icon(uk-icon="icon: phone")
-                            span.uk-margin-left téléphone
-                    li
-                        a.uk-button.uk-button-default(uk-tooltip="pos: bottom" href="skype:johannhospice?add" target="_parent")
-                            span.uk-icon(uk-icon="icon: skype")
-                            span.uk-margin-left skype
-                    li
-                        a.uk-button.uk-button-default(uk-tooltip="pos: bottom" href="mailto:johannhospice.dev@gmail.com" target="_parent")
-                            span.uk-icon(uk-icon="icon: mail")
-                            span.uk-margin-left mail
+            div(class="uk-width-1-1 uk-width-auto@s").uk-text-uppercase
+                ul.uk-nav.uk-nav-default(class="uk-text-center uk-text-left@s uk-visible@s" uk-margin)
+                    +short(menu.values, menu.names)
+                ul.uk-subnav.uk-flex.uk-flex-center(class="uk-hidden@s" uk-margin)
+                    +short(menu.values, menu.names)
 
-        div.uk-grid-stack(uk-grid)
+            div(class="uk-width-expand uk-width-3-5@m")
+                p(class="uk-text-center uk-text-left@s").uk-text-uppercase Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+            
+            div(class="uk-width-1-1 uk-width-auto@s uk-text-right@s").uk-text-center
+                each share in public._data.share
+                    a.uk-margin-medium-left.uk-icon-button(uk-icon="icon:"+share.icon title=share.title uk-tooltip="pos: bottom" href=share.href target=share.target)
+
+        hr.uk-divider-icon
+        
+        div(uk-grid)
             div.uk-width-1-1
-                hr.uk-divider-icon
-                
-        div.uk-child-width-1-2(uk-grid)
-            div
-                p
+                p.uk-text-center
                     | © 2016 
-                    a.uk-link-reset(href="/index") Johann Hospice
+                    a.uk-link-muted(href="/") Johann Hospice
                     | . Tous droits réservés
-            div
-                ul.uk-text-center(class="uk-child-width-expand" uk-grid)
-                    each share in public._data.share
-                        li
-                            a.uk-icon-button(uk-icon="icon:"+share.icon title=share.title uk-tooltip="pos: top" href=share.href target=share.target)
