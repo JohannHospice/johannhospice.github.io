@@ -20,7 +20,7 @@ block body
                             a.uk-link-reset(href="/index") Johann Hospice
                             | . Tous droits réservés
                     div
-                        ul.uk-text-center(class="" uk-grid)
+                        ul.uk-text-center(uk-grid)
                             each share in public._data.share
                                 li
                                     a.uk-icon-button(uk-icon="icon:"+share.icon title=share.title uk-tooltip="pos: top" href=share.href target=share.target)
