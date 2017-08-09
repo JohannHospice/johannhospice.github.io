@@ -1,4 +1,49 @@
+mixin item(value, name)
+    li(class={'uk-active': (current.path[0] == "index" && value == "/") || current.path[0] == value.substr(1)})
+        a(href=value)=name
+
 mixin list(values, names)
     each value, i in values
-        li(class={'uk-active': (current.path[0] == "index" && value == "/") || current.path[0] == value.substr(1)})
-            a(href=value)=names[i]
+        +item(value, names[i])
+
+mixin card-education(diplome)
+    a.uk-link-reset(href=diplome.link.href target="_bank")
+        div(class="uk-card-" +(diplome.primary?"primary":"default")).uk-card.uk-card-hover.uk-card-body.uk-flex.uk-flex-column.uk-flex-between
+            div
+                if diplome.label
+                    div.uk-card-badge.uk-label(class="uk-label-"+diplome.label.type)=diplome.label.value
+                h3=diplome.title
+                    br
+                    small.uk-text-uppercase.uk-text-meta=diplome.mention
+                p!=diplome.description
+            div
+                p.uk-text-uppercase.uk-text-small.uk-margin-small
+                    span=diplome.place
+                    br
+                    span.uk-text-meta
+                        time(datetime)=diplome.dateBegin
+                        |  - 
+                        time(datetime)=diplome.dateEnd
+                small.uk-text-bold.uk-text-uppercase.uk-text-primary=diplome.link.title
+                    span(uk-icon="icon: link")
+
+mixin card-experience(experience)
+    a.uk-link-reset(href=experience.name)
+        div.uk-card.uk-card-default.uk-card-hover.uk-card-body
+            div
+                if experience.label
+                    div.uk-card-badge.uk-label(class="uk-label-"+experience.label.type)=experience.label.value
+                h3=experience.title
+                    if experience.mention
+                        br
+                        small.uk-text-uppercase.uk-text-meta=experience.mention
+                p!=experience.description
+            
+            div
+                p.uk-text-uppercase.uk-text-small.uk-margin-small
+                    span=experience.place
+                    br
+                    span.uk-text-meta
+                        time(datetime)=experience.dateBegin
+                        |  - 
+                        time(datetime)=experience.dateEnd
