@@ -4,11 +4,13 @@
 		"uri": "https://johannhospice.github.io/",
 		"menu": {
 			"values": [
+				"/",
 				"/about",
 				"/works",
 				"/services"
 			],
 			"names": [
+				"Accueil",
 				"À propos",
 				"Réalisation",
 				"Services"

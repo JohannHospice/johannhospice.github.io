@@ -1,7 +1,4 @@
 {
-	"index": {
-		"layout": "_layout-index"
-	},
 	"share": [{
 			"icon": "github",
 			"title": "github.com/johannhospice",
