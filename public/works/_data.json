@@ -38,6 +38,17 @@
             "dateEndFormated": "17 Avril 2017",
             "category": "Site web"
         },{
+            "name": "tchatche",
+            "title": "Tchatche",
+            "subtitle": "Chat Client/Serveur par tubes UNIX",
+            "description": "L’objectif de ce devoir est de réaliser une application utile de calcul de trajet sur le réseau de métro de la RATP dans l’agglomération parisienne.",
+            "code": "https://github.com/johannhospice/tchatche",
+            "dateStart": "01-11-2016",
+            "dateStartFormated": "1 Novembre 2016",
+            "dateEnd": "17-01-2017",
+            "dateEndFormated": "17 Janvier 2017",
+            "category": "logiciel de bureau"
+        },{
             "name": "preoss",
             "title": "Preoss.js",
             "subtitle": "Preprocesseur CSS en JS",
@@ -75,6 +86,26 @@
             "dateEnd": "20-02-2016",
             "dateEndFormated": "20 Fevrier 2016",
             "category": "application web"
+        },
+        {
+            "name": "quizgeek",
+            "title": "Quiz Geek",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod velit vitae neque porta placerat. Vivamus et accumsan ante. Ut ornare elit ac posuere.",
+            "dateStart": "13-01-2016",
+            "dateStartFormated": "13 Janvier 2016",
+            "dateEnd": "20-04-2016",
+            "dateEndFormated": "20 Avril 2016",
+            "category": "site web"
+        },
+        {
+            "name": "the-game",
+            "title": "The game",
+            "description": "The game est un jeu développer durant mon deuxieme semestre à l'IUT d'Orsay, en tant que projet de fin d'année. Il est développé avec le framework libGDX permettant une portabilité de l'application sur de multiples supports (Windows, Web, Mobile, ...) ",
+            "dateStart": "2015",
+            "dateStartFormated": "2015",
+            "dateEnd": "2015",
+            "dateEndFormated": "2015",
+            "category": "Jeu Video"
         }
     ]
 }

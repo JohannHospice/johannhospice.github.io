@@ -6,11 +6,13 @@
     "resume": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas.",
     "content": [{
         "name": "objective",
-        "title": "Mes objectifs",
+        "title": "Objectifs",
+        "subtitle": "L'avenir se profile vers les intelligences artificielles et la science des données",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas. Commodi cumque explicabo harum illo laborum nobis optio quidem tempora veniam voluptate? Culpa eos ipsum laborum nisi optio quo.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
     }, {
         "name": "education",
-        "title": "Ma formation",
+        "title": "Formation",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas. Commodi cumque explicabo harum illo laborum nobis optio quidem tempora veniam voluptate? Culpa eos ipsum laborum nisi optio quo.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
         "diplomes": [{
             "name": "bac-ssi",
@@ -68,10 +70,11 @@
         }]
     }, {
         "name": "professional",
-        "title": "Mon expérience",
+        "title": "Expérience",
+        "subtitle": "Lorem ipsum dolor sit amet",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas. Commodi cumque explicabo harum illo laborum nobis optio quidem tempora veniam voluptate?",
         "experiences": [{
-            "name": "developeur_fullstack-11042016",
+            "name": "developpeur_fullstack-11042016",
             "title": "Développeur fullstack",
             "mention": "stage",
             "place": "Netdevices",
