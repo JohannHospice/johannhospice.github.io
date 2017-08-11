@@ -1,11 +1,7 @@
 include _includes/_mixins
+-var data = public._data
 
-div.uk-section.uk-section-default
+div.uk-section.uk-section-default(uk-height-viewport="offset-top: true")
 	div.uk-container
-		div.uk-child-width-1-2.uk-grid-divider(uk-grid)
-			div
-				h1.uk-heading-primary Johann Hospice
-				h2.uk-heading- Etudiant informaticien
-			div
-				ul.uk-nav-primary.uk-text-right(uk-nav)
-					+list(menu.values, menu.names)
+		h1.uk-heading-hero=data.title
+		h2.uk-text-muted=data.subtitle

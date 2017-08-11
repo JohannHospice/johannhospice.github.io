@@ -1,14 +1,16 @@
 -var data = public.services._data
 
 section.uk-section.uk-section-large
-    div.uk-container.uk-text-center
-        h1.uk-heading-primary=data.title 
-        p.uk-text-large=data.resume
-        ul.uk-grid-match.uk-grid-small.uk-margin-large-top(class='uk-child-width-expand@s', uk-grid)
-            each service in data.contents
-                li
-                    div.uk-card.uk-card-body
-                        div(uk-margin)
-                            span(uk-icon="icon:" + service.icon + ";ratio:4")
-                        h3.uk-card-title= service.title
-                        p=service.resume
+	div.uk-container.uk-flex.uk-flex-center
+		.uk-width-xxlarge.uk-text-center
+			h1.uk-heading-primary=data.title 
+			p.uk-text-large=data.resume
+	div.uk-container
+		.uk-text-center.uk-grid-match.uk-grid-small.uk-margin-large-top(class='uk-child-width-expand@m', uk-grid)
+			each service in data.contents
+				div
+					div.uk-card.uk-card-body
+						div(uk-margin)
+							span(uk-icon="icon:" + service.icon + ";ratio:4")
+						h3.uk-card-title= service.title
+						p=service.resume
