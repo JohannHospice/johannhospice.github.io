@@ -1,49 +1,110 @@
+//-various
 mixin item(value, name)
-    li(class={'uk-active': (current.path[0] == "index" && value == "/") || current.path[0] == value.substr(1)})
-        a(href=value)=name
+	li(class={'uk-active': (current.path[0] == "index" && value == "/") || current.path[0] == value.substr(1)})
+		+a(value)=name
 
 mixin list(values, names)
-    each value, i in values
-        +item(value, names[i])
+	each value, i in values
+		+item(value, names[i])
+
+mixin tooltip(tooltip, title)
+	div(title=title uk-tooltip=tooltip)
+		block
+//-label
+mixin label(type, value)
+	.uk-label(class="uk-label-"+type)=value
+
+mixin card-badge(type, value)
+	+label(type, value).uk-card-badge
+
+mixin icon(icon, ratio)
+	span(uk-icon="icon:"+icon+";ratio:"+(ratio?ratio:1))
+
+//-link
+
+mixin icon-button(href, target, icon, ratio)
+	+a(href, target)(class="uk-icon-button" uk-icon="icon:"+icon+";ratio:"+(ratio?ratio:1))&attributes(attributes)=name
+	
+mixin icon-link(href, target, icon, ratio)
+	+a(href, target)(class="uk-icon-link" uk-icon="icon:"+icon+";ratio:"+(ratio?ratio:1))&attributes(attributes)=name
+
+mixin a(href, target, name)
+	a(href=href target=(target?target:"_self"))&attributes(attributes)=name
+		block
+
+mixin link-reset(href, target)
+	+a(href, target)(class="uk-link-reset")
+		block
+
+//-text
+mixin header(title, subtitle, description)
+	h1.uk-h6.uk-margin-remove.uk-text-uppercase=title
+	h2.uk-h1.uk-margin-remove=subtitle
+	p.uk-text-small.uk-margin-top!=description
+
+//-grid
+mixin dynamic-grid(size, lcolumn, mcolumn, scolumn, column)
+	div(class="uk-child-width-1-"+column+" uk-child-width-1-"+scolumn+"@s uk-child-width-1-"+mcolumn+"@m uk-child-width-1-"+lcolumn+"@l" uk-grid uk-margin uk-grid-parallax)
+		-var i = 0
+		-var column = lcolumn
+		-var line = Math.ceil(size/column)
+		-var jlimit = Math.ceil(size / column - 1)+1
+		-var j = 0
+		while  i < column
+			div(uk-margin)
+				-j = 0
+				while j + i * line < size && j < jlimit
+					div
+						block
+					-j++
+			-i++
+
+//-Cards
+mixin card(type)
+	.uk-card.uk-card-hover(class=(type?"uk-card-" + type:"uk-card-default"))&attributes(attributes)=name
+		block
+
+mixin card-content-date(dateBegin, dateEnd)
+	span.uk-text-meta
+		time(datetime)=dateBegin
+		|  - 
+		time(datetime)=dateEnd
+
+mixin card-content-footer(place, dateBegin, dateEnd)
+	p.uk-text-uppercase.uk-text-small.uk-margin-small
+		span=place
+		br
+		+card-content-date(dateBegin, dateEnd)
+
+mixin card-content-main(title, subtitle, description, label)
+	if label
+		div.uk-card-badge.uk-label(class="uk-label-"+label.type)= label.value
+	h3.uk-margin-remove=title
+	if subtitle
+		h4.uk-margin-remove.uk-text-uppercase.uk-text-meta=subtitle
+	p.uk-margin-bottom.uk-margin-small-top!=description
 
 mixin card-education(diplome)
-    a.uk-link-reset(href=diplome.link.href target="_bank")
-        div(class="uk-card-" +(diplome.primary?"primary":"default")).uk-card.uk-card-hover.uk-card-body.uk-flex.uk-flex-column.uk-flex-between
-            div
-                if diplome.label
-                    div.uk-card-badge.uk-label(class="uk-label-"+diplome.label.type)=diplome.label.value
-                h3=diplome.title
-                    br
-                    small.uk-text-uppercase.uk-text-meta=diplome.mention
-                p!=diplome.description
-            div
-                p.uk-text-uppercase.uk-text-small.uk-margin-small
-                    span=diplome.place
-                    br
-                    span.uk-text-meta
-                        time(datetime)=diplome.dateBegin
-                        |  - 
-                        time(datetime)=diplome.dateEnd
-                small.uk-text-bold.uk-text-uppercase.uk-text-primary=diplome.link.title
-                    span(uk-icon="icon: link")
+	+link-reset(diplome.link.href, "_bank")
+		+card(diplome.primary?"primary":"default").uk-card-body.uk-height-1-1
+			.uk-flex.uk-flex-column.uk-flex-between.uk-height-1-1
+				div
+					+card-content-main(diplome.title, diplome.mention, diplome.description, diplome.label)
+				div
+					+card-content-footer(diplome.place, diplome.dateBegin, diplome.dateEnd)
+					small.uk-text-bold.uk-text-uppercase.uk-text-primary=diplome.link.title
+						span(uk-icon="icon: link")
 
 mixin card-experience(experience)
-    a.uk-link-reset(href=experience.name)
-        div.uk-card.uk-card-default.uk-card-hover.uk-card-body
-            div
-                if experience.label
-                    div.uk-card-badge.uk-label(class="uk-label-"+experience.label.type)=experience.label.value
-                h3=experience.title
-                    if experience.mention
-                        br
-                        small.uk-text-uppercase.uk-text-meta=experience.mention
-                p!=experience.description
-            
-            div
-                p.uk-text-uppercase.uk-text-small.uk-margin-small
-                    span=experience.place
-                    br
-                    span.uk-text-meta
-                        time(datetime)=experience.dateBegin
-                        |  - 
-                        time(datetime)=experience.dateEnd
+	+link-reset("/about/"+experience.name)
+		+card().uk-card-body
+			div
+				+card-content-main(experience.title, experience.mention, experience.description, experience.label)
+			div
+				+card-content-footer(experience.place, experience.dateBegin, experience.dateEnd)
+
+mixin card-work(work)
+	+link-reset("/works/"+work.name)
+		+card().uk-card-body
+			+card-content-main(work.title, null, work.description, work.label)
+			+card-content-footer(work.category, work.dateStartFormated, work.dateEndFormated, work.dateBegin, work.dateEnd)
