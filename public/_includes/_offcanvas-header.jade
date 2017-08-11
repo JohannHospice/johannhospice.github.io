@@ -4,9 +4,16 @@ include _mixins
 - var size = 4
 
 div#offcanvas(uk-offcanvas="overlay: true; mode: push")
-    div.uk-offcanvas-bar.uk-flex.uk-flex-column
-        ul.uk-nav.uk-nav-primary.uk-nav-center.uk-margin-auto-vertical
+    div.uk-offcanvas-bar
+        ul.uk-nav.uk-nav-default.uk-text-uppercase
+            li
+                a.uk-navbar-item.uk-logo(href="/") 
+                    img(src="/assets/logo/logo-grey.png" alt="logo" style="height:50%")
+
             -i = 0
             while i < size
                 +item(menu.values[i], menu.names[i])
                 -i++
+        div
+            each share,i in public._data.share
+                +icon-link(share.href, "_blank", share.icon)(class=(i<2?"uk-margin-small-right":""))
