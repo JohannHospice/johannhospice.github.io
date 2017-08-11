@@ -1,13 +1,26 @@
-extends _layout-base
-
-block body
-    div.uk-offcanvas-content
-
-        include _includes/_header
+doctype
+html(lang='fr')
+    head
+        title=title
+        meta(charset='utf-8')
         
-        main(uk-height-viewport="offset-bottom: true;offset-top: true")
-            != yield
+        link(rel="icon" href="/assets/favicon.png")
+        link(type="text/css", rel="stylesheet", href='/vendors/uikit/css/uikit.min.css')
+        
+        script(src='/vendors/jquery/jquery-3.2.1.min.js')
+        script(src='/vendors/uikit/js/uikit.min.js')
+        script(src='/vendors/uikit/js/uikit-icons.min.js')
+    //-
+        script(src='/vendors/turbolinks/turbolinks.min.js')
 
-        include _includes/_footer
+    body
+        div.uk-offcanvas-content
 
-        include _includes/_offcanvas-header
+            include _includes/_header
+            
+            main(uk-height-viewport="offset-bottom: true;offset-top: true")
+                != yield
+
+            include _includes/_footer
+
+            include _includes/_offcanvas-header
