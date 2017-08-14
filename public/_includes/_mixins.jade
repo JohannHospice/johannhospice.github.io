@@ -36,15 +36,18 @@ mixin link-reset(href, target)
 	+a(href, target)(class="uk-link-reset")
 		block
 
+mixin button(text, style, size, href, target)
+	a.uk-button(class="uk-button-"+style+" uk-button-"+size, href=href, target=target)=text
+	
 //-text
 mixin header(title, subtitle, description)
-	h1.uk-h6.uk-margin-remove.uk-text-uppercase=title
-	h2.uk-h1.uk-margin-remove=subtitle
-	p.uk-text-small.uk-margin-top!=description
+	h1.uk-h6.uk-text-uppercase=title
+	h2.uk-h1.uk-margin-remove-top=subtitle
+	p.uk-margin-small-top!=description
 
 //-grid
 mixin dynamic-grid(size, lcolumn, mcolumn, scolumn, column)
-	div(class="uk-child-width-1-"+column+" uk-child-width-1-"+scolumn+"@s uk-child-width-1-"+mcolumn+"@m uk-child-width-1-"+lcolumn+"@l" uk-grid uk-margin uk-grid-parallax)
+	div(class="uk-child-width-1-"+column+" uk-child-width-1-"+scolumn+"@s uk-child-width-1-"+mcolumn+"@m uk-child-width-1-"+lcolumn+"@l" uk-grid uk-margin)
 		-var i = 0
 		-var column = lcolumn
 		-var line = Math.ceil(size/column)
@@ -103,8 +106,8 @@ mixin card-experience(experience)
 			div
 				+card-content-footer(experience.place, experience.dateBegin, experience.dateEnd)
 
-mixin card-work(work)
+mixin card-work(work, name)
 	+link-reset("/works/"+work.name)
-		+card().uk-card-body
+		+card().uk-card-body&attributes(attributes)=name
 			+card-content-main(work.title, null, work.description, work.label)
 			+card-content-footer(work.category, work.dateStartFormated, work.dateEndFormated, work.dateBegin, work.dateEnd)
