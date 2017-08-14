@@ -4,13 +4,15 @@ include /_includes/_mixins
 -var objective = data.content[0]
 -var education = data.content[1]
 -var professional = data.content[2]
+-var skills = data.content[3]
 
 //top
 section.uk-section.uk-section-large.uk-section-default
 	.uk-container.uk-flex.uk-flex-center
-		.uk-width-xxlarge.uk-text-center
-			h1.uk-heading-primary=data.title
-			p.uk-text-large!=data.resume
+		.uk-width-xxlarge.uk-text-center.uk-flex.uk-flex-center(uk-grid)
+			.uk-width-xlarge
+				h1.uk-heading-primary=data.title
+				p.uk-text-lead!=data.resume
 			.uk-flex.uk-flex-center
 				.uk-grid-divider.uk-flex-center(uk-grid)
 					div
@@ -57,8 +59,15 @@ section.uk-section.uk-section-large.uk-section-muted(id=professional.name)
 				each experience in professional.experiences
 					+card-experience(experience)
 
+//Skills
+section.uk-section.uk-section-large.uk-section-default(id=skills.name)
+	.uk-container
+		.uk-flex.uk-flex-center(uk-grid)
+			.uk-width-xlarge.uk-text-center
+				+header(skills.title, skills.subtitle, skills.description)
+				p.uk-heading-primary ...
 //CV
-section.uk-section.uk-section-large.uk-section-default
+section.uk-section.uk-section-large.uk-section-muted
 	.uk-container.uk-text-center
 		h2 Au plus simple
 		p Allez voir mon curriculum vitae résumant ma formation, mes experiences et mes compétences.
@@ -68,8 +77,6 @@ section.uk-section.uk-section-large.uk-section-default
 
 //-
 	+button-icon("/assets/cv-johannhospice.pdf", "Télécharger mon cv", "file-edit")
-	mixin button(text, style, size, href, target)
-		a.uk-button(class="uk-button-"+style+" uk-button-"+size, href=href, target=target)=text
 
 	mixin button-icon-text(icon, ratio, text, href, target)
 		a.uk-button.uk-button-primary(role="button" href=href target=target)
