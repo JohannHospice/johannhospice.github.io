@@ -1,7 +1,56 @@
 include _includes/_mixins
 -var data = public._data
+-var works = public.works._data.posts
+-var about = data.about
+-var workHeading = data.work
 
-div.uk-section.uk-section-default(uk-height-viewport="offset-top: true")
-	div.uk-container
-		h1.uk-heading-hero=data.title
-		h2.uk-text-muted=data.subtitle
+//Heading
+.uk-inline.uk-width-1-1#heading
+	.uk-child-width-1-1(uk-grid uk-height-viewport="offset-top: true")
+		.uk-background-primary.uk-background-blend-luminosity.uk-background-cover(class="uk-width-1-3@m" style="background-image: url(/assets/home.gif);")
+		.uk-background-default.uk-flex.uk-flex-middle(class="uk-width-2-3@m")
+			.uk-width-1-1
+				.uk-container.uk-text-center(class="uk-text-left@m")
+					h1.uk-heading-hero.uk-text-primary!=data.title
+					.uk-flex.uk-flex-center.uk-margin-medium-top(class="uk-flex-left@m")
+						.uk-width-xxlarge
+							h2.uk-text-muted=data.subtitle
+	.uk-position-small.uk-position-bottom-center(class="uk-visible@m")
+		+icon-link("#content", "_self", "chevron-down", 2)(uk-scroll="offset:80")
+
+#content
+
+//About
+.uk-section.uk-section-large.uk-section-muted(id=about.name)
+	.uk-container
+		.uk-flex.uk-flex-middle(uk-grid class="uk-child-width-1-2@m")
+			div.uk-flex.uk-flex-center(class="uk-flex-left@m")
+				.uk-background-muted
+					img.uk-blend-difference.uk-border-circle(class="uk-width-medium uk-width-large@m" src="/assets/objective.gif" uk-gif)
+			div
+				.uk-width-xlarge
+					+header(about.title, about.subtitle, about.description)
+					hr.uk-divider-small
+					a.uk-button.uk-button-text.uk-button-medium(role="button" href="/about")
+						span En savoir plus 
+						+icon("chevron-right")
+
+//Works
+.uk-section.uk-section-large.uk-section-default(id=workHeading.name)
+	.uk-container
+		.uk-child-width-1-1.uk-flex.uk-flex-middle(uk-grid class="uk-child-width-1-2@m")
+			div
+				+header(workHeading.title, workHeading.subtitle, workHeading.description)
+			.uk-flex.uk-flex-center(class="uk-flex-right@m")
+				.uk-width-large
+					+card-work(works[0]).uk-card-primary
+		hr.uk-margin-large
+		div(class="uk-child-width-1-3@s" uk-grid)
+			-var i = 1
+			while i < 4
+				+card-work(works[i])
+				-i++
+		.uk-flex.uk-flex-center(class="uk-flex-right@m uk-margin-top")
+			a.uk-button.uk-button-default.uk-button-medium(role="button" href="/works")
+				span Voir plus 
+				+icon("arrow-right")

@@ -1,6 +1,18 @@
 {
 	"title": "Johann Hospice",
-	"subtitle": "Je suis un étudiant informaticien",
+	"subtitle": "Ullamco velit anim sint pariatur. Nulla consequat cupidatat sit ut aute aliquip exercitation exercitation non esse.",
+	"about": {
+		"name": "about",
+		"title": "à propos",
+		"subtitle": "Dolor fugiat cillum sit Lorem eiusmod excepteur.",
+		"description": "In ad labore ex non. Culpa culpa elit in minim incididunt tempor sunt. Mollit veniam mollit culpa quis qui officia ea aute ullamco. Eiusmod cillum et sint ullamco nisi ea occaecat velit. In eu velit irure duis amet sunt sunt exercitation excepteur. Occaecat cillum reprehenderit aute pariatur in dolor. Laboris nisi laboris culpa tempor dolore consequat."
+	},
+	"work": {
+		"name": "work",
+		"title": "Réalisations",
+		"subtitle": "Sunt in ea non cupidatat occaecat ullamco nostrud.",
+		"description": "Reprehenderit proident reprehenderit veniam officia fugiat officia incididunt elit. Nulla ea excepteur sit sit cupidatat minim officia id id occaecat magna est. Cupidatat anim ullamco minim eu anim. Sint duis labore irure culpa nulla duis quis et excepteur id quis fugiat aliquip."
+	},
 	"share": [{
 			"icon": "github",
 			"title": "github.com/johannhospice",
