@@ -4,9 +4,9 @@ section.uk-section.uk-section-large
 	div.uk-container.uk-flex.uk-flex-center
 		.uk-width-xxlarge.uk-text-center
 			h1.uk-heading-primary=data.title 
-			p.uk-text-large=data.resume
+			p.uk-text-lead=data.resume
 	div.uk-container
-		.uk-text-center.uk-grid-match.uk-grid-small.uk-margin-large-top(class='uk-child-width-expand@m', uk-grid)
+		.uk-text-center.uk-grid-match.uk-grid-small(class='uk-child-width-expand@m', uk-grid)
 			each service in data.contents
 				div
 					div.uk-card.uk-card-body

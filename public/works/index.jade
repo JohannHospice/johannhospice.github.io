@@ -2,13 +2,15 @@ include /_includes/_mixins
 -var data = public.works._data
 -var works= data.posts.sort((w1, w2) => {var a = new Date(w1.dateBegin), b = new Date(w2.dateBegin);return a > b ? -1 : (a < b ? 1 : 0)})
 
-section.uk-section.uk-section-default.uk-section-large
+//Heading
+section.uk-section.uk-section-large.uk-section-default
 	.uk-container.uk-flex.uk-flex-center
 		.uk-width-xxlarge.uk-text-center
 			h1.uk-heading-primary=data.title 
-			p.uk-text-large=data.resume
+			p.uk-text-lead=data.resume
 
-section.uk-section.uk-section-primary.uk-preserve-color
+//Works
+section.uk-section.uk-section-large.uk-section-primary.uk-preserve-color
 	.uk-container
 		-var i = 0 
 		+dynamic-grid(works.length, 3, 3, 2, 1)
