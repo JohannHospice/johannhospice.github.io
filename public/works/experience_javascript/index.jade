@@ -1,0 +1,53 @@
+include /_includes/_mixins
+
+-var data = public.works.experience_javascript._data
+
+section.uk-section.uk-section-primary
+	.uk-container.uk-container-.uk-flex.uk-flex-center
+		.uk-child-width-1-1.uk-grid-large(class="uk-child-width-1-2@s" uk-grid)
+			.uk-flex.uk-flex-middle.uk-flex-right
+				.uk-width-1-1(class="uk-width-1-1@m")
+					.uk-height-max-large.uk-overflow-hidden.uk-border-rounded
+						img.uk-width-1-1(src="/assets/works/experience_javascript.jpg", alt="blabla")
+			.uk-flex.uk-flex-middle
+				div
+					h2.uk-h6.uk-text-muted.uk-text-uppercase.uk-margin-remove=data.type
+					h1.uk-margin-small-top Experience Javascript
+					p.uk-margin-medium-top
+						| Explicabo sapiente qui. Commodi minima maxime molestiae in dolor quia dolores officia. 
+						br
+						| Eaque sint a et quod et possimus itaque. Enim aliquam minus voluptates beatae. Quasi ut quis veritatis velit. Est laboriosam sed. Aperiam rerum facilis quibusdam illum corrupti ipsa.
+					
+					p.uk-margin-medium.uk-h6.uk-text-uppercase.uk-text-muted
+						time=data.dateStartFormated
+						|  - 
+						time=data.dateEndFormated
+
+
+section.uk-section.uk-section-default
+	.uk-container.uk-container-small
+		h2 Omnis sit enim consequatur reprehenderit ratione ut.
+		p Aut quo tempore laboriosam illo veritatis suscipit asperiores eos quibusdam. Saepe officia et. In debitis qui cum aut et quia odit molestiae. Dolorem molestiae dicta quia ut illum reprehenderit dolor exercitationem odit. Et voluptatibus et qui labore quam odio dolorem et.
+		pre
+			code.
+				var app = new Application(world, viewport);
+
+				window.addEventListener('resize', function () {
+					app.resize();
+				});
+
+				viewport.addEventListener('click', function () {
+					app.swapState();
+				});
+
+				viewport.addEventListener('mousemove', function (e) {
+					app.mouseUpdate(e.clientX, e.clientY);
+				});
+
+				app.create(-1);
+				app.start();
+		hr.uk-margin-large-top
+		.uk-text-center
+			.uk-button-group
+				a.uk-button.uk-button-default.uk-margin-right(href="/works/experience_javascript/js/index.src.js") voir le code
+				a.uk-button.uk-button-primary(href="/works/experience_javascript/demo/") lancer la demo

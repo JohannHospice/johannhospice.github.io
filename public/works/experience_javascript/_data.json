@@ -1,6 +1,7 @@
 {
     "index": {
-        "title": "Experience Javascript - Johann Hospice"
+        "layout": "../_layout-works",
+        "title": "Experience Javascript · Johann Hospice"
     },
     "title": "Expérience javascript",
     "name": "experience-javascript",
