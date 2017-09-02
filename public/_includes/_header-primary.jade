@@ -2,8 +2,10 @@ include /_includes/_vars.jade
 include _mixins
 - var i = 0
 - var size = 4
-style .header-icon{height: 50%;fill:#999;transition:fill .2s}.header-icon:hover{fill:#666}
-header(uk-sticky=headerRules+"cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent")
+
+style .header-icon{height:50%;fill:rgba(255,255,255,.5);transition:fill .2s}.header-icon:hover{fill:rgba(255,255,255,.7)}
+
+header.uk-background-primary.uk-light(uk-sticky=headerRules+"cls-active: uk-navbar-sticky; cls-inactive: ;")
     nav.uk-navbar-container.uk-navbar-transparent
         .uk-container.uk-container-expand
             div(uk-navbar)
@@ -17,8 +19,7 @@ header(uk-sticky=headerRules+"cls-active: uk-navbar-sticky; cls-inactive: uk-nav
                 div.uk-navbar-center
                     a.uk-navbar-item.uk-logo(href="/") 
                         !="<svg class='header-icon' version='1.2' baseProfile='tiny' id='logoJH' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 144 144' xml:space='preserve'><path d='M108,0v36H72V0H36v36H0v36h36v36H0v36h72V72h36v36h36V0H108z M63,9v27H45V9H63z M9,63V45h27v18H9z M9,135v-18h36v-9h18v27	 M99,45v18H63v36H45V45 M117,9h18v90h-18V63h-9V45h9'/></svg>"
-                        //img(src="/assets/logo/logo.svg" alt="logo" style="height:50%;color:red")
-                        //img(src="/assets/logo/logo-grey.png" alt="logo" style="height:50%")
+                        //img(src="/assets/logo/logo-white.png" alt="logo" style="height:50%")
 
                 div.uk-navbar-right
                     ul.uk-navbar-nav(class="uk-visible@s")
@@ -27,4 +28,6 @@ header(uk-sticky=headerRules+"cls-active: uk-navbar-sticky; cls-inactive: uk-nav
                             -i++
                             div(class="uk-offcanvas-content")
         hr.uk-margin-remove
+
+
         include /_includes/_offcanvas-header.jade
