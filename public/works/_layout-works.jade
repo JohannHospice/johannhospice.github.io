@@ -2,12 +2,12 @@ extends /_layout-base
 
 block body
     div.uk-offcanvas-content
-
-        include _includes/_header
+        .uk-background-primary
+            include /_includes/_header-primary
         
         main(uk-height-viewport="offset-bottom: true; offset-top: true")
             != yield
 
-        include _includes/_footer
+        include /_includes/_footer
 
-        include _includes/_offcanvas-header
+        include /_includes/_offcanvas-header
