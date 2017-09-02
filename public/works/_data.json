@@ -1,6 +1,6 @@
 {
     "index": {
-        "title": "Mes Réalisations - Johann Hospice"
+        "title": "Réalisations · Johann Hospice"
     },
     "title": "Mes réalisations",
     "resume": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta, voluptates ut cumque quasiporronesciunt mollitia autem harum labore.",
@@ -78,9 +78,9 @@
             ]
         },
         {
-            "name": "experience-javascript",
+            "name": "experience_javascript",
             "title": "Expérience javascript",
-            "description": "Cette experience fut réalisée lors de ma candidature dans l'entreprise netdevices pour un test de comptence JS",
+            "description": "Cette experience fut réalisée lors de ma candidature dans l'entreprise netdevices pour un test de compétence en javascript.",
             "dateStart": "13-02-2016",
             "dateStartFormated": "13 Fevrier 2016",
             "dateEnd": "20-02-2016",
@@ -100,7 +100,7 @@
         {
             "name": "the-game",
             "title": "The game",
-            "description": "The game est un jeu développer durant mon deuxieme semestre à l'IUT d'Orsay, en tant que projet de fin d'année. Il est développé avec le framework libGDX permettant une portabilité de l'application sur de multiples supports (Windows, Web, Mobile, ...) ",
+            "description": "The game est un jeu développer durant mon deuxieme semestre à l'IUT d'Orsay, en tant que projet de fin d'année. Il est développé avec le framework libGDX permettant une portabilité de l'application sur de multiples supports (Windows, Web, Mobile, ...).",
             "dateStart": "2015",
             "dateStartFormated": "2015",
             "dateEnd": "2015",

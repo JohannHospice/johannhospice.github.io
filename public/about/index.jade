@@ -41,12 +41,13 @@ section.uk-section.uk-section-large.uk-section-primary(id=objective.name)
 //Education
 section.uk-section.uk-section-large.uk-section-default(id=education.name)
 	.uk-container
-		.uk-grid-small.uk-flex.uk-flex-center.uk-flex-middle(uk-grid)
+		.uk-flex.uk-flex-center.uk-flex-middle(uk-grid)
 			.uk-text-center.uk-width-xxlarge.uk-margin-large-bottom
 				+header(education.title, education.subtitle, education.description)
 			.uk-flex-center.uk-grid-large(class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid uk-height-match="target: > a > .uk-card")
 				each diplome in education.diplomes
-					+card-education(diplome)
+					div
+						+card-education(diplome)
 
 //Professional
 section.uk-section.uk-section-large.uk-section-muted(id=professional.name)
