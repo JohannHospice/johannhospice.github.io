@@ -6,65 +6,117 @@
     "resume": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta, voluptates ut cumque quasiporronesciunt mollitia autem harum labore.",
     "posts": [{
             "name": "iportbook",
+            "picture": "/assets/works/iportbook.jpg",
             "title": "Iportbook",
             "subtitle": "Projet de programmation réseaux",
             "description": "Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.",
-            "code": "https://github.com/johannhospice/iportbook",
+            "links": [{
+                "label": "voir sur github",
+                "href": "https://github.com/johannhospice/iportbook"
+            }],
             "dateStart": "25-05-2017",
             "dateStartFormated": "25 Mai 2017",
             "dateEnd": "01-06-2017",
             "dateEndFormated": "1 Juin 2017",
-            "category": "logiciel de bureau"
+            "category": "logiciel de bureau",
+            "tag": [
+                "java",
+                "console",
+                "chat",
+                "server",
+                "client"
+            ]
         }, {
             "name": "ungoliant",
+            "picture": "/assets/works/ungoliant.jpg",
             "title": "Ungoliant",
             "subtitle": "Robot d’Indexation et Moteur de Recherche",
             "description": "Le but de ce projet est d’implémenter en langage C un moteur de recherche, un programme capable d’explorer récursivement le contenu d’un ensemble de pages HTML ou de sites Web, de les indexer, et de permettre à un utilisateur d’effectuer une recherche sur leur contenu.",
-            "code": "https://github.com/johannhospice/ungoliant",
+            "links": [{
+                "label": "voir sur github",
+                "href": "https://github.com/johannhospice/ungoliant"
+            }],
             "dateStart": "15-01-2017",
             "dateStartFormated": "15 Janvier 2017",
             "dateEnd": "14-05-2017",
             "dateEndFormated": "14 Mai 2017",
-            "category": "logiciel de bureau"
-        },{
+            "category": "logiciel de bureau",
+            "tag": [
+                "c",
+                "crawler",
+                "bot",
+                "html"
+            ]
+        }, {
             "name": "metro",
+            "picture": "/assets/works/metro.jpg",
             "title": "Metro",
             "subtitle": "Calcul de trajets en métro",
             "description": "L’objectif de ce devoir est de réaliser une application utile de calcul de trajet sur le réseau de métro de la RATP dans l’agglomération parisienne.",
-            "code": "https://github.com/johannhospice/metro",
+            "links": [{
+                "label": "voir sur github",
+                "href": "https://github.com/johannhospice/metro"
+            }],
             "dateStart": "11-04-2017",
             "dateStartFormated": "11 Avril 2017",
             "dateEnd": "17-04-2017",
             "dateEndFormated": "17 Avril 2017",
-            "category": "Site web"
-        },{
+            "category": "Site web",
+            "tag": [
+                "javascript",
+                "express",
+                "pug",
+                "plus court chemin",
+                "serveur"
+            ]
+        }, {
             "name": "tchatche",
+            "picture": "/assets/works/tchatche.jpg",
             "title": "Tchatche",
             "subtitle": "Chat Client/Serveur par tubes UNIX",
             "description": "L’objectif de ce devoir est de réaliser une application utile de calcul de trajet sur le réseau de métro de la RATP dans l’agglomération parisienne.",
-            "code": "https://github.com/johannhospice/tchatche",
+            "links": [{
+                "label": "voir sur github",
+                "href": "https://github.com/johannhospice/tchatche"
+            }],
             "dateStart": "01-11-2016",
             "dateStartFormated": "1 Novembre 2016",
             "dateEnd": "17-01-2017",
             "dateEndFormated": "17 Janvier 2017",
-            "category": "logiciel de bureau"
-        },{
+            "category": "logiciel de bureau",
+            "tag": [
+                "c",
+                "console",
+                "chat",
+                "server",
+                "client"
+            ]
+        }, {
             "name": "preoss",
             "title": "Preoss.js",
             "subtitle": "Preprocesseur CSS en JS",
             "description": "Module node permettant de coder des feuilles de style CSS avec le plaisir de programmer en Javascript.",
-            "label": {
-                "value": "abandonné",
-                "type": "danger"
-            },
-            "code": "https://github.com/johannhospice/preoss.js",
+            "links": [{
+                "label": "voir sur github",
+                "href": "https://github.com/johannhospice/preoss.js"
+            }, {
+                "label": "voir sur npm",
+                "href": "https://www.npmjs.com/package/preoss"
+            }],
             "dateStart": "07-08-2016",
             "dateStartFormated": "7 Août 2016",
             "dateEnd": "26-07-2016",
             "dateEndFormated": "26 Juillet 2016",
-            "category": "Module node"
+            "category": "Module node",
+            "tag": [
+                "javascript",
+                "css",
+                "preprocessor",
+                "style"
+            ]
         }, {
             "name": "parki",
+            "picture": "/assets/works/parki.jpg",
             "title": "Parki",
             "description": "Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.",
             "dateStart": "11-04-2016",
@@ -72,20 +124,40 @@
             "dateEnd": "01-07-2016",
             "dateEndFormated": "1 Juillet 2016",
             "category": "application mobile",
-            "links": [
-                "https://www.netdevices.fr/",
-                "https://www.netdevices.fr/portfolio-works/parki/"
+            "links": [{
+                "label": "en savoir plus",
+                "href": "https://www.netdevices.fr/portfolio-works/parki/"
+            }],
+            "tag": [
+                "javascript",
+                "react-native",
+                "ios",
+                "android"
             ]
         },
         {
             "name": "experience_javascript",
+            "picture": "/assets/works/experience_javascript.jpg",
             "title": "Expérience javascript",
             "description": "Cette experience fut réalisée lors de ma candidature dans l'entreprise netdevices pour un test de compétence en javascript.",
             "dateStart": "13-02-2016",
             "dateStartFormated": "13 Fevrier 2016",
             "dateEnd": "20-02-2016",
             "dateEndFormated": "20 Fevrier 2016",
-            "category": "application web"
+            "category": "application web",
+            "links": [{
+                "label": "voir le code",
+                "href": "/gitter"
+            }, {
+                "label": "voir la demo",
+                "href": "/works/experience_javascript/demo"
+            }],
+            "tag": [
+                "javascript",
+                "react-native",
+                "ios",
+                "android"
+            ]
         },
         {
             "name": "quizgeek",
@@ -95,7 +167,15 @@
             "dateStartFormated": "13 Janvier 2016",
             "dateEnd": "20-04-2016",
             "dateEndFormated": "20 Avril 2016",
-            "category": "site web"
+            "category": "site web",
+            "tag": [
+                "php",
+                "css"
+            ],
+            "links": [{
+                "label": "voir le code",
+                "href": "/gitter"
+            }]
         },
         {
             "name": "the-game",
@@ -105,7 +185,18 @@
             "dateStartFormated": "2015",
             "dateEnd": "2015",
             "dateEndFormated": "2015",
-            "category": "Jeu Video"
+            "category": "Jeu Video",
+            "tag": [
+                "java",
+                "libgdx"
+            ],
+            "links": [{
+                "label": "voir le code",
+                "href": "/gitter"
+            }, {
+                "label": "voir la demo",
+                "href": "/works/experience_javascript/demo"
+            }]
         }
     ]
 }
