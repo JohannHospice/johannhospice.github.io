@@ -1,36 +1,11 @@
-include _mixins
-
-mixin short(values, names)
-    - var i = 0
-    while i < 4
-        +item(values[i], names[i])
-        -i++
-
-footer.uk-section.uk-section-medium.uk-section-secondary
+footer.uk-section.uk-section-small.uk-section-secondary
     .uk-container
-        
-        div(uk-grid)
-            .uk-width-1-1.uk-text-uppercase(class="uk-width-auto@s")
-                
-                ul.uk-nav.uk-nav-default(class="uk-text-center uk-text-left@s uk-visible@s" uk-margin)
-                    +short(menu.values, menu.names)
-                
-                ul.uk-subnav.uk-flex.uk-flex-center(class="uk-hidden@s" uk-margin)
-                    +short(menu.values, menu.names)
-
-            div(class="uk-width-expand uk-width-3-5@m")
-                p(class="uk-text-center uk-text-left@s").uk-text-uppercase
-                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
-                    a.uk-link(href=_data)
-                    // TODO
-            div(class="uk-width-1-1 uk-width-auto@s uk-text-right@s").uk-text-center
-                each share in public._data.share
-                    a.uk-margin-medium-left.uk-icon-button(uk-icon="icon:"+share.icon title=share.title uk-tooltip="pos: bottom" href=share.href target=share.target)
-
-        hr.uk-divider-icon
-        
-        div.uk-width-1-1
-            p.uk-text-center
-                | © 2016 
-                a.uk-link-muted(href="/") Johann Hospice
-                | . Tous droits réservés
+        .uk-child-width-1-1(uk-grid)
+            div
+                p.uk-text-center
+                    | © 2016 
+                    a.uk-link-muted(href="/") Johann Hospice
+                    | . Tous droits réservés
+            .uk-flex.uk-flex-center
+                a(href="#heading" uk-scroll) 
+                    img.jh-logo(src="/assets/images/logo/logo.svg" alt="johann hospice" uk-svg)
