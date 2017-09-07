@@ -1,40 +1,114 @@
 {
-	"title": "Johann Hospice",
-	"subtitle": "Ullamco velit anim sint pariatur. Nulla consequat cupidatat sit ut aute aliquip exercitation exercitation non esse.",
-	"about": {
-		"name": "about",
-		"title": "à propos",
-		"subtitle": "Dolor fugiat cillum sit Lorem eiusmod excepteur.",
-		"description": "In ad labore ex non. Culpa culpa elit in minim incididunt tempor sunt. Mollit veniam mollit culpa quis qui officia ea aute ullamco. Eiusmod cillum et sint ullamco nisi ea occaecat velit. In eu velit irure duis amet sunt sunt exercitation excepteur. Occaecat cillum reprehenderit aute pariatur in dolor. Laboris nisi laboris culpa tempor dolore consequat."
-	},
-	"work": {
-		"name": "work",
-		"title": "Réalisations",
-		"subtitle": "Sunt in ea non cupidatat occaecat ullamco nostrud.",
-		"description": "Reprehenderit proident reprehenderit veniam officia fugiat officia incididunt elit. Nulla ea excepteur sit sit cupidatat minim officia id id occaecat magna est. Cupidatat anim ullamco minim eu anim. Sint duis labore irure culpa nulla duis quis et excepteur id quis fugiat aliquip."
-	},
-	"share": [{
-			"icon": "github",
-			"title": "github.com/johannhospice",
-			"href": "https://github.com/johannhospice",
-			"target": "_blank"
-		},
-		{
-			"icon": "linkedin",
-			"title": "www.linkedin.com/in/johannhospice",
-			"href": "https://www.linkedin.com/in/johannhospice",
-			"target": "_blank"
-		}
-	],
-	"contact": [{
-			"icon": "phone",
-			"title": "+33781700715",
-			"href": "tel:+33781700715"
-		},
-		{
-			"icon": "mail",
-			"title": "johannhospice.dev@gmail.com",
-			"href": "mailto:johannhospice.dev@gmail.com"
-		}
-	]
+    "title": "Johann Hospice",
+    "subtitle": "Quas sed est et enim consequuntur eum. Fugiat officiis autem modi officia consequatur quisquam voluptatem sed voluptate dolores.",
+    "share": [{
+            "icon": "github",
+            "title": "github.com/johannhospice",
+            "href": "https://github.com/johannhospice",
+            "target": "_blank"
+        },
+        {
+            "icon": "linkedin",
+            "title": "www.linkedin.com/in/johannhospice",
+            "href": "https://www.linkedin.com/in/johannhospice",
+            "target": "_blank"
+        }
+    ],
+    "about": {
+        "name": "about",
+        "title": "à propos",
+        "subtitle": "Dolor fugiat cillum sit Lorem eiusmod excepteur.",
+        "description": "In ad labore ex non. Culpa culpa elit in minim incididunt tempor sunt. Mollit veniam mollit culpa quis qui officia ea aute ullamco. Eiusmod cillum et sint ullamco nisi ea occaecat velit. In eu velit irure duis amet sunt sunt exercitation excepteur. Occaecat cillum reprehenderit aute pariatur in dolor. Laboris nisi laboris culpa tempor dolore consequat."
+    },
+    "work": {
+        "name": "work",
+        "title": "Réalisations",
+        "subtitle": "Sunt in ea non cupidatat occaecat ullamco nostrud.",
+        "description": "Reprehenderit proident reprehenderit veniam officia fugiat officia incididunt elit. Nulla ea excepteur sit sit cupidatat minim officia id id occaecat magna est. Cupidatat anim ullamco minim eu anim. Sint duis labore irure culpa nulla duis quis et excepteur id quis fugiat aliquip."
+    },
+    "education": {
+        "name": "education",
+        "title": "Formation",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas. Commodi cumque explicabo harum illo laborum nobis optio quidem tempora veniam voluptate? Culpa eos ipsum laborum nisi optio quo.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+        "diplomes": [{
+            "name": "bac-ssi",
+            "title": "Baccalauréat Scientifique",
+            "mention": "Science de l'ingénieur",
+            "place": "Lycée Clement Ader",
+            "dateBegin": "2011",
+            "dateEnd": "2014",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+            "link": {
+                "title": "lyc-ader-athis.ac-versailles.fr",
+                "href": "http://www.lyc-ader-athis.ac-versailles.fr/SSI.php"
+            }
+        }, {
+            "name": "dut-informatique",
+            "title": "DUT",
+            "mention": "Informatique",
+            "place": "Université Paris Saclay",
+            "dateBegin": "2014",
+            "dateEnd": "2016",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.",
+            "link": {
+                "title": "iut-orsay.u-psud.fr",
+                "href": "http://www.iut-orsay.u-psud.fr/fr/formations/dut/info_dut_fi.html"
+            }
+        }, {
+            "name": "licence-informatique",
+            "title": "Licence",
+            "mention": "Informatique",
+            "place": "Université Paris Diderot",
+            "dateBegin": "2016",
+            "dateEnd": "2017",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi facilis harum laudantium, necessitatibus pariatur perspiciatis sequi sint soluta suscipit voluptatibus.",
+            "link": {
+                "title": "informatique.univ-paris-diderot.fr",
+                "href": "http://www.informatique.univ-paris-diderot.fr/wiki/doku.php/enseignement/licence"
+            }
+        }, {
+            "name": "master-informatique",
+            "title": "Master",
+            "mention": "Informatique",
+            "place": "Université Paris Diderot",
+            "dateBegin": "2017",
+            "dateEnd": "2019",
+            "description": "Saepe voluptas molestiae possimus sunt maiores quia distinctio cupiditate repudiandae. Quo labore consequatur quia. Voluptatem eos id magni tempore incidunt. Ut aut minima voluptatum numquam adipisci.",
+            "link": {
+                "title": "informatique.univ-paris-diderot.fr",
+                "href": "http://www.informatique.univ-paris-diderot.fr/wiki/doku.php/enseignement/master"
+            },
+            "label": {
+                "type": "primary",
+                "value": "en cours"
+            },
+            "primary": true
+        }]
+    },
+    "professional": {
+        "name": "professional",
+        "title": "Expérience professionnel",
+        "subtitle": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas. Commodi cumque explicabo harum illo laborum nobis optio quidem tempora veniam voluptate?",
+        "experiences": [{
+            "name": "developpeur_fullstack-11042016",
+            "title": "Développeur fullstack",
+            "mention": "stage",
+            "place": "Netdevices",
+            "dateBegin": "11/04/2016",
+            "dateEnd": "01/07/2016",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+            "time": {
+                "value": 12,
+                "mesure": "semaines"
+            }
+        }]
+    },
+    "skills": {
+        "name": "skills",
+        "title": "competences",
+        "subtitle": "Id consectetur ut magna commodo Lorem enim aute eu.",
+        "description": "Quis ex magna magna enim. Tempor cupidatat enim non qui cillum quis commodo. Reprehenderit ea ipsum cupidatat do in cillum eu irure adipisicing fugiat id. Occaecat culpa laboris occaecat occaecat. Cupidatat magna elit laboris culpa deserunt voluptate aliquip. Est eiusmod in incididunt consectetur labore labore id magna Lorem minim deserunt pariatur. Laboris dolor dolor adipisicing nostrud aliqua mollit mollit."
+    }
 }

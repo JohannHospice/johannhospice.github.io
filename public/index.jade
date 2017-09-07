@@ -1,8 +1,9 @@
 include _includes/_mixins
 -var data = public._data
--var works = public.works._data.posts
 -var about = data.about
--var workHeading = data.work
+-var education = data.education
+-var professional = data.professional
+-var skills = data.skills
 
 //Heading
 .uk-inline.uk-width-1-1#heading
@@ -13,47 +14,108 @@ include _includes/_mixins
 					h1.uk-heading-hero.uk-text-primary!=data.title
 					.uk-flex.uk-flex-center.uk-margin-medium-top(class="uk-flex-left@m")
 						.uk-width-xxlarge
-							h2.uk-text-muted=data.subtitle
-		.uk-background-primary.uk-background-blend-luminosity.uk-background-cover(class="uk-width-1-3@m uk-flex-first@m" style="background-image: url(/assets/home.gif);")
+							p.uk-h2.uk-text-muted!=data.subtitle
+					.uk-child-width-auto.uk-flex-center(class="uk-flex-left@m" uk-grid)
+						div
+							a.uk-button.uk-button-danger.uk-button-large(href="#contact" uk-scroll) Je suis à la recherche d'un stage
+						//div
+							a.uk-button.uk-button-default.uk-button-large(href="/works") voir mes réalisation
+							
+
+		div.uk-overflow-hidden(class="uk-width-1-3@m uk-flex-first@m")
+			.uk-height-1-1.uk-animation-kenburns.uk-background-primary.uk-background-blend-luminosity.uk-background-cover.uk-animation-reverse.uk-transform-origin-top-center(style="background-image: url(/assets/images/0.jpg);")
 	.uk-position-small.uk-position-bottom-center
-		+icon-link("#content", "_self", "chevron-down", 2).uk-light(class="uk-hidden@m" uk-scroll)
-		+icon-link("#content", "_self", "chevron-down", 2)(class="uk-visible@m" uk-scroll)
-		//-
-			uk-scroll="offset:80")
+		a.uk-icon-button(href="#content" uk-icon="icon:chevron-down;ratio:1.4" uk-scroll)
 
 #content
 
-//About
-.uk-section.uk-section-large.uk-section-muted(id=about.name)
-	.uk-container
-		.uk-flex.uk-flex-middle(uk-grid class="uk-child-width-1-2@m")
-			div.uk-flex.uk-flex-center(class="uk-flex-left@m")
-				.uk-background-muted
-					img.uk-blend-difference.uk-border-circle(class="uk-width-medium uk-width-large@m" src="/assets/objective.gif" uk-gif)
-			div
-				.uk-width-xlarge
-					+header(about.title, about.subtitle, about.description)
-					hr.uk-divider-small
-					a.uk-button.uk-button-text.uk-button-medium(role="button" href="/about")
-						span En savoir plus 
-						+icon("chevron-right")
+include _includes/_header-index
 
-//Works
-.uk-section.uk-section-large.uk-section-default(id=workHeading.name)
+//About
+section.uk-section.uk-section-large.uk-section-default(id=about.name)
 	.uk-container
-		.uk-child-width-1-1.uk-flex.uk-flex-middle(uk-grid class="uk-child-width-1-2@m")
+		div(uk-grid class="uk-child-width-1-2@m")
 			div
-				+header(workHeading.title, workHeading.subtitle, workHeading.description)
-			.uk-flex.uk-flex-center(class="uk-flex-right@m")
-				.uk-width-large
-					+card-work(works[0]).uk-card-primary
-		hr.uk-margin-large
-		div(class="uk-child-width-1-3@s" uk-grid)
-			-var i = 1
-			while i < 4
-				+card-work(works[i])
-				-i++
-		.uk-margin-medium-top.uk-flex.uk-flex-center(class="uk-flex-right@m")
-			a.uk-button.uk-button-text.uk-button-medium(role="button" href="/works")
-				span Voir plus 
-				+icon("arrow-right")
+				.uk-background-primary.uk-height-1-1
+			div
+				.uk-flex.uk-flex-center
+					.uk-width-xlarge.uk-text-center(class="uk-text-left@m")
+						+header(about.title, about.subtitle, about.description)
+						a.uk-margin-top.uk-button.uk-button-primary(role="button" href="/assets/cv-johannhospice.pdf")
+							span Télécharger mon cv 
+							+icon("file-edit")
+
+				//
+					img.uk-blend-screen.uk-border-circle(class="uk-width-medium uk-width-large@m" src="/assets/objective.gif" uk-gif)
+
+
+//Education
+section.uk-section.uk-section-large.uk-section-muted(id=education.name)
+	.uk-container
+		.uk-flex.uk-flex-center.uk-flex-middle(uk-grid)
+			.uk-text-center.uk-width-xxlarge.uk-margin-large-bottom
+				+header(education.title, education.subtitle, education.description)
+	.uk-container.uk-container
+		.uk-flex-center.uk-grid-small(class="uk-child-width-1-2@s uk-child-width-1-4@l" uk-grid uk-height-match="target: > a > .uk-card")
+			each diplome in education.diplomes
+				div
+					+card-education(diplome)
+
+//Professional
+section.uk-section.uk-section-large.uk-section-default(id=professional.name)
+	.uk-container
+		.uk-flex.uk-flex-middle.uk-flex-center(class="uk-child-width-1-2@m" uk-grid)
+			.uk-flex.uk-flex-center
+				.uk-text-center(class="uk-text-left@m")
+					+header(professional.title, professional.subtitle, professional.description)
+			.uk-flex.uk-flex-center(class="uk-child-width-1-2@s uk-child-width-1-1@m" uk-grid)
+				each experience in professional.experiences
+					+card-experience(experience)
+
+//Skills
+section.uk-section.uk-section-large.uk-section-muted(id=skills.name)
+	.uk-container
+		.uk-flex.uk-flex-center(uk-grid)
+			.uk-width-xlarge.uk-text-center
+				+header(skills.title, skills.subtitle, skills.description)
+		.uk-margin-large-top
+			.uk-grid-large(class="uk-child-width-1-1@s" uk-grid)
+				div
+					div(uk-grid)
+						.uk-width-large
+							h3 Langage informatique
+							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident explicabo rem, dolore, quo quasi temporibus minus molestias molestiae nam repellat perspiciatis ut nobis tempora minima laboriosam odio sequi similique voluptas?
+						.uk-width-expand
+							.uk-background-primary.uk-height-medium
+								//								canvas#chart-language.uk-width-1-1.uk-height-1-1
+				div
+					div(uk-grid)
+						.uk-width-expand
+							.uk-background-primary.uk-height-medium
+						.uk-width-large
+							h3 Frameworks
+							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident explicabo rem, dolore, quo quasi temporibus minus molestias molestiae nam repellat perspiciatis ut nobis tempora minima laboriosam odio sequi similique voluptas?
+
+//Contact
+section.uk-section.uk-section-large.uk-section-primary(id="contact")
+	.uk-container
+		div(class="uk-child-width-1-2@m" uk-grid)
+			div(class="uk-visible@m")
+				.uk-background-default.uk-height-1-1
+			div
+				+header("Contact", "Fugiat repellendus ut qui.", "skills.descriptionQuis aut maiores placeat est. In quod omnis dolor debitis incidunt repellendus explicabo. Harum quam qui. Recusandae aut qui. Minima a exercitationem debitis ut libero. Ad consequatur possimus incidunt aut qui nihil qui inventore temporibus.")
+				.uk-margin-top
+					.uk-grid-small(class="uk-child-width-1-2@s" uk-grid)
+						div
+							a.uk-button.uk-button-text.uk-text-lowercase(href="mailto:johannhospice.dev@gmail.com")
+								span.uk-margin-small-right(uk-icon="icon: mail")
+								| johannhospice.dev@gmail.com
+				.uk-margin-medium-top
+					.uk-child-width-auto(uk-grid)
+						div
+							a.uk-icon-button(uk-icon="icon:github;ratio:1.3" href="https://github.com/johannhospice" target="_blank")
+						div
+							a.uk-icon-button(uk-icon="icon:linkedin;ratio:1.3" href="https://www.linkedin.com/in/johannhospice" target="_blank")
+//
+	script(src='/assets/vendors/chart/chart.min.js')
+	script(src='/assets/vendors/me/me.js')

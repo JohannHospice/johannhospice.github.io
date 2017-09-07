@@ -5,15 +5,11 @@
 		"menu": {
 			"values": [
 				"/",
-				"/about",
-				"/works",
-				"/services"
+				"/works"
 			],
 			"names": [
-				"Accueil",
-				"À propos",
-				"Réalisations",
-				"Services"
+				"à propos",
+				"Réalisations"
 			]
 		}
 	}
