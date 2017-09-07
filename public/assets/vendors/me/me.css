@@ -1,0 +1,19 @@
+.jh-logo {
+    height: 40px;
+    width: 40px;
+    fill: #999;
+    transition: fill .2s
+}
+
+.jh-logo:hover {
+    fill: #666
+}
+.uk-offcanvas-bar .jh-logo,
+.uk-section-secondary:not(.uk-preserve-color) .jh-logo {
+    fill: rgba(255, 255, 255, .5);
+    transition: fill .2s
+}
+.uk-offcanvas-bar .jh-logo:hover,
+.uk-section-secondary:not(.uk-preserve-color) .jh-logo:hover {
+    fill: rgba(255, 255, 255, .7)
+}
