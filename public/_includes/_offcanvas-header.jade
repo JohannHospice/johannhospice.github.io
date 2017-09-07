@@ -1,19 +1,31 @@
-include _mixins
+#offcanvas(uk-offcanvas="overlay: false; mode: push")
+    .uk-offcanvas-bar.uk-flex.uk-flex-column.uk-text-center
+        //button.uk-offcanvas-close.uk-close-large.uk-icon(type="button" uk-close)
+        
+        a(href="/") 
+            img.jh-logo(src="/assets/images/logo/logo.svg" alt="johann hospice" uk-svg)
 
-- var i = 0
-- var size = 4
-
-div#offcanvas(uk-offcanvas="overlay: true; mode: push")
-    div.uk-offcanvas-bar
-        ul.uk-nav.uk-nav-default.uk-text-uppercase
-            //a.uk-navbar-toggle(href="#offcanvas" uk-toggle uk-navbar-toggle-icon)
-            a.uk-navbar-item.uk-logo(href="/") 
-                img(src="/assets/logo/logo-grey.png" alt="logo" style="height:50%")
-
-            -i = 0
-            while i < size
-                +item(menu.values[i], menu.names[i])
-                -i++
+        ul.uk-nav.uk-nav-primary.uk-nav-center.uk-margin-auto-vertical
+            li.uk-parent.uk-active
+                a(href="/") Accueil
+            //
+                ul.uk-nav-sub
+                    li
+                        a(href="#about") À propos
+                    li
+                        a(href="#education") Formation
+                    li
+                        a(href="#professional") Experience professionnelle
+                    li
+                        a(href="#skills") Compétence
+                    li
+                        a(href="#contact") Contact
+            li
+                a(href="/works") Réalisation
+                
         div
-            each share,i in public._data.share
-                +icon-link(share.href, "_blank", share.icon)(class=(i<2?"uk-margin-small-right":""))
+            .uk-grid-small.uk-child-width-auto.uk-flex-inline(uk-grid)
+                div
+                    a.uk-icon-button(uk-icon="icon: github" href="https://github.com/johannhospice"  target="_blank")
+                div
+                    a.uk-icon-button(uk-icon="icon: linkedin" href="https://www.linkedin.com/in/johannhospice"  target="_blank")
