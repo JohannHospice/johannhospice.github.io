@@ -1,30 +1,25 @@
-include /_includes/_vars.jade
+include /_includes/_vars
 include _mixins
 - var i = 0
-- var size = 4
-style .header-icon{height: 50%;fill:#999;transition:fill .2s}.header-icon:hover{fill:#666}
-header(uk-sticky=headerRules+"cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent")
+- var size = menu.values.length
+
+header(uk-sticky="sel-target: .uk-navbar-container; animation:uk-animation-slide-top; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top:301")
     nav.uk-navbar-container.uk-navbar-transparent
-        .uk-container.uk-container-expand
+        .uk-container.uk-container-large
             div(uk-navbar)
                 div.uk-navbar-left
-                    a.uk-navbar-toggle(class="uk-hidden@s" href="#offcanvas" uk-toggle uk-navbar-toggle-icon)
-                    ul.uk-navbar-nav(class="uk-visible@s")
-                        while i < size / 2
-                            +item(menu.values[i], menu.names[i])
-                            -i++
-
+                    button.uk-navbar-toggle(class="uk-hidden@s" uk-toggle="target:#offcanvas" uk-navbar-toggle-icon="")
+                    a.uk-navbar-item.uk-logo(class="uk-visible@s" href="/") 
+                        img.jh-logo(src="/assets/images/logo/logo.svg" alt="johann hospice" uk-svg)
+                    
                 div.uk-navbar-center
-                    a.uk-navbar-item.uk-logo(href="/") 
-                        !="<svg class='header-icon' version='1.2' baseProfile='tiny' id='logoJH' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 144 144' xml:space='preserve'><path d='M108,0v36H72V0H36v36H0v36h36v36H0v36h72V72h36v36h36V0H108z M63,9v27H45V9H63z M9,63V45h27v18H9z M9,135v-18h36v-9h18v27	 M99,45v18H63v36H45V45 M117,9h18v90h-18V63h-9V45h9'/></svg>"
-                        //img(src="/assets/logo/logo.svg" alt="logo" style="height:50%;color:red")
-                        //img(src="/assets/logo/logo-grey.png" alt="logo" style="height:50%")
+                    a.uk-navbar-item.uk-logo(class="uk-hidden@s" href="/")
+                        img.jh-logo(src="/assets/images/logo/logo.svg" alt="johann hospice" uk-svg)
 
                 div.uk-navbar-right
                     ul.uk-navbar-nav(class="uk-visible@s")
                         while i < size
                             +item(menu.values[i], menu.names[i])
                             -i++
-                            div(class="uk-offcanvas-content")
+                        div(class="uk-offcanvas-content")
         hr.uk-margin-remove
-        include /_includes/_offcanvas-header.jade
