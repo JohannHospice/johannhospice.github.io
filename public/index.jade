@@ -1,9 +1,10 @@
 include _includes/_mixins
 -var data = public._data
--var about = data.about
--var education = data.education
--var professional = data.professional
--var skills = data.skills
+-var home = public._data.home
+-var about = public._data.about
+-var education = public._data.education
+-var professional = public._data.professional
+-var skills = public._data.skills
 
 //Heading
 .uk-inline.uk-width-1-1#heading
@@ -11,24 +12,21 @@ include _includes/_mixins
 		.uk-background-default.uk-flex.uk-flex-middle(class="uk-width-2-3@m")
 			.uk-width-1-1
 				.uk-container.uk-text-center(class="uk-text-left@m")
-					h1.uk-heading-hero.uk-text-primary!=data.title
-					.uk-flex.uk-flex-center.uk-margin-medium-top(class="uk-flex-left@m")
+					h1.uk-heading-hero.uk-text-primary!=home.title
+					.uk-margin-small-top.uk-flex.uk-flex-center(class="uk-flex-left@m")
 						.uk-width-xxlarge
-							p.uk-h2.uk-text-muted!=data.subtitle
-					.uk-child-width-auto.uk-flex-center(class="uk-flex-left@m" uk-grid)
-						div
-							a.uk-button.uk-button-danger.uk-button-large(href="#contact" uk-scroll) Je suis à la recherche d'un stage
-						//div
-							a.uk-button.uk-button-default.uk-button-large(href="/works") voir mes réalisation
-							
+							p.uk-h2.uk-text-muted!=home.subtitle
+					.uk-margin-medium-top.uk-child-width-auto.uk-flex-center(class="uk-flex-left@m" uk-grid)
+						each button in home.buttons
+							div
+								a.uk-button.uk-button-large(class="uk-button-"+button.type href=button.href uk-scroll)=button.text
 
 		div.uk-overflow-hidden(class="uk-width-1-3@m uk-flex-first@m")
 			.uk-height-1-1.uk-animation-kenburns.uk-background-primary.uk-background-blend-luminosity.uk-background-cover.uk-animation-reverse.uk-transform-origin-top-center(style="background-image: url(/assets/images/background-tmp.jpg);")
 	.uk-position-small.uk-position-bottom-center
 		a.uk-icon-button(href="#content" uk-icon="icon:chevron-down;ratio:1.4" uk-scroll)
 
-#content
-
+hr.uk-margin-remove#content
 include _includes/_header-index
 
 //About
@@ -95,6 +93,24 @@ section.uk-section.uk-section-large.uk-section-muted(id=skills.name)
 						.uk-width-large
 							h3 Frameworks
 							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident explicabo rem, dolore, quo quasi temporibus minus molestias molestiae nam repellat perspiciatis ut nobis tempora minima laboriosam odio sequi similique voluptas?
+style.
+	.links line {
+	stroke: #999;
+	stroke-opacity: 0.6;
+	}
+
+	.nodes circle {
+	stroke: #fff;
+	stroke-width: 1.5px;
+	}
+
+	text {
+	font-family: sans-serif;
+	font-size: 10px;
+	}
+svg#d3skills.uk-width-1-1.uk-height-large(uk-svg)
+script(src="/assets/vendors/d3/d3.min.js")
+script(src="/assets/vendors/me/me.js")
 
 //Contact
 section.uk-section.uk-section-large.uk-section-primary(id="contact")
