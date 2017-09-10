@@ -8,11 +8,11 @@ header(uk-sticky="sel-target: .uk-navbar-container")
         .uk-container.uk-container-large(uk-navbar)
             div.uk-navbar-left
                 button.uk-navbar-toggle(class="uk-hidden@s" uk-toggle="target:#offcanvas" uk-navbar-toggle-icon="")
-                a.uk-navbar-item.uk-logo(class="uk-visible@s" href="/") 
+                a.uk-navbar-item.uk-logo(class="uk-visible@s" href="#heading" uk-scroll) 
                     img.jh-logo(src="/assets/images/logo/logo.svg" alt="johann hospice" uk-svg)
 
             div.uk-navbar-center
-                a.uk-navbar-item.uk-logo(class="uk-hidden@s" href="/") 
+                a.uk-navbar-item.uk-logo(class="uk-hidden@s" href="#heading" uk-scroll) 
                     img.jh-logo(src="/assets/images/logo/logo.svg" alt="johann hospice" uk-svg)
                 ul.uk-dotnav(class="uk-visible@s" uk-scrollspy-nav="closest: li; scroll: true; offset: 400")
                     li
