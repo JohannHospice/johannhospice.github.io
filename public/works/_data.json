@@ -19,7 +19,7 @@
             "dateEnd": "01-06-2017",
             "dateEndFormated": "1 Juin 2017",
             "category": "logiciel de bureau",
-            "tag": [
+            "tags": [
                 "java",
                 "console",
                 "chat",
@@ -41,7 +41,7 @@
             "dateEnd": "14-05-2017",
             "dateEndFormated": "14 Mai 2017",
             "category": "logiciel de bureau",
-            "tag": [
+            "tags": [
                 "c",
                 "crawler",
                 "bot",
@@ -62,7 +62,7 @@
             "dateEnd": "17-04-2017",
             "dateEndFormated": "17 Avril 2017",
             "category": "Site web",
-            "tag": [
+            "tags": [
                 "javascript",
                 "express",
                 "pug",
@@ -84,7 +84,7 @@
             "dateEnd": "17-01-2017",
             "dateEndFormated": "17 Janvier 2017",
             "category": "logiciel de bureau",
-            "tag": [
+            "tags": [
                 "c",
                 "console",
                 "chat",
@@ -108,7 +108,7 @@
             "dateEnd": "26-07-2016",
             "dateEndFormated": "26 Juillet 2016",
             "category": "Module node",
-            "tag": [
+            "tags": [
                 "javascript",
                 "css",
                 "preprocessor",
@@ -128,7 +128,7 @@
                 "label": "en savoir plus",
                 "href": "https://www.netdevices.fr/portfolio-works/parki/"
             }],
-            "tag": [
+            "tags": [
                 "javascript",
                 "react-native",
                 "ios",
@@ -152,7 +152,7 @@
                 "label": "voir la demo",
                 "href": "/works/experience_javascript/demo"
             }],
-            "tag": [
+            "tags": [
                 "javascript",
                 "react-native",
                 "ios",
@@ -168,7 +168,7 @@
             "dateEnd": "20-04-2016",
             "dateEndFormated": "20 Avril 2016",
             "category": "site web",
-            "tag": [
+            "tags": [
                 "php",
                 "css"
             ],
@@ -186,7 +186,7 @@
             "dateEnd": "2015",
             "dateEndFormated": "2015",
             "category": "Jeu Video",
-            "tag": [
+            "tags": [
                 "java",
                 "libgdx"
             ],
