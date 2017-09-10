@@ -1,19 +1,13 @@
 {
-    "title": "Johann Hospice",
-    "subtitle": "Quas sed est et enim consequuntur eum. Fugiat officiis autem modi officia consequatur quisquam voluptatem sed voluptate dolores.",
-    "share": [{
-            "icon": "github",
-            "title": "github.com/johannhospice",
-            "href": "https://github.com/johannhospice",
-            "target": "_blank"
-        },
-        {
-            "icon": "linkedin",
-            "title": "www.linkedin.com/in/johannhospice",
-            "href": "https://www.linkedin.com/in/johannhospice",
-            "target": "_blank"
-        }
-    ],
+    "home": {
+        "title": "Johann Hospice",
+        "subtitle": "Etudiant en informatique, je overseeing all product development, engineering, and design of the company's electric vehicles, battery products, and solar roofs.",
+        "buttons": [{
+            "type": "danger",
+            "href": "#contact",
+            "text": "Je suis à la recherche d'un stage"
+        }]
+    },
     "about": {
         "name": "about",
         "title": "à propos",
