@@ -1,24 +1,16 @@
-//Heading
-!= partial("/_partials/_home", {home: public._data.home})
+include /_partials/_home
 
-hr.uk-margin-remove#content
+include /_includes/_header-index
 
-include _includes/_header-index
+include /_partials/_intro
 
-//intro
-!= partial("/_partials/_intro", {intro: public._data.intro})
+include /_partials/_education
 
-//Education
-!= partial("/_partials/_education", {education: public._data.education})
+include /_partials/_professional
 
-//Professional
-!= partial("/_partials/_professional", {professional: public._data.professional})
+include /_partials/_skills
 
-//Skills
-!= partial("/_partials/_skills", {skills: public._data.skills})
-
-//Contact
-!= partial("/_partials/_contact", {contact: public._data.contact})
+include /_partials/_contact
 
 
 //
