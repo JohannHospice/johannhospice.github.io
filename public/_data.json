@@ -1,16 +1,16 @@
 {
     "home": {
         "title": "Johann Hospice",
-        "subtitle": "Etudiant en informatique, je overseeing all product development, engineering, and design of the company's electric vehicles, battery products, and solar roofs.",
+        "subtitle": "Etudiant en science informatique à l'université Paris Diderot",
         "buttons": [{
             "type": "danger",
             "href": "#contact",
-            "text": "Je suis à la recherche d'un stage"
+            "text": "Je suis à la recherche d'un stage!"
         }]
     },
-    "about": {
-        "name": "about",
-        "title": "à propos",
+    "intro": {
+        "name": "intro",
+        "title": "Objectif",
         "subtitle": "Dolor fugiat cillum sit Lorem eiusmod excepteur.",
         "description": "In ad labore ex non. Culpa culpa elit in minim incididunt tempor sunt. Mollit veniam mollit culpa quis qui officia ea aute ullamco. Eiusmod cillum et sint ullamco nisi ea occaecat velit. In eu velit irure duis amet sunt sunt exercitation excepteur. Occaecat cillum reprehenderit aute pariatur in dolor. Laboris nisi laboris culpa tempor dolore consequat."
     },
