@@ -8,12 +8,8 @@ const MARGIN = 0;
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
     var simulation = d3.forceSimulation()
-        .force("link", d3.forceLink().distance(20).strength(1)
-            .id(function (d) {
-                return d.id;
-            }))
-        .force("charge", d3.forceManyBody().strength(-300))
-        .force("collide", d3.forceCollide())
+        .force("link", d3.forceLink().distance(50).iterations(2).strength(2).id(function (d) {return d.id;}))
+        .force("charge", d3.forceManyBody().strength(-600))
         .force("center", d3.forceCenter(width / 2, height / 2 + MARGIN));
 
     window.onresize = function () {
@@ -25,7 +21,7 @@ const MARGIN = 0;
     //load data
     d3.json("/assets/skills.json", function (error, graph) {
         if (error) throw error;
-
+    
         var link = d3Skills.append("g")
             .attr("class", "links")
             .selectAll("line")
@@ -42,6 +38,10 @@ const MARGIN = 0;
             .selectAll("g")
             .data(graph.nodes)
             .enter().append("g")
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended));
         //shape
         var circles = node.append("circle")
             .attr("r", function (d) {
@@ -50,17 +50,13 @@ const MARGIN = 0;
             .attr("fill", function (d) {
                 return color(d.group);
             })
-            .call(d3.drag()
-                .on("start", dragstarted)
-                .on("drag", dragged)
-                .on("end", dragended));
         //label
         node.append("text")
             .text(function (d) {
                 return d.id;
             })
-            .attr('x', 8)
-            .attr('y', ".31em");
+            .attr('x', 20)
+            .attr('y', ".5em");
         //tooltip
         node.append("title")
             .text(function (d) {
@@ -69,7 +65,8 @@ const MARGIN = 0;
 
         simulation.nodes(graph.nodes)
             .on("tick", function ticked() {
-                link.attr("x1", function (d) {
+                link
+                    .attr("x1", function (d) {
                         return d.source.x;
                     })
                     .attr("y1", function (d) {
@@ -81,27 +78,18 @@ const MARGIN = 0;
                     .attr("y2", function (d) {
                         return d.target.y;
                     });
-
-                node.attr("transform", positionNode)
+                node
+                    .attr("transform", positionNode)
+                    .attr("cx", function (d) {
+                        return d.x;
+                    })
+                    .attr("cy", function (d) {
+                        return d.y;
+                    });
             });
 
         simulation.force("link")
             .links(graph.links);
-
-        d3Skills.call(d3.zoom()
-            .scaleExtent([1, 8])
-            .on("zoom", zoomed));
-
-        function zoomed() {
-            link.attr("transform", transform(d3.event.transform));
-            circles.attr("transform", transform(d3.event.transform));
-        }
-
-        function transform(t) {
-            return function (d) {
-                return "translate(" + (d.x + t.x) + "," + (d.y + t.y) + ")";
-            };
-        }
     });
 
     function positionNode(d) {
