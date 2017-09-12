@@ -1,7 +1,5 @@
 include /_includes/_vars
 include _mixins
-- var i = 0
-- var size = menu.values.length
 
 header(uk-sticky="sel-target: .uk-navbar-container; animation:uk-animation-slide-top; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top:301")
     nav.uk-navbar-container.uk-navbar-transparent
@@ -18,7 +16,8 @@ header(uk-sticky="sel-target: .uk-navbar-container; animation:uk-animation-slide
 
                 div.uk-navbar-right
                     ul.uk-navbar-nav(class="uk-visible@s")
-                        while i < size
+                        - var i = 0
+                        while i < menu.values.length
                             +item(menu.values[i], menu.names[i])
                             -i++
                         div(class="uk-offcanvas-content")

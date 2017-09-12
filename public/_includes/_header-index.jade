@@ -1,7 +1,5 @@
 include /_includes/_vars
 include _mixins
-- var i = 0
-- var size = menu.values.length
 
 header(uk-sticky="sel-target: .uk-navbar-container")
     nav.uk-navbar-container
@@ -27,7 +25,8 @@ header(uk-sticky="sel-target: .uk-navbar-container")
                         a(href="#contact" uk-scroll="offset:80" uk-tooltip title="Contact" pos="bottom")
             div.uk-navbar-right
                 ul.uk-navbar-nav(class="uk-visible@s")
-                    while i < size
+                    - var i = 0
+                    while i < menu.values.length
                         +item(menu.values[i], menu.names[i])
                         -i++
                     div(class="uk-offcanvas-content")
