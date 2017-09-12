@@ -3,6 +3,10 @@
         "id": "java",
         "group": "language",
         "size": 3
+    },{
+        "id": "kotlin",
+        "group": "language",
+        "size": 3
     }, {
         "id": "javascript",
         "group": "language",
@@ -100,6 +104,10 @@
         "group": "system",
         "size": 3
     }, {
+        "id": "desktop",
+        "group": "system",
+        "size": 3
+    }, {
         "id": "linux",
         "group": "system",
         "size": 2
@@ -111,58 +119,62 @@
         "id": "android",
         "group": "system",
         "size": 3
-    }, {
-        "id": "web",
-        "group": "system",
-        "size": 3
-    }, {
-        "id": "application",
+    },{
+        "id": "mobile",
         "group": "system",
         "size": 2
     },{
         "id": "programmation fonctionnelle",
         "group": "paradigm",
         "size": 2
+    },{
+        "id": "front-end",
+        "group": "paradigm",
+        "size": 2
+    },{
+        "id": "back-end",
+        "group": "paradigm",
+        "size": 2
     }],
     "links": [{
-        "source": "javascript",
+        "source": "node.js",
+        "target": "back-end",
+        "value": 1
+    },{
+        "source": "front-end",
+        "target": "css",
+        "value": 1
+    },{
+        "source": "front-end",
+        "target": "html",
+        "value": 1
+    },{
+        "source": "front-end",
+        "target": "bootstrap",
+        "value": 1
+    },{
+        "source": "front-end",
+        "target": "uikit",
+        "value": 1
+    }, {
+        "source": "android",
+        "target": "mobile",
+        "value": 1
+    }, {
+        "source": "ios",
+        "target": "mobile",
+        "value": 1
+    }, {
+        "source": "jquery",
+        "target": "front-end",
+        "value": 1
+    }, {
+        "source": "sails.js",
         "target": "node.js",
         "value": 1
     }, {
-        "source": "javascript",
-        "target": "react-native",
-        "value": 1
-    }, {
-        "source": "react-native",
-        "target": "ios",
-        "value": 1
-    }, {
-        "source": "react-native",
-        "target": "android",
-        "value": 1
-    }, {
-        "source": "javascript",
-        "target": "express.js",
-        "value": 1
-    }, {
-        "source": "javascript",
-        "target": "jquery",
-        "value": 1
-    }, {
-        "source": "javascript",
-        "target": "sails.js",
-        "value": 1
-    }, {
-        "source": "html",
-        "target": "css",
-        "value": 1
-    }, {
-        "source": "css",
-        "target": "bootstrap",
-        "value": 1
-    }, {
-        "source": "php",
-        "target": "symfony",
+        "source": "symfony",
+        "target": "php",
         "value": 1
     }, {
         "source": "java",
@@ -177,96 +189,60 @@
         "target": "numpy",
         "value": 1
     }, {
-        "source": "css",
-        "target": "bootstrap",
-        "value": 1
-    }, {
-        "source": "web",
-        "target": "css",
-        "value": 1
-    }, {
-        "source": "web",
-        "target": "html",
-        "value": 1
-    }, {
-        "source": "web",
+        "source": "front-end",
         "target": "javascript",
         "value": 1
     }, {
-        "source": "web",
-        "target": "sails.js",
+        "source": "back-end",
+        "target": "javascript",
         "value": 1
     }, {
-        "source": "web",
+        "source": "back-end",
         "target": "php",
         "value": 1
     }, {
-        "source": "web",
+        "source": "back-end",
         "target": "sql",
         "value": 1
     }, {
-        "source": "web",
-        "target": "node.js",
-        "value": 1
-    }, {
-        "source": "web",
-        "target": "express.js",
-        "value": 1
-    }, {
-        "source": "web",
-        "target": "jquery",
-        "value": 1
-    }, {
-        "source": "web",
-        "target": "bootstrap",
-        "value": 1
-    }, {
-        "source": "web",
-        "target": "uikit",
-        "value": 1
-    }, {
-        "source": "web",
-        "target": "symfony",
-        "value": 1
-    }, {
-        "source": "application",
-        "target": "android",
-        "value": 1
-    }, {
-        "source": "application",
-        "target": "ios",
+        "source": "react-native",
+        "target": "mobile",
         "value": 1
     }, {
         "source": "android",
         "target": "java",
         "value": 1
     }, {
-        "source": "windows",
-        "target": "c",
+        "source": "kotlin",
+        "target": "java",
         "value": 1
     }, {
-        "source": "windows",
-        "target": "java",
+        "source": "desktop",
+        "target": "windows",
+        "value": 1
+    }, {
+        "source": "java",
+        "target": "desktop",
         "value": 1
     }, {
         "source": "sdl",
         "target": "c",
         "value": 1
     }, {
-        "source": "linux",
-        "target": "java",
+        "source": "desktop",
+        "target": "linux",
         "value": 1
     }, {
-        "source": "linux",
-        "target": "c",
+        "source": "c",
+        "target": "desktop",
         "value": 1
     }, {
         "source": "c++",
-        "target": "c",
+        "target": "desktop",
         "value": 1
     }, {
-        "source": "application",
-        "target": "python",
+        "source": "python",
+        "target": "desktop",
         "value": 1
     }, {
         "source": "express.js",
@@ -275,10 +251,6 @@
     }, {
         "source": "react-native",
         "target": "node.js",
-        "value": 1
-    }, {
-        "source": "bootstrap",
-        "target": "uikit",
         "value": 1
     }, {
         "source": "ios",
@@ -292,15 +264,7 @@
         "source": "programmation fonctionnelle",
         "target": "java",
         "value": 1
-    }, {
-        "source": "node.js",
-        "target": "windows",
-        "value": 1
-    }, {
-        "source": "node.js",
-        "target": "linux",
-        "value": 1
-    }, {
+    },  {
         "source": "windows",
         "target": "visual basic",
         "value": 1
