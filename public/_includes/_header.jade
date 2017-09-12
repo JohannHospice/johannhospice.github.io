@@ -18,7 +18,8 @@ header(uk-sticky="sel-target: .uk-navbar-container; animation:uk-animation-slide
                     ul.uk-navbar-nav(class="uk-visible@s")
                         - var i = 0
                         while i < menu.values.length
-                            +item(menu.values[i], menu.names[i])
+                            li(class={'uk-active': (current.path[0] == "index" && menu.values[i] == "/") || menu.values[i].includes(current.path[0])})
+                                a(href=menu.values[i]+"#content")=menu.names[i]
                             -i++
                         div(class="uk-offcanvas-content")
         hr.uk-margin-remove
