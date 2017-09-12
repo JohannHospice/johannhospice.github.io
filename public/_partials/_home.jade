@@ -1,4 +1,5 @@
 include /_includes/_mixins
+-var home = public._data.home
 
 .uk-inline.uk-width-1-1#heading
 	.uk-child-width-1-1.uk-flex(uk-grid uk-height-viewport="offset-top: true")
@@ -10,11 +11,14 @@ include /_includes/_mixins
 						.uk-width-xlarge
 							p.uk-h2.uk-text-muted!=home.subtitle
 					.uk-margin-medium-top.uk-child-width-auto.uk-flex-center(class="uk-flex-left@m" uk-grid)
+					
 						each button in home.buttons
 							div
 								a.uk-button.uk-button-large(class="uk-button-"+button.type href=button.href uk-scroll)=button.text
 
 		div.uk-overflow-hidden(class="uk-width-1-3@m uk-flex-first@m")
-			.uk-height-1-1.uk-animation-kenburns.uk-background-primary.uk-background-blend-luminosity.uk-background-cover.uk-animation-reverse.uk-transform-origin-top-center(style="background-image: url(/assets/images/background-tmp.jpg);")
+			.uk-height-1-1.uk-animation-kenburns.uk-background-primary.uk-background-blend-luminosity.uk-background-cover.uk-animation-reverse(style="background-image: url(/assets/images/background-tmp.jpg);")
 	.uk-position-small.uk-position-bottom-center
 		a.uk-icon-button(href="#content" uk-icon="icon:chevron-down;ratio:1.4" uk-scroll)
+
+hr.uk-margin-remove#content

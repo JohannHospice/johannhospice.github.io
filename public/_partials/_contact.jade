@@ -1,4 +1,5 @@
 include /_includes/_mixins
+-var contact = public._data.contact
 
 section.uk-section.uk-section-large.uk-section-primary(id="contact")
 	.uk-container
@@ -6,16 +7,20 @@ section.uk-section.uk-section-large.uk-section-primary(id="contact")
 			div(class="uk-visible@m")
 				.uk-background-default.uk-height-1-1
 			div
-				+header("Contact", "Fugiat repellendus ut qui.", "skills.descriptionQuis aut maiores placeat est. In quod omnis dolor debitis incidunt repellendus explicabo. Harum quam qui. Recusandae aut qui. Minima a exercitationem debitis ut libero. Ad consequatur possimus incidunt aut qui nihil qui inventore temporibus.")
+				+header(contact.title, contact.subtitle, contact.description)
+				.uk-grid-small.uk-child-width-auto(uk-grid)
+					each label in contact.tags
+						div
+							span.uk-label=label
 				.uk-margin-top
 					.uk-grid-small(class="uk-child-width-1-2@s" uk-grid)
-						div
-							a.uk-button.uk-button-text.uk-text-lowercase(href="mailto:johannhospice.dev@gmail.com")
-								span.uk-margin-small-right(uk-icon="icon: mail")
-								| johannhospice.dev@gmail.com
+						each link in contact.contact_links
+							div
+								a.uk-button.uk-button-text.uk-text-lowercase(href=link.href)
+									span.uk-margin-small-right(uk-icon="icon:"+link.icon)
+									span=link.title
 				.uk-margin-medium-top
 					.uk-child-width-auto(uk-grid)
-						div
-							a.uk-icon-button(uk-icon="icon:github;ratio:1.3" href="https://github.com/johannhospice" target="_blank")
-						div
-							a.uk-icon-button(uk-icon="icon:linkedin;ratio:1.3" href="https://www.linkedin.com/in/johannhospice" target="_blank")
+						each link in contact.links
+							div
+								a.uk-icon-button(uk-icon="icon:"+link.name+";ratio:1.3" href=link.href target="_blank")
