@@ -9,7 +9,7 @@
             "picture": "/assets/works/iportbook.jpg",
             "title": "Iportbook",
             "subtitle": "Projet de programmation réseaux",
-            "description": "Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.",
+            "description": "Systeme permettant à différentes entités clients d'établir des relations et de pouvoir communiquer. Le fonctionnement est inspiré des réseaux sociaux actuels.",
             "links": [{
                 "label": "voir sur github",
                 "href": "https://github.com/johannhospice/iportbook"
@@ -20,18 +20,21 @@
             "dateEndFormated": "1 Juin 2017",
             "category": "logiciel de bureau",
             "tags": [
-                "java",
-                "console",
-                "chat",
-                "server",
-                "client"
+                "Java",
+                "Chat",
+                "Communication",
+                "Publicitaire",
+                "Serveur",
+                "Client",
+                "Promoteur",
+                "Terminal"
             ]
         }, {
             "name": "ungoliant",
             "picture": "/assets/works/ungoliant.jpg",
             "title": "Ungoliant",
             "subtitle": "Robot d’Indexation et Moteur de Recherche",
-            "description": "Le but de ce projet est d’implémenter en langage C un moteur de recherche, un programme capable d’explorer récursivement le contenu d’un ensemble de pages HTML ou de sites Web, de les indexer, et de permettre à un utilisateur d’effectuer une recherche sur leur contenu.",
+            "description": "Moteur de recherche, capable d’explorer récursivement le contenu d’un ensemble de pages HTML ou de sites Web, de les indexer, et permet à un utilisateur d’effectuer une recherche sur leur contenu.",
             "links": [{
                 "label": "voir sur github",
                 "href": "https://github.com/johannhospice/ungoliant"
@@ -42,17 +45,19 @@
             "dateEndFormated": "14 Mai 2017",
             "category": "logiciel de bureau",
             "tags": [
-                "c",
-                "crawler",
-                "bot",
-                "html"
+                "C",
+                "Tidyhtml",
+                "Curl",
+                "Bot",
+                "Crawler",
+                "HTML"
             ]
         }, {
             "name": "metro",
             "picture": "/assets/works/metro.jpg",
             "title": "Metro",
             "subtitle": "Calcul de trajets en métro",
-            "description": "L’objectif de ce devoir est de réaliser une application utile de calcul de trajet sur le réseau de métro de la RATP dans l’agglomération parisienne.",
+            "description": "Application utile de calcul de trajet sur le réseau de métro de la RATP dans l’agglomération parisienne.",
             "links": [{
                 "label": "voir sur github",
                 "href": "https://github.com/johannhospice/metro"
@@ -63,18 +68,17 @@
             "dateEndFormated": "17 Avril 2017",
             "category": "Site web",
             "tags": [
-                "javascript",
-                "express",
-                "pug",
-                "plus court chemin",
-                "serveur"
+                "Javascript",
+                "Express.js",
+                "Pug",
+                "Pathfinding"
             ]
         }, {
             "name": "tchatche",
             "picture": "/assets/works/tchatche.jpg",
             "title": "Tchatche",
             "subtitle": "Chat Client/Serveur par tubes UNIX",
-            "description": "L’objectif de ce devoir est de réaliser une application utile de calcul de trajet sur le réseau de métro de la RATP dans l’agglomération parisienne.",
+            "description": "Système de communication interactif multi-utilisateurs",
             "links": [{
                 "label": "voir sur github",
                 "href": "https://github.com/johannhospice/tchatche"
@@ -85,11 +89,12 @@
             "dateEndFormated": "17 Janvier 2017",
             "category": "logiciel de bureau",
             "tags": [
-                "c",
-                "console",
-                "chat",
-                "server",
-                "client"
+                "C",
+                "Chat",
+                "Communication",
+                "Client",
+                "Serveur",
+                "Terminal"
             ]
         }, {
             "name": "preoss",
@@ -109,10 +114,10 @@
             "dateEndFormated": "26 Juillet 2016",
             "category": "Module node",
             "tags": [
-                "javascript",
-                "css",
-                "preprocessor",
-                "style"
+                "Javascript",
+                "CSS",
+                "Preprocessor",
+                "Node.js"
             ]
         }, {
             "name": "parki",
@@ -126,13 +131,16 @@
             "category": "application mobile",
             "links": [{
                 "label": "en savoir plus",
+                "disabled": true
+            }, {
+                "label": "voir sur netdevices",
                 "href": "https://www.netdevices.fr/portfolio-works/parki/"
             }],
             "tags": [
-                "javascript",
-                "react-native",
-                "ios",
-                "android"
+                "JavaScript",
+                "React-Native",
+                "IOS",
+                "Android"
             ]
         },
         {
@@ -144,19 +152,19 @@
             "dateStartFormated": "13 Fevrier 2016",
             "dateEnd": "20-02-2016",
             "dateEndFormated": "20 Fevrier 2016",
-            "category": "application web",
+            "category": "Application web",
             "links": [{
-                "label": "voir le code",
-                "href": "/gitter"
+                "label": "voir le gist",
+                "target": "_blank",
+                "href": "https://gist.github.com/JohannHospice/9e0d0eb47f0ea730c99e93fd1c2ebfa9"
             }, {
                 "label": "voir la demo",
                 "href": "/works/experience_javascript/demo"
             }],
             "tags": [
-                "javascript",
-                "react-native",
-                "ios",
-                "android"
+                "JavaScript",
+                "CSS",
+                "HTML"
             ]
         },
         {
@@ -169,12 +177,15 @@
             "dateEndFormated": "20 Avril 2016",
             "category": "site web",
             "tags": [
-                "php",
-                "css"
+                "PHP",
+                "CSS",
+                "JavaScript",
+                "MVC",
+                "Gestion utilisateurs"
             ],
             "links": [{
-                "label": "voir le code",
-                "href": "/gitter"
+                "label": "en savoir plus",
+                "disabled": true
             }]
         },
         {
@@ -191,11 +202,8 @@
                 "libgdx"
             ],
             "links": [{
-                "label": "voir le code",
-                "href": "/gitter"
-            }, {
-                "label": "voir la demo",
-                "href": "/works/experience_javascript/demo"
+                "label": "en savoir plus",
+                "disabled": true
             }]
         }
     ]
