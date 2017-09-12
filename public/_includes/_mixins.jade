@@ -257,3 +257,23 @@ mixin card-work(work)
 						.uk-hidden-hover
 							img.uk-width-1-1(src="/assets/_home.gif" alt="_home")
 						img.uk-width-1-1(src="/assets/works/"+work.name+".jpg" alt=work.name)
+//others
+mixin pic-or-not(work, height)
+	if work.picture
+		+card-work-picture(work, height)
+	else			
+		+card-work(work)
+
+
+mixin grid(size, cols)
+	div(uk-grid class="uk-child-width-1-"+cols+"@s")
+		- var i = 0
+		while i < cols
+			div
+				div(uk-grid)
+					- var n = 0
+					while n < size/cols
+						div
+							block
+						-n++
+			-i++

@@ -10,25 +10,6 @@ section.uk-section.uk-section-large.uk-section-default
 		.uk-width-xxlarge.uk-text-center
 			h1.uk-heading-primary=data.title 
 			p.uk-text-lead=data.resume
-mixin pic-or-not(work, height)
-	if work.picture
-		+card-work-picture(work, height)
-	else			
-		+card-work(work)
-
-
-mixin grid(size, cols)
-	div(uk-grid class="uk-child-width-1-"+cols+"@s")
-		- var i = 0
-		while i < cols
-			div
-				div(uk-grid)
-					- var n = 0
-					while n < size/cols
-						div
-							block
-						-n++
-			-i++
 
 //Works
 section.uk-section.uk-section-large.uk-section-muted.uk-preserve-color
