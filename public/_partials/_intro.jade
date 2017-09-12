@@ -1,0 +1,17 @@
+include /_includes/_mixins
+
+section.uk-section.uk-section-large.uk-section-default(id=intro.name)
+	.uk-container
+		div(uk-grid class="uk-child-width-1-2@m")
+			div
+				.uk-background-primary.uk-height-1-1
+			div
+				.uk-flex.uk-flex-center
+					.uk-width-xlarge.uk-text-center(class="uk-text-left@m")
+						+header(intro.title, intro.subtitle, intro.description)
+						a.uk-margin-top.uk-button.uk-button-primary(role="button" href="/assets/cv-johannhospice.pdf")
+							span Télécharger mon cv 
+							+icon("file-edit")
+
+				//
+					img.uk-blend-screen.uk-border-circle(class="uk-width-medium uk-width-large@m" src="/assets/objective.gif" uk-gif)

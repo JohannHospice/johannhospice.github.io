@@ -1,0 +1,12 @@
+include /_includes/_mixins
+
+section.uk-section.uk-section-large.uk-section-muted(id=education.name)
+	.uk-container
+		.uk-flex.uk-flex-center.uk-flex-middle(uk-grid)
+			.uk-text-center.uk-width-xxlarge.uk-margin-large-bottom
+				+header(education.title, education.subtitle, education.description)
+	.uk-container.uk-container
+		.uk-flex-center.uk-grid-small(class="uk-child-width-1-2@s uk-child-width-1-4@l" uk-grid uk-height-match="target: > a > .uk-card")
+			each diplome in education.diplomes
+				div
+					+card-education(diplome)

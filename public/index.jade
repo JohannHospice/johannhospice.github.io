@@ -1,137 +1,42 @@
-include _includes/_mixins
--var data = public._data
--var home = public._data.home
--var about = public._data.about
--var education = public._data.education
--var professional = public._data.professional
--var skills = public._data.skills
-
 //Heading
-.uk-inline.uk-width-1-1#heading
-	.uk-child-width-1-1.uk-flex(uk-grid uk-height-viewport="offset-top: true")
-		.uk-background-default.uk-flex.uk-flex-middle(class="uk-width-2-3@m")
-			.uk-width-1-1
-				.uk-container.uk-text-center(class="uk-text-left@m")
-					h1.uk-heading-hero.uk-text-primary!=home.title
-					.uk-margin-small-top.uk-flex.uk-flex-center(class="uk-flex-left@m")
-						.uk-width-xxlarge
-							p.uk-h2.uk-text-muted!=home.subtitle
-					.uk-margin-medium-top.uk-child-width-auto.uk-flex-center(class="uk-flex-left@m" uk-grid)
-						each button in home.buttons
-							div
-								a.uk-button.uk-button-large(class="uk-button-"+button.type href=button.href uk-scroll)=button.text
-
-		div.uk-overflow-hidden(class="uk-width-1-3@m uk-flex-first@m")
-			.uk-height-1-1.uk-animation-kenburns.uk-background-primary.uk-background-blend-luminosity.uk-background-cover.uk-animation-reverse.uk-transform-origin-top-center(style="background-image: url(/assets/images/background-tmp.jpg);")
-	.uk-position-small.uk-position-bottom-center
-		a.uk-icon-button(href="#content" uk-icon="icon:chevron-down;ratio:1.4" uk-scroll)
+!= partial("/_partials/_home", {home: public._data.home})
 
 hr.uk-margin-remove#content
+
 include _includes/_header-index
 
-//About
-section.uk-section.uk-section-large.uk-section-default(id=about.name)
-	.uk-container
-		div(uk-grid class="uk-child-width-1-2@m")
-			div
-				.uk-background-primary.uk-height-1-1
-			div
-				.uk-flex.uk-flex-center
-					.uk-width-xlarge.uk-text-center(class="uk-text-left@m")
-						+header(about.title, about.subtitle, about.description)
-						a.uk-margin-top.uk-button.uk-button-primary(role="button" href="/assets/cv-johannhospice.pdf")
-							span Télécharger mon cv 
-							+icon("file-edit")
-
-				//
-					img.uk-blend-screen.uk-border-circle(class="uk-width-medium uk-width-large@m" src="/assets/objective.gif" uk-gif)
-
+//intro
+!= partial("/_partials/_intro", {intro: public._data.intro})
 
 //Education
-section.uk-section.uk-section-large.uk-section-muted(id=education.name)
-	.uk-container
-		.uk-flex.uk-flex-center.uk-flex-middle(uk-grid)
-			.uk-text-center.uk-width-xxlarge.uk-margin-large-bottom
-				+header(education.title, education.subtitle, education.description)
-	.uk-container.uk-container
-		.uk-flex-center.uk-grid-small(class="uk-child-width-1-2@s uk-child-width-1-4@l" uk-grid uk-height-match="target: > a > .uk-card")
-			each diplome in education.diplomes
-				div
-					+card-education(diplome)
+!= partial("/_partials/_education", {education: public._data.education})
 
 //Professional
-section.uk-section.uk-section-large.uk-section-default(id=professional.name)
-	.uk-container
-		.uk-flex.uk-flex-middle.uk-flex-center(class="uk-child-width-1-2@m" uk-grid)
-			.uk-flex.uk-flex-center
-				.uk-text-center(class="uk-text-left@m")
-					+header(professional.title, professional.subtitle, professional.description)
-			.uk-flex.uk-flex-center(class="uk-child-width-1-2@s uk-child-width-1-1@m" uk-grid)
-				each experience in professional.experiences
-					+card-experience(experience)
+!= partial("/_partials/_professional", {professional: public._data.professional})
 
 //Skills
-section.uk-section.uk-section-large.uk-section-muted(id=skills.name)
-	.uk-container
-		.uk-flex.uk-flex-center(uk-grid)
-			.uk-width-xlarge.uk-text-center
-				+header(skills.title, skills.subtitle, skills.description)
-		.uk-margin-large-top
-			.uk-grid-large(class="uk-child-width-1-1@s" uk-grid)
-				div
-					div(uk-grid)
-						.uk-width-large
-							h3 Langage informatique
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident explicabo rem, dolore, quo quasi temporibus minus molestias molestiae nam repellat perspiciatis ut nobis tempora minima laboriosam odio sequi similique voluptas?
-						.uk-width-expand
-							.uk-background-primary.uk-height-medium
-								//								canvas#chart-language.uk-width-1-1.uk-height-1-1
-				div
-					div(uk-grid)
-						.uk-width-expand
-							.uk-background-primary.uk-height-medium
-						.uk-width-large
-							h3 Frameworks
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident explicabo rem, dolore, quo quasi temporibus minus molestias molestiae nam repellat perspiciatis ut nobis tempora minima laboriosam odio sequi similique voluptas?
-style.
-	.links line {
-	stroke: #999;
-	stroke-opacity: 0.6;
-	}
-
-	.nodes circle {
-	stroke: #fff;
-	stroke-width: 1.5px;
-	}
-
-	text {
-	font-family: sans-serif;
-	font-size: 10px;
-	}
-svg#d3skills.uk-width-1-1.uk-height-large(uk-svg)
-script(src="/assets/vendors/d3/d3.min.js")
-script(src="/assets/vendors/me/me.js")
+!= partial("/_partials/_skills", {skills: public._data.skills})
 
 //Contact
-section.uk-section.uk-section-large.uk-section-primary(id="contact")
-	.uk-container
-		div(class="uk-child-width-1-2@m" uk-grid)
-			div(class="uk-visible@m")
-				.uk-background-default.uk-height-1-1
-			div
-				+header("Contact", "Fugiat repellendus ut qui.", "skills.descriptionQuis aut maiores placeat est. In quod omnis dolor debitis incidunt repellendus explicabo. Harum quam qui. Recusandae aut qui. Minima a exercitationem debitis ut libero. Ad consequatur possimus incidunt aut qui nihil qui inventore temporibus.")
-				.uk-margin-top
-					.uk-grid-small(class="uk-child-width-1-2@s" uk-grid)
-						div
-							a.uk-button.uk-button-text.uk-text-lowercase(href="mailto:johannhospice.dev@gmail.com")
-								span.uk-margin-small-right(uk-icon="icon: mail")
-								| johannhospice.dev@gmail.com
-				.uk-margin-medium-top
-					.uk-child-width-auto(uk-grid)
-						div
-							a.uk-icon-button(uk-icon="icon:github;ratio:1.3" href="https://github.com/johannhospice" target="_blank")
-						div
-							a.uk-icon-button(uk-icon="icon:linkedin;ratio:1.3" href="https://www.linkedin.com/in/johannhospice" target="_blank")
+!= partial("/_partials/_contact", {contact: public._data.contact})
+
+
 //
-	script(src='/assets/vendors/chart/chart.min.js')
-	script(src='/assets/vendors/me/me.js')
+	style.
+		.links line {
+		stroke: #999;
+		stroke-opacity: 0.6;
+		}
+
+		.nodes circle {
+		stroke: #fff;
+		stroke-width: 1.5px;
+		}
+
+		text {
+		font-family: sans-serif;
+		font-size: 10px;
+		}
+	svg#d3skills.uk-width-1-1.uk-height-large(uk-svg)
+	script(src="/assets/vendors/d3/d3.min.js")
+	script(src="/assets/vendors/me/me.js")

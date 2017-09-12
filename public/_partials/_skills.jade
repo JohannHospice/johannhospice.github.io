@@ -1,0 +1,25 @@
+include /_includes/_mixins
+
+//Skills
+section.uk-section.uk-section-large.uk-section-muted(id=skills.name)
+	.uk-container
+		.uk-flex.uk-flex-center(uk-grid)
+			.uk-width-xlarge.uk-text-center
+				+header(skills.title, skills.subtitle, skills.description)
+		.uk-margin-large-top
+			.uk-grid-large(class="uk-child-width-1-1@s" uk-grid)
+				div
+					div(uk-grid)
+						.uk-width-large
+							h3 Langage informatique
+							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident explicabo rem, dolore, quo quasi temporibus minus molestias molestiae nam repellat perspiciatis ut nobis tempora minima laboriosam odio sequi similique voluptas?
+						.uk-width-expand
+							.uk-background-primary.uk-height-medium
+								//								canvas#chart-language.uk-width-1-1.uk-height-1-1
+				div
+					div(uk-grid)
+						.uk-width-expand
+							.uk-background-primary.uk-height-medium
+						.uk-width-large
+							h3 Frameworks
+							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident explicabo rem, dolore, quo quasi temporibus minus molestias molestiae nam repellat perspiciatis ut nobis tempora minima laboriosam odio sequi similique voluptas?
