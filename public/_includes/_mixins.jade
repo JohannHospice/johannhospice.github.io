@@ -114,7 +114,7 @@ mixin card-education(diplome)
 						span(uk-icon="icon: link")
 
 mixin card-experience(experience)
-	+link-reset("/about/"+experience.name)
+	+link-reset(experience.link)
 		+card().uk-card-body.uk-card-secondary
 			div
 				+card-content-main(experience.title, experience.mention, experience.description, experience.label)

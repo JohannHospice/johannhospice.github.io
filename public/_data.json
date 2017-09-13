@@ -119,7 +119,8 @@
             "time": {
                 "value": 12,
                 "mesure": "semaines"
-            }
+            }, 
+            "link": "/professional/developpeur_fullstack-11042016/"
         }]
     },
     "skills": {
