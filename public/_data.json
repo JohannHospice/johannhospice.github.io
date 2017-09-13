@@ -59,7 +59,8 @@
             "link": {
                 "title": "lyc-ader-athis.ac-versailles.fr",
                 "href": "http://www.lyc-ader-athis.ac-versailles.fr/SSI.php"
-            }
+            },
+            "courses": []
         }, {
             "name": "dut-informatique",
             "title": "DUT",
@@ -71,7 +72,8 @@
             "link": {
                 "title": "iut-orsay.u-psud.fr",
                 "href": "http://www.iut-orsay.u-psud.fr/fr/formations/dut/info_dut_fi.html"
-            }
+            },
+            "courses": []
         }, {
             "name": "licence-informatique",
             "title": "Licence",
@@ -83,7 +85,8 @@
             "link": {
                 "title": "informatique.univ-paris-diderot.fr",
                 "href": "http://www.informatique.univ-paris-diderot.fr/wiki/doku.php/enseignement/licence"
-            }
+            },
+            "courses": ["Programmation fonctionnelle", "Outil et logique", "Complément Programmation orientée objet", "algorithmique", "Mathématiques Discrètes", "Systèmes d'exploitation et language c", "Machine virtuelles", "Programmation web", "Langages de script", "Logique", "Programmation réseaux", "Projet Logiciel", "Anglais"]
         }, {
             "name": "master-informatique",
             "title": "Master",
@@ -100,7 +103,8 @@
                 "type": "primary",
                 "value": "en cours"
             },
-            "primary": true
+            "primary": true,
+            "courses": []
         }]
     },
     "professional": {
@@ -119,7 +123,7 @@
             "time": {
                 "value": 12,
                 "mesure": "semaines"
-            }, 
+            },
             "link": "/professional/developpeur_fullstack-11042016/"
         }]
     },
