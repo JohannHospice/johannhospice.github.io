@@ -42,7 +42,7 @@ mixin button(text, style, size, href, target)
 //-text
 mixin header(title, subtitle, description)
 	h1.uk-h6.uk-text-uppercase=title
-	h2.uk-h1.uk-margin-remove-top=subtitle
+	h2.uk-h1.uk-text-primary.uk-margin-remove-top=subtitle
 	p.uk-margin-small-top!=description
 
 //-grid
@@ -144,10 +144,15 @@ mixin card-work-expend(work)
 					-title+=tag + ", "
 				span(uk-icon="icon:info" uk-tooltip="pos:bottom-right" title=title)
 			div
-				.uk-flex-between(uk-grid)
-					.uk-width-auto
+				.uk-flex.uk-flex-between(class="uk-flex-column")
+					div
 						p.uk-margin-remove.uk-text-uppercase.uk-text-small.uk-text-meta=work.category
-						h3.uk-margin-remove.uk-text-uppercase=work.title
+						h3.uk-text-primary.uk-margin-remove.uk-text-uppercase=work.title
+					div
+						p.uk-text-uppercase.uk-text-small.uk-text-muted.uk-margin-remove-top.uk-margin-remove-bottom
+							time(datetime=work.dateBegin)=work.dateStartFormated
+							|  - 
+							time(datetime=work.dateEnd)=work.dateEndFormated
 
 				p.uk-margin-top.uk-margin-remove-bottom=work.description
 				
@@ -155,11 +160,6 @@ mixin card-work-expend(work)
 					.uk-text-small.uk-flex.uk-flex-wrap
 						each tag in work.tags
 							span.uk-background-muted.uk-text-uppercase.uk-margin-small-right=tag
-
-				p.uk-text-uppercase.uk-text-small.uk-text-.uk-margin-small-top.uk-margin-remove-bottom
-					time(datetime=work.dateBegin)=work.dateStartFormated
-					|  - 
-					time(datetime=work.dateEnd)=work.dateEndFormated
 
 			.uk-margin-top
 				.uk-flex.uk-flex-middle.uk-flex-between
