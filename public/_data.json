@@ -119,12 +119,15 @@
             "place": "Netdevices",
             "dateBegin": "11/04/2016",
             "dateEnd": "01/07/2016",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+            "description": "Contribution au développement de l’application mobile Parki.",
             "time": {
                 "value": 12,
                 "mesure": "semaines"
             },
-            "link": "/professional/developpeur_fullstack-11042016/"
+            "link": "/professional/developpeur_fullstack-11042016/",
+            "tags": [
+                "JavaScript", "Node.js", "Sails.js", "Socket.IO", "react-native"
+            ]
         }]
     },
     "skills": {
