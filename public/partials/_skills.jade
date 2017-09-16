@@ -1,0 +1,32 @@
+include /_includes/_mixins
+-var skills = public._data.skills
+-var data = public.partials._data
+
+//Skills
+section.uk-section.uk-section-large.uk-section-muted(id=skills.name)
+	.uk-container
+		.uk-section.uk-section-small.uk-padding-remove-top.uk-flex.uk-flex-center
+			.uk-width-xlarge.uk-text-center
+				+header(skills.title, skills.subtitle, skills.description)
+		.uk-section.uk-section-small
+			div(uk-grid)
+				.uk-width-1-1(class="uk-width-large@l")
+					h3 Langage informatique
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident explicabo rem, dolore, quo quasi temporibus minus molestias molestiae nam repellat perspiciatis ut nobis tempora minima laboriosam odio sequi similique voluptas?
+				.uk-width-1-1(class="uk-width-expand@l")
+					.uk-grid-small.uk-flex-center.uk-child-width-1-5(uk-grid)
+						each tag in data.languages
+							div
+								.uk-padding-small.uk-background-primary.uk-light.uk-text-uppercase.uk-text-center
+									span=tag.id
+		.uk-section.uk-section-small.uk-padding-remove-bottom
+			.uk-flex(uk-grid)
+				.uk-width-1-1(class="uk-width-large@l uk-flex-first uk-flex-last@l")
+					h3 Frameworks
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident explicabo rem, dolore, quo quasi temporibus minus molestias molestiae nam repellat perspiciatis ut nobis tempora minima laboriosam odio sequi similique voluptas?
+				.uk-width-1-1(class="uk-width-expand@l")
+					.uk-grid-small.uk-flex-center.uk-child-width-1-4(uk-grid)
+						each tag in data.frameworks
+							div
+								.uk-padding-small.uk-background-primary.uk-light.uk-text-uppercase.uk-text-center
+									span=tag.id

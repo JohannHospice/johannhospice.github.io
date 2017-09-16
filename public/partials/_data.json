@@ -1,0 +1,141 @@
+{
+    "languages":[{
+        "id": "java",
+        "group": "language",
+        "size": 3
+    },{
+        "id": "kotlin",
+        "group": "language",
+        "size": 3
+    }, {
+        "id": "javascript",
+        "group": "language",
+        "size": 3
+    }, {
+        "id": "html",
+        "group": "language",
+        "size": 3
+    }, {
+        "id": "css",
+        "group": "language",
+        "size": 3
+    }, {
+        "id": "php",
+        "group": "language",
+        "size": 2
+    }, {
+        "id": "python",
+        "group": "language",
+        "size": 2
+    }, {
+        "id": "sql",
+        "group": "language",
+        "size": 2
+    }, {
+        "id": "c",
+        "group": "language",
+        "size": 2
+    }, {
+        "id": "c++",
+        "group": "language",
+        "size": 1
+    }, {
+        "id": "ocaml",
+        "group": "language",
+        "size": 2
+    }, {
+        "id": "objective-c",
+        "group": "language",
+        "size": 1
+    }, {
+        "id": "visual basic",
+        "group": "language",
+        "size": 2
+    }, {
+        "id": "shell",
+        "group": "language",
+        "size": 3
+    }, {
+        "id": "assembler",
+        "group": "language",
+        "size": 2
+    }],
+    "frameworks": [
+        {
+            "id": "react-native",
+            "group": "framework",
+            "size": 2
+        }, {
+            "id": "node.js",
+            "group": "framework",
+            "size": 3
+        }, {
+            "id": "express.js",
+            "group": "framework",
+            "size": 3
+        }, {
+            "id": "jquery",
+            "group": "framework",
+            "size": 3
+        }, {
+            "id": "swing",
+            "group": "framework",
+            "size": 3
+        }, {
+            "id": "bootstrap",
+            "group": "framework",
+            "size": 3
+        }, {
+            "id": "uikit",
+            "group": "framework",
+            "size": 3
+        }, {
+            "id": "symfony",
+            "group": "framework",
+            "size": 2
+        }, {
+            "id": "sails.js",
+            "group": "framework",
+            "size": 2
+        }, {
+            "id": "libgdx",
+            "group": "framework",
+            "size": 1
+        }, {
+            "id": "numpy",
+            "group": "framework",
+            "size": 2
+        }, {
+            "id": "sdl",
+            "group": "framework",
+            "size": 1
+        }
+    ],
+    "system":[
+        {
+            "id": "windows",
+            "group": "system",
+            "size": 3
+        }, {
+            "id": "desktop",
+            "group": "system",
+            "size": 3
+        }, {
+            "id": "linux",
+            "group": "system",
+            "size": 2
+        }, {
+            "id": "ios",
+            "group": "system",
+            "size": 2
+        }, {
+            "id": "android",
+            "group": "system",
+            "size": 3
+        },{
+            "id": "mobile",
+            "group": "system",
+            "size": 2
+        }
+    ]
+}
