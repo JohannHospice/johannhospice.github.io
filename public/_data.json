@@ -1,11 +1,16 @@
 {
     "home": {
         "title": "Johann Hospice",
-        "subtitle": "Etudiant en science informatique à l'université Paris Diderot",
+        "subtitle": "Étudiant en Master Informatique à l'Université Paris Diderot",
         "buttons": [{
             "type": "danger",
             "href": "#contact",
+            "scroll": true,
             "text": "Besoin d'un développeur"
+        },{
+            "type": "default",
+            "href": "/works",
+            "text": "voir mes réalisations"
         }]
     },
     "contact": {
@@ -81,7 +86,7 @@
             "place": "Université Paris Diderot",
             "dateBegin": "2016",
             "dateEnd": "2017",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi facilis harum laudantium, necessitatibus pariatur perspiciatis sequi sint soluta suscipit voluptatibus.",
+            "description": "L'objectif des enseignements de la mention Informatique d la Licence est de dégager les concets fondamentaux mis en jeu en partidulier dans le développement de logiciels, permettant ainsi d'appréhender les principales techniques, d'en comprendre les évolutions et de participer à celles-ci. Les aspects tant pratiques que fondamentaux y sont couverts.",
             "link": {
                 "title": "informatique.univ-paris-diderot.fr",
                 "href": "http://www.informatique.univ-paris-diderot.fr/wiki/doku.php/enseignement/licence"
@@ -114,12 +119,12 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas. Commodi cumque explicabo harum illo laborum nobis optio quidem tempora veniam voluptate?",
         "experiences": [{
             "name": "developpeur_fullstack-11042016",
-            "title": "Développeur fullstack",
+            "title": "Développeur Full Stack",
             "mention": "stage",
             "place": "Netdevices",
             "dateBegin": "11/04/2016",
             "dateEnd": "01/07/2016",
-            "description": "Contribution au développement de l’application mobile Parki.",
+            "description": "Développeur Full Stack d'application mobile dans la startup NetDevices, société de conseils et réalisations digitales. J'ai contribué à la conception et au développement de l'application mobile(Andorid et IOS) Parki. Travaillant en front-end et back-end principalement en JavaScript sur React-Native et Sails.io.",
             "time": {
                 "value": 12,
                 "mesure": "semaines"
