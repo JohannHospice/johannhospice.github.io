@@ -117,6 +117,7 @@
                 "Javascript",
                 "CSS",
                 "Preprocessor",
+                "Mocha",
                 "Node.js"
             ]
         }, {
@@ -138,7 +139,12 @@
             }],
             "tags": [
                 "JavaScript",
+                "Node.js",
                 "React-Native",
+                "Sails.js",
+                "Socket.io",
+                "Client",
+                "Serveur",
                 "IOS",
                 "Android"
             ]
