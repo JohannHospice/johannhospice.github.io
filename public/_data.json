@@ -16,8 +16,8 @@
     "contact": {
         "name": "contact",
         "title": "Contact",
-        "subtitle": "Id sit quod numquam aut ab eaque amet.",
-        "description": "Molestias porro et autem cum nesciunt omnis qui voluptatum sed. Autem in nihil. Molestiae quis assumenda cum totam. Dolorem ab corporis corrupti quas eveniet ipsa. Necessitatibus cum non nihil consectetur eos cum.",
+        "subtitle": "Mon profil vous intérresse?",
+        "description": "Je suis à la recherche d'un stage pour mon Master 1 informatique, je serai potentiellement intéressé par des offres de stages dans les domaines suivant.",
         "tags": ["Science des données", "intelligence artificielle", "application mobile", "web", "front-end", "back-end", "fullstack", "analyste", "développeur/programmeur", "genie logiciel"],
         "links": [{
             "name": "github",
@@ -134,11 +134,5 @@
                 "JavaScript", "Node.js", "Sails.js", "Socket.IO", "react-native"
             ]
         }]
-    },
-    "skills": {
-        "name": "skills",
-        "title": "competences",
-        "subtitle": "Id consectetur ut magna commodo Lorem enim aute eu.",
-        "description": "Quis ex magna magna enim. Tempor cupidatat enim non qui cillum quis commodo. Reprehenderit ea ipsum cupidatat do in cillum eu irure adipisicing fugiat id. Occaecat culpa laboris occaecat occaecat. Cupidatat magna elit laboris culpa deserunt voluptate aliquip. Est eiusmod in incididunt consectetur labore labore id magna Lorem minim deserunt pariatur. Laboris dolor dolor adipisicing nostrud aliqua mollit mollit."
     }
 }
