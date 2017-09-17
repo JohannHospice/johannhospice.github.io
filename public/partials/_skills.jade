@@ -1,32 +1,31 @@
 include /_includes/_mixins
--var skills = public._data.skills
--var data = public.partials._data
+-var skills = public.partials._data.skills
 
-//Skills
-section.uk-section.uk-section-large.uk-section-muted(id=skills.name)
-	.uk-container
-		.uk-section.uk-section-small.uk-padding-remove-top.uk-flex.uk-flex-center
+mixin icon(tag)
+	a.uk-link-reset
+		.jh-icon-container.uk-text-center.uk-child-width-1-1.uk-grid-small(uk-grid)
+			div
+				img.jh-icon(src="/assets/vendors/devicon/icons/"+tag.icon+".svg" uk-svg)
+			div
+				span.uk-text-uppercase=tag.id
+
+section.uk-section.uk-section-large.uk-section-muted
+	.uk-container(id=skills.name)
+		.uk-flex.uk-flex-center
 			.uk-width-xlarge.uk-text-center
 				+header(skills.title, skills.subtitle, skills.description)
-		.uk-section.uk-section-small
-			div(uk-grid)
-				.uk-width-1-1(class="uk-width-large@l")
-					h3 Langage informatique
-					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident explicabo rem, dolore, quo quasi temporibus minus molestias molestiae nam repellat perspiciatis ut nobis tempora minima laboriosam odio sequi similique voluptas?
-				.uk-width-1-1(class="uk-width-expand@l")
-					.uk-grid-small.uk-flex-center.uk-child-width-1-5(uk-grid)
-						each tag in data.languages
+
+		ul(uk-tab).uk-flex-center
+			each value in skills.data
+				li 
+					a=value.title 
+						span(class="uk-hidden@m") ...
+						span(class="uk-visible@m")=value.title_extention
+
+		ul#skills-switcher.uk-switcher.uk-overflow-hidden
+			each value in skills.data
+				li
+					.uk-child-width-1-3.uk-flex-center(class="uk-child-width-1-4@s uk-child-width-1-6@m" uk-grid)
+						each tag in value.data
 							div
-								.uk-padding-small.uk-background-primary.uk-light.uk-text-uppercase.uk-text-center
-									span=tag.id
-		.uk-section.uk-section-small.uk-padding-remove-bottom
-			.uk-flex(uk-grid)
-				.uk-width-1-1(class="uk-width-large@l uk-flex-first uk-flex-last@l")
-					h3 Frameworks
-					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident explicabo rem, dolore, quo quasi temporibus minus molestias molestiae nam repellat perspiciatis ut nobis tempora minima laboriosam odio sequi similique voluptas?
-				.uk-width-1-1(class="uk-width-expand@l")
-					.uk-grid-small.uk-flex-center.uk-child-width-1-4(uk-grid)
-						each tag in data.frameworks
-							div
-								.uk-padding-small.uk-background-primary.uk-light.uk-text-uppercase.uk-text-center
-									span=tag.id
+								+icon(tag)

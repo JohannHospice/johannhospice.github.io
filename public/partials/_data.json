@@ -1,141 +1,136 @@
 {
-    "languages":[{
-        "id": "java",
-        "group": "language",
-        "size": 3
-    },{
-        "id": "kotlin",
-        "group": "language",
-        "size": 3
-    }, {
-        "id": "javascript",
-        "group": "language",
-        "size": 3
-    }, {
-        "id": "html",
-        "group": "language",
-        "size": 3
-    }, {
-        "id": "css",
-        "group": "language",
-        "size": 3
-    }, {
-        "id": "php",
-        "group": "language",
-        "size": 2
-    }, {
-        "id": "python",
-        "group": "language",
-        "size": 2
-    }, {
-        "id": "sql",
-        "group": "language",
-        "size": 2
-    }, {
-        "id": "c",
-        "group": "language",
-        "size": 2
-    }, {
-        "id": "c++",
-        "group": "language",
-        "size": 1
-    }, {
-        "id": "ocaml",
-        "group": "language",
-        "size": 2
-    }, {
-        "id": "objective-c",
-        "group": "language",
-        "size": 1
-    }, {
-        "id": "visual basic",
-        "group": "language",
-        "size": 2
-    }, {
-        "id": "shell",
-        "group": "language",
-        "size": 3
-    }, {
-        "id": "assembler",
-        "group": "language",
-        "size": 2
-    }],
-    "frameworks": [
-        {
-            "id": "react-native",
-            "group": "framework",
-            "size": 2
+    "skills": {
+        "name": "skills",
+        "title": "compétences",
+        "subtitle": "Id consectetur ut magna commodo Lorem enim aute eu.",
+        "description": "Quis ex magna magna enim. Tempor cupidatat enim non qui cillum quis commodo. Reprehenderit ea ipsum cupidatat do in cillum eu irure adipisicing fugiat id. Occaecat culpa laboris occaecat occaecat. Cupidatat magna elit laboris culpa deserunt voluptate aliquip. Est eiusmod in incididunt consectetur labore labore id magna Lorem minim deserunt pariatur.",
+        "data": [{
+            "name": "languages",
+            "title": "Langages  ",
+            "title_extention": "informatiques",
+            "data": [{
+                "id": "java",
+                "icon": "java/java-plain",
+                "size": 3
+            }, {
+                "id": "kotlin",
+                "icon": "kotlin/kotlin-plain",
+                "size": 3
+            }, {
+                "id": "c",
+                "icon": "c/c-plain",
+                "size": 2
+            }, {
+                "id": "c++",
+                "icon": "cplusplus/cplusplus-plain",
+                "size": 1
+            }, {
+                "id": "ocaml",
+                "icon": "ocaml/ocaml-original",
+                "size": 2
+            }, {
+                "id": "python",
+                "icon": "python/python-plain",
+                "size": 2
+            }, {
+                "id": "visual basic",
+                "icon": "visualstudio/visualstudio-plain",
+                "size": 2
+            }, {
+                "id": "objective-c",
+                "icon": "apple/apple-original",
+                "size": 1
+            }, {
+                "id": "php",
+                "icon": "php/php-plain",
+                "size": 2
+            }, {
+                "id": "javascript",
+                "icon": "javascript/javascript-plain",
+                "size": 3
+            }, {
+                "id": "html",
+                "icon": "html5/html5-plain",
+                "size": 3
+            }, {
+                "id": "css",
+                "icon": "css3/css3-plain",
+                "size": 3
+            }, {
+                "id": "sql",
+                "icon": "database/database-plain",
+                "size": 2
+            }, {
+                "id": "assembleur",
+                "icon": "assembly/assembly-plain",
+                "size": 2
+            }]
         }, {
-            "id": "node.js",
-            "group": "framework",
-            "size": 3
+            "name": "frameworks",
+            "title": "Environnement ",
+            "title_extention": "de développement",
+            "data": [{
+                "id": "symfony",
+                "icon": "symfony/symfony-original",
+                "size": 2
+            }, {
+                "id": "node.js",
+                "icon": "nodejs/nodejs-original",
+                "size": 3
+            }, {
+                "id": "sails.js",
+                "icon": "sailsjs/sailsjs-plain",
+                "size": 2
+            }, {
+                "id": "express.js",
+                "icon": "express/express-original",
+                "size": 3
+            }, {
+                "id": "react-native",
+                "icon": "react/react-original",
+                "size": 2
+            }, {
+                "id": "jquery",
+                "icon": "jquery/jquery-plain",
+                "size": 3
+            }, {
+                "id": "bootstrap",
+                "icon": "bootstrap/bootstrap-plain",
+                "size": 3
+            }, {
+                "id": "uikit",
+                "icon": "uikit/uikit-plain",
+                "size": 3
+            }, {
+                "id": "libgdx",
+                "icon": "libgdx/libgdx-original",
+                "size": 1
+            }, {
+                "id": "sdl",
+                "icon": "sdl/sdl-plain",
+                "size": 1
+            }]
         }, {
-            "id": "express.js",
-            "group": "framework",
-            "size": 3
-        }, {
-            "id": "jquery",
-            "group": "framework",
-            "size": 3
-        }, {
-            "id": "swing",
-            "group": "framework",
-            "size": 3
-        }, {
-            "id": "bootstrap",
-            "group": "framework",
-            "size": 3
-        }, {
-            "id": "uikit",
-            "group": "framework",
-            "size": 3
-        }, {
-            "id": "symfony",
-            "group": "framework",
-            "size": 2
-        }, {
-            "id": "sails.js",
-            "group": "framework",
-            "size": 2
-        }, {
-            "id": "libgdx",
-            "group": "framework",
-            "size": 1
-        }, {
-            "id": "numpy",
-            "group": "framework",
-            "size": 2
-        }, {
-            "id": "sdl",
-            "group": "framework",
-            "size": 1
-        }
-    ],
-    "system":[
-        {
-            "id": "windows",
-            "group": "system",
-            "size": 3
-        }, {
-            "id": "desktop",
-            "group": "system",
-            "size": 3
-        }, {
-            "id": "linux",
-            "group": "system",
-            "size": 2
-        }, {
-            "id": "ios",
-            "group": "system",
-            "size": 2
-        }, {
-            "id": "android",
-            "group": "system",
-            "size": 3
-        },{
-            "id": "mobile",
-            "group": "system",
-            "size": 2
-        }
-    ]
+            "name": "system",
+            "title": "Systèmes ",
+            "title_extention": "d'exploitations",
+            "data": [{
+                "id": "windows",
+                "icon": "windows8/windows8-original",
+                "size": 3
+            }, {
+                "id": "linux",
+                "icon": "linux/linux-plain",
+                "size": 2
+            }, {
+                "id": "mac / ios",
+                "icon": "apple/apple-original",
+                "size": 2
+            }, {
+                "id": "android",
+                "icon": "android/android-plain",
+                "size": 3
+            }]
+        }]
+    }
 }
