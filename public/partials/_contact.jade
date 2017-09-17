@@ -1,8 +1,8 @@
 include /_includes/_mixins
 -var contact = public._data.contact
 
-section.uk-section.uk-section-large.uk-section-primary(id="contact")
-	.uk-container
+section.uk-section.uk-section-large.uk-section-primary
+	.uk-container(id="contact")
 		div(class="uk-child-width-1-2@m" uk-grid)
 			div(class="uk-visible@m")
 				.uk-background-default.uk-height-1-1
@@ -12,8 +12,8 @@ section.uk-section.uk-section-large.uk-section-primary(id="contact")
 					each label in contact.tags
 						div
 							span.uk-label=label
-				.uk-margin-top
-					.uk-grid-small(class="uk-child-width-1-2@s" uk-grid)
+				.uk-margin-medium-top
+					.uk-grid-small(class="uk-child-width-auto@s" uk-grid)
 						each link in contact.contact_links
 							div
 								a.uk-button.uk-button-text.uk-text-lowercase(href=link.href)

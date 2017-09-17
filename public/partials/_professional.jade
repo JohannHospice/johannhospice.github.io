@@ -1,9 +1,9 @@
 include /_includes/_mixins
 -var professional = public._data.professional
 
-section.uk-section.uk-section-large.uk-section-default(id=professional.name)
-	.uk-container
-		.uk-flex.uk-flex-middle.uk-flex-center(class="uk-child-width-1-2@m" uk-grid)
+section.uk-section.uk-section-large.uk-section-default
+	.uk-container(id=professional.name)
+		.uk-flex-center(class="uk-child-width-1-2@m" uk-grid)
 			.uk-flex.uk-flex-center
 				.uk-text-center(class="uk-text-left@m")
 					+header(professional.title, professional.subtitle, professional.description)

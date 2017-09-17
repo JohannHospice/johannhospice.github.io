@@ -6,23 +6,23 @@ header(uk-sticky="sel-target: .uk-navbar-container")
         .uk-container.uk-container-large(uk-navbar)
             div.uk-navbar-left
                 button.uk-navbar-toggle(class="uk-hidden@s" uk-toggle="target:#offcanvas" uk-navbar-toggle-icon="")
-                a.uk-navbar-item.uk-logo(class="uk-visible@s" href="#heading" uk-scroll) 
+                a.uk-navbar-item.uk-logo(class="uk-visible@s" href="/") 
                     img.jh-logo(src="/assets/images/logo/logo.svg" alt="johann hospice" uk-svg)
 
             div.uk-navbar-center
-                a.uk-navbar-item.uk-logo(class="uk-hidden@s" href="#heading" uk-scroll) 
+                a.uk-navbar-item.uk-logo(class="uk-hidden@s" href="/") 
                     img.jh-logo(src="/assets/images/logo/logo.svg" alt="johann hospice" uk-svg)
                 ul.uk-dotnav(class="uk-visible@s" uk-scrollspy-nav="closest: li; scroll: true; offset: 400")
                     li
-                        a(href="#intro" uk-scroll="offset:80" uk-tooltip title=public._data.intro.title pos="bottom")
+                        a(href="#intro" uk-scroll="offset:150" uk-tooltip title=public._data.intro.title pos="bottom")
                     li
-                        a(href="#education" uk-scroll="offset:80" uk-tooltip title="Formation" pos="bottom")
+                        a(href="#education" uk-scroll="offset:150" uk-tooltip title="Formation" pos="bottom")
                     li
-                        a(href="#professional" uk-scroll="offset:80" uk-tooltip title="Experience professionnelle" pos="bottom")
+                        a(href="#professional" uk-scroll="offset:150" uk-tooltip title="Experience professionnelle" pos="bottom")
                     li
-                        a(href="#skills" uk-scroll="offset:80" uk-tooltip title="Compétence" pos="bottom")
+                        a(href="#skills" uk-scroll="offset:150" uk-tooltip title="Compétence" pos="bottom")
                     li
-                        a(href="#contact" uk-scroll="offset:80" uk-tooltip title="Contact" pos="bottom")
+                        a(href="#contact" uk-scroll="offset:150" uk-tooltip title="Contact" pos="bottom")
             div.uk-navbar-right
                 ul.uk-navbar-nav(class="uk-visible@s")
                     - var i = 0
