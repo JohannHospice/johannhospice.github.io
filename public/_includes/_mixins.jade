@@ -135,15 +135,10 @@ mixin card-experience(experience)
 
 // work							
 mixin card-work-expend(work)
-	.uk-card.uk-card-default.uk-card-small.uk-height-1-1
-		.uk-card-body.uk-height-1-1.uk-flex.uk-flex-column.uk-flex-between
+	.uk-card.uk-card-default.uk-card-small.uk-height-1-1(id=work.name)
+		.uk-height-1-1.uk-flex.uk-flex-column.uk-flex-between
 
-			//.uk-card-badge
-				-var title = ""
-				each tag in work.tags
-					-title+=tag + ", "
-				span(uk-icon="icon:info" uk-tooltip="pos:bottom-right" title=title)
-			div
+			.uk-card-body
 				.uk-flex.uk-flex-between(class="uk-flex-column")
 					div
 						p.uk-margin-remove.uk-text-uppercase.uk-text-small.uk-text-meta=work.category
@@ -153,23 +148,24 @@ mixin card-work-expend(work)
 							time(datetime=work.dateBegin)=work.dateStartFormated
 							|  - 
 							time(datetime=work.dateEnd)=work.dateEndFormated
-
 				p.uk-margin-top.uk-margin-remove-bottom=work.description
-				
-				.uk-margin-small-top
-					.uk-text-small.uk-flex.uk-flex-wrap
-						each tag in work.tags
-							span.uk-background-muted.uk-text-uppercase.uk-margin-small-right=tag
-
-			.uk-margin-top
-				.uk-flex.uk-flex-middle.uk-flex-between
-					.uk-grid-small(class="uk-child-width-auto" uk-grid)
-						each link in work.links
-							div
-								if(link.disabled)
-									button.uk-button.uk-button-default.uk-button-small(disabled)=link.label
-								else
-									a.uk-button.uk-button-default.uk-button-small(href=link.href, target="_blank")=link.label
+			.uk-background-muted
+				hr.uk-divider-small.uk-margin-remove
+				.uk-card-body
+					p.uk-text-lowercase.uk-margin.uk-text-truncate
+						span.uk-margin-small-right(uk-icon="icon:tag")
+						each tag, i in work.tags
+							=tag
+							if i < work.tags.length -1
+								| , 
+					.uk-flex.uk-flex-between
+						.uk-grid-small(class="uk-child-width-auto" uk-grid)
+							each link in work.links
+								div
+									if(link.disabled)
+										button.uk-button.uk-button-default.uk-button-small(disabled)=link.label
+									else
+										a.uk-button.uk-button-default.uk-button-small(href=link.href, target="_blank")=link.label
 
 mixin card-work-picture-expend(work, imgHeight)
 	//
