@@ -17,3 +17,16 @@
 .uk-section-secondary:not(.uk-preserve-color) .jh-logo:hover {
     fill: rgba(255, 255, 255, .7)
 }
+
+.jh-icon {
+    height: 64px;
+    width: 64px;
+}
+.jh-icon-container{
+    transition: .2s ease-in-out;
+    transition-property: color, fill;
+}
+.jh-icon-container:hover {
+    fill: #1e87f0;
+    color: #1e87f0;
+}
