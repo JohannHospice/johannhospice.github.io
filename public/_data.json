@@ -7,7 +7,7 @@
             "href": "#contact",
             "scroll": true,
             "text": "Besoin d'un développeur"
-        },{
+        }, {
             "type": "default",
             "href": "/works",
             "text": "voir mes réalisations"
@@ -48,15 +48,15 @@
         "subtitle": "Sunt in ea non cupidatat occaecat ullamco nostrud.",
         "description": "Reprehenderit proident reprehenderit veniam officia fugiat officia incididunt elit. Nulla ea excepteur sit sit cupidatat minim officia id id occaecat magna est. Cupidatat anim ullamco minim eu anim. Sint duis labore irure culpa nulla duis quis et excepteur id quis fugiat aliquip."
     },
-    "education": {
-        "name": "education",
-        "title": "Formation",
+    "cursus": {
+        "name": "cursus",
+        "title": "Cursus",
         "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas. Commodi cumque explicabo harum illo laborum nobis optio quidem tempora veniam voluptate? Culpa eos ipsum laborum nisi optio quo.<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
-        "diplomes": [{
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas. Commodi cumque explicabo harum illo laborum nobis optio quidem tempora veniam voluptate? Culpa eos ipsum laborum nisi optio quo.",
+        "educations": [{
             "name": "bac-ssi",
             "title": "Baccalauréat Scientifique",
-            "mention": "Science de l'ingénieur",
+            "subtitle": "Science de l'ingénieur",
             "place": "Lycée Clement Ader",
             "dateBegin": "2011",
             "dateEnd": "2014",
@@ -69,7 +69,7 @@
         }, {
             "name": "dut-informatique",
             "title": "DUT",
-            "mention": "Informatique",
+            "subtitle": "Informatique",
             "place": "Université Paris Saclay",
             "dateBegin": "2014",
             "dateEnd": "2016",
@@ -82,7 +82,7 @@
         }, {
             "name": "licence-informatique",
             "title": "Licence",
-            "mention": "Informatique",
+            "subtitle": "Informatique",
             "place": "Université Paris Diderot",
             "dateBegin": "2016",
             "dateEnd": "2017",
@@ -95,7 +95,7 @@
         }, {
             "name": "master-informatique",
             "title": "Master",
-            "mention": "Informatique",
+            "subtitle": "Informatique",
             "place": "Université Paris Diderot",
             "dateBegin": "2017",
             "dateEnd": "2019",
@@ -110,17 +110,11 @@
             },
             "primary": true,
             "courses": []
-        }]
-    },
-    "professional": {
-        "name": "professional",
-        "title": "Expérience professionnel",
-        "subtitle": "Lorem ipsum dolor sit amet",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nihil, quas. Commodi cumque explicabo harum illo laborum nobis optio quidem tempora veniam voluptate?",
+        }],
         "experiences": [{
             "name": "developpeur_fullstack-11042016",
             "title": "Développeur Full Stack",
-            "mention": "stage",
+            "subtitle": "stage",
             "place": "Netdevices",
             "dateBegin": "11/04/2016",
             "dateEnd": "01/07/2016",

@@ -1,0 +1,27 @@
+include /_includes/_mixins
+-var cursus = public._data.cursus
+include /_includes/_cards/_card_experience
+include /_includes/_cards/_card_education
+
+section.uk-section.uk-section-large.uk-section-muted
+	.uk-container(id=cursus.name)
+		
+		.uk-flex.uk-flex-center.uk-flex-middle(uk-grid)
+			.uk-text-center.uk-width-xxlarge
+				+header(cursus.title, cursus.subtitle, cursus.description)
+
+		.uk-flex.uk-flex-center.uk-margin-bottom.uk-margin-large-top
+			h2.uk-text-center Formation
+
+		.uk-flex-center.uk-grid-small(class="uk-child-width-1-2@s uk-child-width-1-4@l" uk-grid uk-height-match="target: > a > .uk-card")
+			each education in cursus.educations
+				div
+					+card-education(education)
+	
+		.uk-flex.uk-flex-center.uk-margin-bottom.uk-margin-large-top
+			h2.uk-text-center Expérience professionnelle
+
+		.uk-flex-center.uk-grid-small(class="uk-child-width-1-2@s uk-child-width-1-3@l" uk-grid uk-height-match="target: > a > .uk-card")
+			each experience in cursus.experiences
+				div
+					+card-experience(experience)
