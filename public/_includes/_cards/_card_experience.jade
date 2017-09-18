@@ -1,0 +1,24 @@
+include /_includes/_cards/_card
+include /_includes/_mixins
+
+mixin card-experience(experience)
+	a.uk-link-reset(href=experience.link, target="_bank")
+		.uk-card.uk-card-default.uk-card-hover.uk-card-small.uk-card-body.uk-card-secondary.uk-height-1-1
+			div
+				h3.uk-margin-remove=experience.title
+				h4.uk-margin-remove.uk-text-uppercase.uk-text-meta=experience.subtitle
+				p.uk-margin-bottom.uk-margin-small-top!=experience.description
+			div
+				p.uk-text-uppercase.uk-text-small.uk-margin-small
+					span=experience.place
+					br
+					span.uk-text-meta
+						time(datetime)=experience.dateBegin
+						|  - 
+						time(datetime)=experience.dateEnd
+						span
+							|  (
+							=experience.time.value
+							|  
+							=experience.time.mesure
+							| )

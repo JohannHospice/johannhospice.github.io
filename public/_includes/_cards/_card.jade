@@ -1,0 +1,24 @@
+
+mixin card(type)
+	.uk-card.uk-card-hover(class=(type?"uk-card-" + type:"uk-card-default"))&attributes(attributes)=name
+		block
+
+mixin card-content-date(dateBegin, dateEnd)
+	span.uk-text-meta
+		time(datetime)=dateBegin
+		|  - 
+		time(datetime)=dateEnd
+
+mixin card-content-footer(sub, dateBegin, dateEnd)
+	p.uk-text-uppercase.uk-text-small.uk-margin-small
+		span=sub
+		br
+		+card-content-date(dateBegin, dateEnd)
+
+mixin card-content-main(title, subtitle, description, label)
+	if label
+		div.uk-card-badge.uk-label(class="uk-label-"+label.type)= label.value
+	h3.uk-margin-remove=title
+	if subtitle
+		h4.uk-margin-remove.uk-text-uppercase.uk-text-meta=subtitle
+	p.uk-margin-bottom.uk-margin-small-top!=description

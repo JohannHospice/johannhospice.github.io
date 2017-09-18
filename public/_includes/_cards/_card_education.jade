@@ -1,0 +1,22 @@
+include /_includes/_cards/_card
+include /_includes/_mixins
+
+mixin card-education(diplome)
+	a.uk-link-reset(href=diplome.link.href, target="_bank")
+		.uk-card.uk-card-default.uk-card-hover.uk-card-small.uk-card-body.uk-height-1-1
+			.uk-flex.uk-flex-column.uk-flex-between.uk-height-1-1
+				div
+					h3.uk-margin-remove=diplome.title
+					h4.uk-margin-remove.uk-text-uppercase.uk-text-meta=diplome.subtitle
+					p.uk-margin-bottom.uk-margin-small-top!=diplome.description
+				div
+					p.uk-text-uppercase.uk-text-small.uk-margin-small
+						span=diplome.place
+						br
+						p.uk-text-uppercase.uk-text-small.uk-margin-remove
+							span.uk-text-meta
+								time(datetime)=diplome.dateBegin
+								|  - 
+								time(datetime)=diplome.dateEnd
+					small.uk-text-bold.uk-text-uppercase.uk-text-primary=diplome.link.title
+						span(uk-icon="icon: link")

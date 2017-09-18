@@ -1,39 +1,20 @@
 include /_includes/_mixins
+include /_includes/_cards/_card_work
+
 -var data = public.works._data
 -var works= data.posts.sort((w1, w2) => {var a = new Date(w1.dateBegin), b = new Date(w2.dateBegin);return a > b ? -1 : (a < b ? 1 : 0)})
 
 include /_includes/_header
 
-//Heading
 section.uk-section.uk-section-large.uk-section-default
 	.uk-container.uk-flex.uk-flex-center
 		.uk-width-xxlarge.uk-text-center
 			h1.uk-heading-primary.uk-text-primary=data.title 
 			p.uk-text-lead.uk-text-muted=data.resume
 
-//Works
-section.uk-section.uk-section-large.uk-section-muted.uk-preserve-color
+section.uk-section.uk-section-medium.uk-section-muted.uk-preserve-color
 	.uk-container.uk-container-medium
 		.uk-grid-medium(class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid)
 			each work in works
 				div
-					+card-work-expend(work)
-	//
-		-var offset = 0
-		.uk-grid-medium(uk-grid class="uk-child-width-1-2@m")
-			div
-				.uk-grid-medium(uk-grid)
-					div
-						+card-work-picture-expend(works[offset++], "large")
-			div
-				+grid(4, 2)
-					+pic-or-not(works[offset++], "small")
-				.uk-grid-medium(uk-grid)
-			
-		.uk-grid-medium(uk-grid class="uk-child-width-1-3@m")
-			-var n=0
-			while n<3
-				div
-					+card-work-picture-expend(works[offset++], "medium")
-				-n++
-include /partials/_contact
+					+card-work(work)
