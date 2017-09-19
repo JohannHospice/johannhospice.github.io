@@ -67,8 +67,7 @@
             "courses": []
         }, {
             "name": "dut-informatique",
-            "title": "DUT",
-            "subtitle": "Informatique",
+            "title": "DUT Informatique",
             "place": "Université Paris Saclay",
             "dateBegin": "2014",
             "dateEnd": "2016",
@@ -80,8 +79,7 @@
             "courses": []
         }, {
             "name": "licence-informatique",
-            "title": "Licence",
-            "subtitle": "Informatique",
+            "title": "Licence Informatique",
             "place": "Université Paris Diderot",
             "dateBegin": "2016",
             "dateEnd": "2017",
@@ -93,8 +91,7 @@
             "courses": ["Programmation fonctionnelle", "Outil et logique", "Complément Programmation orientée objet", "algorithmique", "Mathématiques Discrètes", "Systèmes d'exploitation et language c", "Machine virtuelles", "Programmation web", "Langages de script", "Logique", "Programmation réseaux", "Projet Logiciel", "Anglais"]
         }, {
             "name": "master-informatique",
-            "title": "Master",
-            "subtitle": "Informatique",
+            "title": "Master Informatique",
             "place": "Université Paris Diderot",
             "dateBegin": "2017",
             "dateEnd": "2019",

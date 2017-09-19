@@ -2,21 +2,35 @@ include /_includes/_cards/_card
 include /_includes/_mixins
 
 mixin card-education(diplome)
-	a.uk-link-reset(href=diplome.link.href, target="_bank")
-		.uk-card.uk-card-default.uk-card-hover.uk-card-small.uk-card-body.uk-height-1-1
-			.uk-flex.uk-flex-column.uk-flex-between.uk-height-1-1
-				div
-					h3.uk-margin-remove=diplome.title
-					h4.uk-margin-remove.uk-text-uppercase.uk-text-meta=diplome.subtitle
-					p.uk-margin-bottom.uk-margin-small-top!=diplome.description
-				div
-					p.uk-text-uppercase.uk-text-small.uk-margin-small
-						span=diplome.place
-						br
+	a.uk-link-reset(uk-toggle="target:#modal-"+diplome.name)
+		.uk-card.uk-card-default.uk-card-hover.uk-card-small.uk-card-body
+			h2.uk-text-uppercase.uk-text-muted.uk-text-small.uk-margin-remove=diplome.place
+			h3.uk-margin-remove.uk-text-uppercase.uk-text-primary=diplome.title
+			p.uk-margin-small-top!=diplome.description
+
+
+	div(id="modal-"+diplome.name uk-modal)
+		.uk-modal-dialog.uk-margin-auto-vertical
+			button.uk-modal-close-default(type="button" uk-close)
+			.uk-modal-body
+				.uk-grid-small.uk-flex-between.uk-child-width-auto(uk-grid class="uk-child-width-1-1@s")
+					div
+						h2.uk-text-uppercase.uk-text-muted.uk-text-small.uk-margin-remove=diplome.place
+						h3.uk-card-title.uk-text-primary.uk-margin-remove.uk-text-uppercase=diplome.title
+					.uk-margin-remove-top
 						p.uk-text-uppercase.uk-text-small.uk-margin-remove
 							span.uk-text-meta
 								time(datetime)=diplome.dateBegin
 								|  - 
 								time(datetime)=diplome.dateEnd
+				p.uk-margin-top=diplome.description
+				p.uk-margin-small
+					span Unités d'enseignements:
+					.uk-column-1-2
+						ul.uk-list.uk-list-bullet.uk-text-capitalize
+							each course in diplome.courses
+								li=course
+				hr.uk-divider-small
+				a.uk-link-reset(href=diplome.link.href, target="_bank")
 					small.uk-text-bold.uk-text-uppercase.uk-text-primary=diplome.link.title
 						span(uk-icon="icon: link")

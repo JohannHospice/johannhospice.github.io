@@ -9,7 +9,20 @@ section.uk-section.uk-section-large.uk-section-default
 		.uk-flex.uk-flex-center.uk-flex-middle(uk-grid)
 			.uk-text-center.uk-width-xxlarge
 				+header(cursus.title, cursus.subtitle, cursus.description)
-
+		div.uk-margin-large-top
+			each education, i in cursus.educations
+				.uk-grid-small(class="uk-child-width-expand@s" uk-grid)
+					.uk-flex-last(class="uk-flex-first@s")
+						if i % 2 == 0
+							+card-education(education)
+					.uk-width-auto
+						span=education.dateBegin
+							|  - 
+							=education.dateEnd
+					div
+						if i % 2 == 1
+							+card-education(education)
+//
 		.uk-flex-center.uk-grid-small(class="uk-child-width-1-2@s uk-child-width-1-4@l" uk-grid uk-height-match="target: > a > .uk-card")
 			each education in cursus.educations
 				div
