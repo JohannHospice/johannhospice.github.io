@@ -1,21 +1,22 @@
 include /_includes/_mixins
 -var contact = public._data.contact
 
-footer
-    .uk-section.uk-section-large.uk-section-primary(id="contact")
-        .uk-container
-            .uk-flex.uk-flex-middle.uk-flex-column
-                .uk-width-xlarge.uk-text-center
-                    h3.uk-h1 Contact
-                    p.uk-margin Je suis à la recherche d'un stage durant l'été, n'hésitez pas à me contacter.
-                .uk-text-center.uk-grid-small.uk-margin-remove(class="uk-child-width-auto@s" uk-grid)
-                    each link,i in contact.contact_links
-                        div.uk-margin-remove
-                            a.uk-button.uk-button-text.uk-text-lowercase(href=link.href)
+footer.uk-section-secondary
+    .uk-section#contact
+        .uk-container(class="uk-flex-middle@m uk-text-center@m")
+            .uk-flex(class="uk-flex-center@m")
+                h3.uk-h2 Contact
+            .uk-flex(class="uk-flex-center@m")
+                p.uk-margin-medium-bottom(class="uk-width-large@s")  Aut qui voluptas labore commodi nihil deserunt. Quaerat inventore possimus tenetur veritatis.
+            .uk-flex(class="uk-flex-center@m")
+                .uk-grid-medium(uk-grid)
+                    each link, i in contact.contact_links
+                        div
+                            a.uk-button.uk-button-text(href=link.href)
                                 span.uk-margin-small-right(uk-icon="icon:"+link.icon)
-                                span=link.title
+                                span.uk-text-lowercase=link.title
 
-    //.uk-child-width-expand.uk-flex-middle.uk-grid-small(uk-grid)
+    .uk-child-width-expand.uk-flex-middle.uk-grid-small(uk-grid)
         div
             hr.uk-margin-remove
         .uk-width-auto
@@ -23,13 +24,13 @@ footer
                 img.jh-logo(src="/assets/images/logo/logo.svg" alt="johann hospice" uk-svg)
         div
             hr.uk-margin-remove
-    .uk-section.uk-section-.uk-section-secondary
+    .uk-section.uk-section-small
         .uk-container
             .uk-flex.uk-flex-between.uk-flex-middle
                 p.uk-text-small.uk-margin-remove
-                    | ©2016 
+                    | ©2017 
                     a.uk-link-muted(href="/") Johann Hospice
-                    |  Tous droits réservés
+                    |  - Tous droits réservés.
                 .uk-flex.uk-flex-bottom
                     .uk-child-width-auto.uk-grid-small(uk-grid)
                         each link in contact.links
