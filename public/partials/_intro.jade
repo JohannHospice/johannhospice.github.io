@@ -1,19 +1,15 @@
 include /_includes/_mixins
 -var intro = public._data.intro
 
-section.uk-section.uk-section-large.uk-section-default
-	.uk-container(id=intro.name)
-		div(uk-grid class="uk-child-width-1-2@m")
-			div
-				.uk-background-primary.uk-height-1-1
-			div
-				.uk-flex.uk-flex-center
-					.uk-width-xlarge.uk-text-center(class="uk-text-left@m")
-						+header(intro.title, intro.subtitle, intro.description)
-						a.uk-margin-top.uk-button.uk-button-primary(role="button" href="/assets/cv-johannhospice.pdf" target="_blank")
-							span Télécharger mon cv 
-							+icon("file-edit")
-
-				//
-					img.uk-blend-screen.uk-border-circle(class="uk-width-medium uk-width-large@m" src="/assets/objective.gif" uk-gif)
-					
+section.uk-section.uk-section-large.uk-section-muted
+	.uk-container.uk-container-small(id=intro.name)
+		h1.uk-h6.uk-text-uppercase=intro.title
+		h2.uk-h1.uk-width-xlarge.uk-text-primary.uk-margin-remove-top=intro.subtitle
+		.uk-margin-top.uk-column-1-2
+			each paragraph in intro.description
+				p=paragraph
+		hr.uk-divider-small.uk-margin-large-top
+		a.uk-margin-top.uk-button.uk-button-primary(role="button" href="/assets/cv-johannhospice.pdf" target="_blank")
+			+icon("file-edit")
+			span.uk-margin-small-left Télécharger mon cv 
+			
