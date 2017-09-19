@@ -7,10 +7,6 @@
             "href": "#contact",
             "scroll": true,
             "text": "Besoin d'un développeur"
-        }, {
-            "type": "default",
-            "href": "/works",
-            "text": "voir mes réalisations"
         }]
     },
     "contact": {
@@ -40,8 +36,11 @@
         "name": "intro",
         "title": "Objectif",
         "subtitle": "Dolor fugiat cillum sit Lorem eiusmod excepteur.",
-        "description": "In ad labore ex non. Culpa culpa elit in minim incididunt tempor sunt. Mollit veniam mollit culpa quis qui officia ea aute ullamco. Eiusmod cillum et sint ullamco nisi ea occaecat velit. In eu velit irure duis amet sunt sunt exercitation excepteur. Occaecat cillum reprehenderit aute pariatur in dolor. Laboris nisi laboris culpa tempor dolore consequat."
-    },
+        "description": [
+            "Ut commodi non ipsum. Qui laborum illum. Aperiam labore et ut optio. Perferendis dolorum ut velit ab quia ut totam fugit vero. Nostrum nihil aut rerum reprehenderit est odio id. Similique tempora quia minima aperiam exercitationem magnam sed. Magnam placeat dolores assumenda mollitia magni pariatur qui ipsa quos. Consequatur officiis adipisci cumque nostrum eos dolor eum ut possimus. Quam voluptatem molestias. Dolor quia et voluptatibus quaerat. Saepe temporibus repellat et hic tenetur impedit beatae.",
+            "Similique ipsum ipsam voluptates quos possimus aut sequi. Qui laboriosam alias reprehenderit saepe dolore quam ab. Nostrum aut reiciendis labore est facilis. Vitae consequatur sapiente consequatur ut et.",
+            "Ullam ex modi architecto soluta aut ea enim. Rerum impedit ex. Facere harum et minus veritatis. Numquam autem numquam aut omnis. Tenetur cum culpa voluptatem. In rerum sit repellat."
+         ] },
     "work": {
         "name": "work",
         "title": "Réalisations",
