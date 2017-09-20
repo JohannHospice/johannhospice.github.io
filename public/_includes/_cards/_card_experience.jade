@@ -2,23 +2,47 @@ include /_includes/_cards/_card
 include /_includes/_mixins
 
 mixin card-experience(experience)
-	a.uk-link-reset(href=experience.link, target="_bank")
-		.uk-card.uk-card-default.uk-card-hover.uk-card-small.uk-card-body.uk-card-secondary.uk-height-1-1
+	a.uk-link-reset.uk-card.uk-card-hover.uk-card-secondary.uk-height-medium.uk-width-large(uk-toggle="target:#modal-"+experience.name)
+		.uk-card-body.uk-flex.uk-flex-column.uk-flex-between.uk-height-1-1
 			div
-				h3.uk-margin-remove=experience.title
-				h4.uk-margin-remove.uk-text-uppercase.uk-text-meta=experience.subtitle
-				p.uk-margin-bottom.uk-margin-small-top!=experience.description
+				.uk-flex.uk-flex-between
+					div
+						h2.uk-h4.uk-text-uppercase.uk-text-primary=experience.title
+							.uk-text-small=experience.subtitle
+					.uk-text-right
+						if experience.status
+							small.uk-text-small.uk-text-uppercase.uk-text-warning=experience.status
 			div
-				p.uk-text-uppercase.uk-text-small.uk-margin-small
-					span=experience.place
-					br
+				h3.uk-text-uppercase.uk-text-.uk-text-small.uk-margin-remove=experience.place
+				p.uk-text-uppercase.uk-text-small.uk-margin-remove
 					span.uk-text-meta
-						time(datetime)=experience.dateBegin
-						|  - 
-						time(datetime)=experience.dateEnd
-						span
-							|  (
-							=experience.time.value
-							|  
-							=experience.time.mesure
-							| )
+						=experience.time.value
+						|  
+						=experience.time.mesure
+
+	div(id="modal-"+experience.name uk-modal)
+		.uk-modal-dialog.uk-margin-auto-vertical
+			button.uk-modal-close-default(type="button" uk-close)
+			.uk-modal-body
+				.uk-grid-small.uk-flex-between.uk-child-width-auto(uk-grid class="uk-child-width-1-1@s")
+					div
+						h2.uk-text-uppercase.uk-text-muted.uk-text-small.uk-margin-remove=experience.place
+						h3.uk-card-title.uk-text-primary.uk-margin-remove.uk-text-uppercase=experience.title
+					.uk-margin-remove-top
+						span.uk-text-meta
+							time(datetime)=experience.dateBegin
+							|  - 
+							time(datetime)=experience.dateEnd
+							span
+								|  (
+								=experience.time.value
+								|  
+								=experience.time.mesure
+								| )
+
+				p.uk-margin-top!=experience.description
+
+				hr.uk-divider-small
+				a.uk-link-reset(href=experience.link.href, target="_bank")
+					small.uk-text-bold.uk-text-uppercase.uk-text-primary=experience.link.title
+						span(uk-icon="icon: link")

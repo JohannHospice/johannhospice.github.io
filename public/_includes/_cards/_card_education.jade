@@ -2,12 +2,23 @@ include /_includes/_cards/_card
 include /_includes/_mixins
 
 mixin card-education(diplome)
-	a.uk-link-reset(uk-toggle="target:#modal-"+diplome.name)
-		.uk-card.uk-card-default.uk-card-hover.uk-card-small.uk-card-body
-			h2.uk-text-uppercase.uk-text-muted.uk-text-small.uk-margin-remove=diplome.place
-			h3.uk-margin-remove.uk-text-uppercase.uk-text-primary=diplome.title
-			p.uk-margin-small-top!=diplome.description
-
+	a.uk-link-reset.uk-card.uk-card-hover.uk-card-default.uk-height-medium.uk-width-medium(uk-toggle="target:#modal-"+diplome.name)
+		.uk-card-body.uk-flex.uk-flex-column.uk-flex-between.uk-height-1-1
+			div
+				.uk-flex.uk-flex-between
+					div
+						h2.uk-h4.uk-text-uppercase.uk-text-primary=diplome.title
+							.uk-text-small=diplome.subtitle
+					.uk-text-right
+						if diplome.status
+							small.uk-text-small.uk-text-uppercase.uk-text-warning=diplome.status
+			div
+				h3.uk-text-uppercase.uk-text-.uk-text-small.uk-margin-remove=diplome.place
+				p.uk-text-uppercase.uk-text-small.uk-margin-remove
+					span.uk-text-meta
+						time(datetime)=diplome.dateBegin
+						|  - 
+						time(datetime)=diplome.dateEnd
 
 	div(id="modal-"+diplome.name uk-modal)
 		.uk-modal-dialog.uk-margin-auto-vertical
@@ -24,12 +35,13 @@ mixin card-education(diplome)
 								|  - 
 								time(datetime)=diplome.dateEnd
 				p.uk-margin-top=diplome.description
-				p.uk-margin-small
-					span Unités d'enseignements:
-					.uk-column-1-2
-						ul.uk-list.uk-list-bullet.uk-text-capitalize
-							each course in diplome.courses
-								li=course
+				if diplome.courses
+					p.uk-margin-small
+						span Unités d'enseignements:
+						.uk-column-1-2
+							ul.uk-list.uk-list-bullet.uk-text-capitalize
+								each course in diplome.courses
+									li=course
 				hr.uk-divider-small
 				a.uk-link-reset(href=diplome.link.href, target="_bank")
 					small.uk-text-bold.uk-text-uppercase.uk-text-primary=diplome.link.title

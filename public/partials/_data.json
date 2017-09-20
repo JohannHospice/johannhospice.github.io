@@ -2,8 +2,8 @@
     "skills": {
         "name": "skills",
         "title": "compétences",
-        "subtitle": "Id consectetur ut magna commodo Lorem enim aute eu.",
-        "description": "Quis ex magna magna enim. Tempor cupidatat enim non qui cillum quis commodo. Reprehenderit ea ipsum cupidatat do in cillum eu irure adipisicing fugiat id. Occaecat culpa laboris occaecat occaecat. Cupidatat magna elit laboris culpa deserunt voluptate aliquip. Est eiusmod in incididunt consectetur labore labore id magna Lorem minim deserunt pariatur.",
+        "subtitle": "Id consectetur ut magna enim aute eu.",
+        "description": "Cupidatat magna elit laboris culpa deserunt voluptate aliquip. Est eiusmod in incididunt consectetur labore labore id magna Lorem minim deserunt pariatur.",
         "data": [{
             "name": "languages",
             "title": "Langages  ",
