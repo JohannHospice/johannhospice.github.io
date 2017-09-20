@@ -1,14 +1,6 @@
 include /_includes/_mixins
 -var skills = public.partials._data.skills
 
-mixin icon(tag)
-	a.uk-link-reset
-		.jh-icon-container.uk-text-center.uk-child-width-1-1.uk-grid-small(uk-grid)
-			div
-				img.jh-icon(src="/assets/vendors/devicon/icons/"+tag.icon+".svg" uk-svg)
-			div
-				span.uk-text-uppercase=tag.id
-
 section.uk-section.uk-section-large.uk-section-muted
 	.uk-container(id=skills.name)
 		.uk-flex.uk-flex-center
@@ -25,7 +17,12 @@ section.uk-section.uk-section-large.uk-section-muted
 		ul#skills-switcher.uk-switcher.uk-overflow-hidden.uk-margin-medium-top
 			each value in skills.data
 				li
-					.uk-child-width-1-3.uk-flex-center(class="uk-child-width-1-4@s uk-child-width-1-6@m" uk-grid)
+					.uk-child-width-1-3.uk-flex-center(class="uk-child-width-1-4@s uk-child-width-1-5@m" uk-grid)
 						each tag in value.data
 							div
-								+icon(tag)
+								a.uk-link-reset
+									.jh-icon-container.uk-text-center.uk-child-width-1-1.uk-grid-small(uk-grid)
+										div
+											img.jh-icon(src="/assets/vendors/devicon/icons/"+tag.icon+".svg" uk-svg)
+										div
+											span.uk-text-uppercase.uk-text-small=tag.id
