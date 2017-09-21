@@ -12,8 +12,8 @@ section.uk-section.uk-section-large.uk-section-muted
 				+header("Formation", cursus.subtitle, cursus.description)
 		.uk-margin-large-top
 			div(class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l" uk-grid)
-				each education in educations
-					.uk-flex.uk-flex-center
+				each education, i in educations
+					.uk-flex.uk-flex-center(class=(i%2==0?"uk-flex-right@s":"uk-flex-left@s"))
 						+card-education(education)
 
 section.uk-section.uk-section-large.uk-section-default
