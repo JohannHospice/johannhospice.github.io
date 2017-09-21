@@ -40,7 +40,8 @@
             "Ut commodi non ipsum. Qui laborum illum. Aperiam labore et ut optio. Perferendis dolorum ut velit ab quia ut totam fugit vero. Nostrum nihil aut rerum reprehenderit est odio id. Similique tempora quia minima aperiam exercitationem magnam sed. Magnam placeat dolores assumenda mollitia magni pariatur qui ipsa quos. Consequatur officiis adipisci cumque nostrum eos dolor eum ut possimus. Quam voluptatem molestias. Dolor quia et voluptatibus quaerat. Saepe temporibus repellat et hic tenetur impedit beatae.",
             "Similique ipsum ipsam voluptates quos possimus aut sequi. Qui laboriosam alias reprehenderit saepe dolore quam ab. Nostrum aut reiciendis labore est facilis. Vitae consequatur sapiente consequatur ut et.",
             "Ullam ex modi architecto soluta aut ea enim. Rerum impedit ex. Facere harum et minus veritatis. Numquam autem numquam aut omnis. Tenetur cum culpa voluptatem. In rerum sit repellat."
-         ] },
+        ]
+    },
     "work": {
         "name": "work",
         "title": "Réalisations",
@@ -83,7 +84,7 @@
             "place": "Université Paris Diderot",
             "dateBegin": "2016",
             "dateEnd": "2017",
-            "description": "L'objectif des enseignements de la mention Informatique d la Licence est de dégager les concets fondamentaux mis en jeu en partidulier dans le développement de logiciels, permettant ainsi d'appréhender les principales techniques, d'en comprendre les évolutions et de participer à celles-ci. Les aspects tant pratiques que fondamentaux y sont couverts.",
+            "descriptions": ["L’objectif de cette licence est, dans son parcours principal «Informatique générale», de donner une solide formation de base en informatique permettant aux étudiants de s’adapter aux grands domaines de l’informatique et de ses applications (informatique industrielle et technique, informatique scientifique, informatique communicante et réseaux, micro-informatique et multimédia, …), soit dans le but d’entrer dans la vie professionnelle, soit dans celui de poursuivre des études en master professionnalisant ou recherche.", "Tel qu’il a été conçu, le programme de ce parcours permet une acquisition progressive de connaissances tant théoriques que pratiques et d’outils généraux qui permettent d’appréhender la discipline dans son ensemble. Les étudiants de ce parcours seront ainsi capables de concevoir et développer des applications en s’appuyant sur de bonnes bases mathématiques et de solides bases informatiques dans différents domaines (programmation dans différents styles, systèmes, réseaux, bases de données, algorithmique, automates et grammaires formelles, logique, combinatoire et probabilités)."],
             "link": {
                 "title": "informatique.univ-paris-diderot.fr",
                 "href": "http://www.informatique.univ-paris-diderot.fr/wiki/doku.php/enseignement/licence"
@@ -96,11 +97,12 @@
             "place": "Université Paris Diderot",
             "dateBegin": "2017",
             "dateEnd": "2019",
-            "description": "Saepe voluptas molestiae possimus sunt maiores quia distinctio cupiditate repudiandae. Quo labore consequatur quia. Voluptatem eos id magni tempore incidunt. Ut aut minima voluptatum numquam adipisci.",
+            "descriptions": ["Les applications informatiques sont maintenant généralement des applications réparties et depuis quelques années, avec l’émergence du cloud et des smartphones, des applications mobiles. En quelques années grâce à Internet, l’accès et l’usage de l’information numérique se sont simplifiés mais aussi accélérés, banalisés et surtout délocalisés.", "L’objectif de ce parcours est de donner aux étudiants une expertise dans les algorithmes qui rentrent en jeu dans la conception et dans la programmation de telles applications. Ce parcours couvre plusieurs thématiques qui s’entremêlent: les systèmes d’information, l’internet et la répartition (qui inclut les aspects réseaux au sens informatique du terme mais aussi les réseaux sociaux, la sécurité et la sûreté, les grilles de calculs, les architectures multithreads, multicœurs, ….), les systèmes. Nous ne prétendons pas faire de nos étudiants des experts de tous ces domaines mais de leur donner de solides connaissances et de former des spécialistes dans au moins deux de ceux-ci. Nos étudiants seront formés aux langages/systèmes/logiciels/technologies actuels utilisés dans ces domaines (Java, J2EE, Apache, Tomcat, JBOSS, Javascript, Android, Linux, Mac OSX….) afin d’être immédiatement opérationnels mais ils auront aussi le bagage scientifique nécessaire pour évoluer."],
             "link": {
                 "title": "informatique.univ-paris-diderot.fr",
                 "href": "http://www.informatique.univ-paris-diderot.fr/wiki/doku.php/enseignement/master"
             },
+            "courses": ["Programmation des composants mobiles", "Circuits et architecture", "Interprétation des programmes", "Programmation fonctionnelle avancée", "Langages à objets avancés", "Infographie", "Anglais", "Algorithmique", "Protocoles réseaux", "Théorie et pratique de la concurrence", "Algorithmique avancée", "Compilation", "Interfaces graphiques", "Introduction aux logiciels libres", "Génie logiciel avancé", "Programmation système avancée", "Bases de données avancées", "Projets de programmation"],
             "status": "en cours"
         }],
         "experiences": [{
@@ -122,6 +124,140 @@
             "tags": [
                 "JavaScript", "Node.js", "Sails.js", "Socket.IO", "react-native"
             ]
+        }]
+    },
+    "skills": {
+        "name": "skills",
+        "title": "compétences",
+        "subtitle": "Id consectetur ut magna enim aute eu.",
+        "description": "Cupidatat magna elit laboris culpa deserunt voluptate aliquip. Est eiusmod in incididunt consectetur labore labore id magna Lorem minim deserunt pariatur.",
+        "data": [{
+            "name": "languages",
+            "title": "Langages  ",
+            "title_extention": "informatiques",
+            "data": [{
+                "id": "java",
+                "icon": "java/java-plain",
+                "size": 3
+            }, {
+                "id": "kotlin",
+                "icon": "kotlin/kotlin-plain",
+                "size": 3
+            }, {
+                "id": "c",
+                "icon": "c/c-plain",
+                "size": 2
+            }, {
+                "id": "c++",
+                "icon": "cplusplus/cplusplus-plain",
+                "size": 1
+            }, {
+                "id": "ocaml",
+                "icon": "ocaml/ocaml-original",
+                "size": 2
+            }, {
+                "id": "python",
+                "icon": "python/python-plain",
+                "size": 2
+            }, {
+                "id": "visual basic",
+                "icon": "visualstudio/visualstudio-plain",
+                "size": 2
+            }, {
+                "id": "objective-c",
+                "icon": "apple/apple-original",
+                "size": 1
+            }, {
+                "id": "php",
+                "icon": "php/php-plain",
+                "size": 2
+            }, {
+                "id": "javascript",
+                "icon": "javascript/javascript-plain",
+                "size": 3
+            }, {
+                "id": "html",
+                "icon": "html5/html5-plain",
+                "size": 3
+            }, {
+                "id": "css",
+                "icon": "css3/css3-plain",
+                "size": 3
+            }, {
+                "id": "sql",
+                "icon": "database/database-plain",
+                "size": 2
+            }, {
+                "id": "assembleur",
+                "icon": "assembly/assembly-plain",
+                "size": 2
+            }]
+        }, {
+            "name": "frameworks",
+            "title": "Environnement ",
+            "title_extention": "de développement",
+            "data": [{
+                "id": "symfony",
+                "icon": "symfony/symfony-original",
+                "size": 2
+            }, {
+                "id": "node.js",
+                "icon": "nodejs/nodejs-original",
+                "size": 3
+            }, {
+                "id": "sails.js",
+                "icon": "sailsjs/sailsjs-plain",
+                "size": 2
+            }, {
+                "id": "express.js",
+                "icon": "express/express-original",
+                "size": 3
+            }, {
+                "id": "react-native",
+                "icon": "react/react-original",
+                "size": 2
+            }, {
+                "id": "jquery",
+                "icon": "jquery/jquery-plain",
+                "size": 3
+            }, {
+                "id": "bootstrap",
+                "icon": "bootstrap/bootstrap-plain",
+                "size": 3
+            }, {
+                "id": "uikit",
+                "icon": "uikit/uikit-plain",
+                "size": 3
+            }, {
+                "id": "libgdx",
+                "icon": "libgdx/libgdx-original",
+                "size": 1
+            }, {
+                "id": "sdl",
+                "icon": "sdl/sdl-plain",
+                "size": 1
+            }]
+        }, {
+            "name": "system",
+            "title": "Systèmes ",
+            "title_extention": "d'exploitations",
+            "data": [{
+                "id": "windows",
+                "icon": "windows8/windows8-original",
+                "size": 3
+            }, {
+                "id": "linux",
+                "icon": "linux/linux-plain",
+                "size": 2
+            }, {
+                "id": "mac / ios",
+                "icon": "apple/apple-original",
+                "size": 2
+            }, {
+                "id": "android",
+                "icon": "android/android-plain",
+                "size": 3
+            }]
         }]
     }
 }

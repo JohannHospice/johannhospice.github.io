@@ -34,14 +34,19 @@ mixin card-education(diplome)
 								time(datetime)=diplome.dateBegin
 								|  - 
 								time(datetime)=diplome.dateEnd
-				p.uk-margin-top=diplome.description
+				if diplome.descriptions
+					each de in diplome.descriptions
+						p.uk-margin-top=de					
+				else
+					p.uk-margin-top=diplome.description
 				if diplome.courses
 					p.uk-margin-small
+					ul(uk-accordion="multiple: true")
+					
 						span Unités d'enseignements:
-						.uk-column-1-2
-							ul.uk-list.uk-list-bullet.uk-text-capitalize
-								each course in diplome.courses
-									li=course
+						ul.uk-list.uk-list-bullet.uk-text-capitalize
+							each course in diplome.courses
+								li=course
 				hr.uk-divider-small
 				a.uk-link-reset(href=diplome.link.href, target="_bank")
 					small.uk-text-bold.uk-text-uppercase.uk-text-primary=diplome.link.title
