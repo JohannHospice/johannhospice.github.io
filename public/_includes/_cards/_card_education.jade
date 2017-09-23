@@ -14,11 +14,7 @@ mixin card-education(diplome)
 							small.uk-text-small.uk-text-uppercase.uk-text-warning=diplome.status
 			div
 				h3.uk-text-uppercase.uk-text-.uk-text-small.uk-margin-remove=diplome.place
-				p.uk-text-uppercase.uk-text-small.uk-margin-remove
-					span.uk-text-meta
-						time(datetime)=diplome.dateBegin
-						|  - 
-						time(datetime)=diplome.dateEnd
+				time.uk-text-uppercase.uk-text-small.uk-text-meta.uk-margin-remove(datetime)=diplome.dateEnd
 
 	div(id="modal-"+diplome.name uk-modal)
 		.uk-modal-dialog.uk-margin-auto-vertical
@@ -41,12 +37,18 @@ mixin card-education(diplome)
 					p.uk-margin-top=diplome.description
 				if diplome.courses
 					p.uk-margin-small
-					ul(uk-accordion="multiple: true")
-					
-						span Unités d'enseignements:
-						ul.uk-list.uk-list-bullet.uk-text-capitalize
-							each course in diplome.courses
-								li=course
+					h6.uk-heading-line.uk-text-center
+						span Unités d'enseignements
+					ul(uk-accordion="collapsible: true; multiple: true")
+						each courses,i in diplome.courses
+							li
+								.uk-accordion-title
+									span.uk-h5 Semestre 
+										=i+1
+								.uk-accordion-content
+									ul.uk-list.uk-list-bullet
+										each course in courses
+											li=course
 				hr.uk-divider-small
 				a.uk-link-reset(href=diplome.link.href, target="_bank")
 					small.uk-text-bold.uk-text-uppercase.uk-text-primary=diplome.link.title
