@@ -2,19 +2,25 @@ include /_includes/_cards/_card
 include /_includes/_mixins
 
 mixin card-education(diplome)
-	a.uk-link-reset.uk-card.uk-card-hover.uk-card-default.uk-card-small.uk-height-medium.uk-width-medium(uk-toggle="target:#modal-"+diplome.name)
-		.uk-card-body.uk-flex.uk-flex-column.uk-flex-between.uk-height-1-1
-			div
-				.uk-flex.uk-flex-between
-					div
+	a.uk-link-reset.uk-height-medium.uk-width-medium(uk-toggle="target:#modal-"+diplome.name)
+		.uk-card.uk-card-default.uk-card-hover(id=diplome.name)
+			.uk-inline
+				.uk-background-default.uk-height-medium.uk-overflow-hidden.uk-flex.uk-flex-center.uk-flex-middle
+					p.jh-dark(jh-code=diplome.name+"," jh-size=600)
+				
+				.uk-position-cover.uk-inline
+
+					.uk-overlay.uk-position-top-left
 						h2.uk-h4.uk-text-uppercase.uk-text-primary=diplome.title
 							.uk-text-small=diplome.subtitle
-					.uk-text-right
-						if diplome.status
-							small.uk-text-small.uk-text-uppercase.uk-text-warning=diplome.status
-			div
-				h3.uk-text-uppercase.uk-text-.uk-text-small.uk-margin-remove=diplome.place
-				time.uk-text-uppercase.uk-text-small.uk-text-meta.uk-margin-remove(datetime)=diplome.dateEnd
+				
+					.uk-overlay.uk-position-bottom-left
+						h3.uk-text-uppercase.uk-text-small.uk-margin-remove=diplome.place
+						time.uk-text-uppercase.uk-text-small.uk-text-muted.uk-margin-remove(datetime)=diplome.dateEnd
+				
+					if diplome.status
+						.uk-overlay.uk-position-top-right
+							span.uk-text-small.uk-text-uppercase.uk-text-warning=diplome.status
 
 	div(id="modal-"+diplome.name uk-modal)
 		.uk-modal-dialog.uk-margin-auto-vertical

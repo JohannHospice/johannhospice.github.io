@@ -2,6 +2,30 @@
     "home": {
         "title": "Johann Hospice",
         "subtitle": "Étudiant en Master Informatique à l'Université Paris Diderot",
+        "interests": [
+            "rick et morty",
+            "dragon ball",
+            "berserk",
+            "my hero academia",
+            "one piece",
+            "hunter x hunter",
+            "bleach",
+            "star wars",
+            "vsauce",
+            "intelligence artificielle",
+            "génétique",
+            "physique",
+            "science",
+            "karaté",
+            "boxe",
+            "athlétisme",
+            "developper",
+            "design",
+            "plage",
+            "foret",
+            "calme",
+            "nature"
+        ],
         "buttons": [{
             "type": "danger",
             "href": "#contact",
@@ -29,8 +53,8 @@
         }]
     },
     "intro": {
-        "name": "intro",
-        "title": "Objectif",
+        "name": "about",
+        "title": "à propos",
         "subtitle": "Dolor fugiat cillum sit Lorem eiusmod excepteur.",
         "description": [
             "Ut commodi non ipsum. Qui laborum illum. Aperiam labore et ut optio. Perferendis dolorum ut velit ab quia ut totam fugit vero. Nostrum nihil aut rerum reprehenderit est odio id. Similique tempora quia minima aperiam exercitationem magnam sed. Magnam placeat dolores assumenda mollitia magni pariatur qui ipsa quos. Consequatur officiis adipisci cumque nostrum eos dolor eum ut possimus. Quam voluptatem molestias. Dolor quia et voluptatibus quaerat. Saepe temporibus repellat et hic tenetur impedit beatae.",

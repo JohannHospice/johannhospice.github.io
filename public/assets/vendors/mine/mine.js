@@ -13,17 +13,22 @@ var Translator = (function () {
             }).join('').toUpperCase()
         }
     }
-})()
+})();
 
-var selectors = ['.jh-code']
-selectors.forEach(function (selector) {
-    document.querySelectorAll(selector).forEach(function (e) {
-        const LIMIT_CHAR = 500
-        const CODE = Translator.code(e.innerText)
-        const CODE_SPLITED = CODE.split('').join(' ')
+document.querySelectorAll("[jh-code]").forEach(function (e) {
+    var text = e.getAttribute("jh-code").split(",").join('/')
+    var size = e.getAttribute("jh-size")
 
-        e.innerHTML = "" + CODE_SPLITED
-        while(e.innerHTML.length < LIMIT_CHAR)
-            e.innerHTML += " " + CODE_SPLITED
-    })
+    if (size == null)
+        size = 500
+
+    var code = Translator.code(text)
+    
+    var codeConcat = ""
+    var i = 0
+    while (codeConcat.length < size) {
+        codeConcat += code[i] + " "
+        i = (i + 1) % code.length
+    }
+    e.innerHTML = codeConcat
 })

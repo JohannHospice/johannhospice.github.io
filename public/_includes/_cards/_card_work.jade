@@ -1,27 +1,25 @@
 include /_includes/_cards/_card
 include /_includes/_mixins
 
-style.
-	.jh-card-badge {
-		top: 20px;
-		right: 20px;
-	}
-
 mixin card-work(work)
 	a.uk-link-reset(uk-toggle="target:#modal-"+work.name)
 		.uk-card.uk-card-default.uk-card-hover(id=work.name)
-			.uk-inline.uk-width
-				.uk-background-secondary.uk-height-large.uk-width-1-1
-				//.uk-overflow-hidden.uk-flex.uk-flex-center.uk-flex-middle
-					p.uk-h2.uk-text-uppercase.jh-code=work.name
-				.uk-overlay.uk-position-top
-					h3.uk-text-uppercase.uk-margin-remove.uk-light=work.title
-					h4.uk-text-meta.uk-text-uppercase.uk-text-small.uk-margin-remove=work.subtitle
-				.uk-overlay.uk-position-bottom
-					time.uk-text-uppercase.uk-text-small.uk-text-muted(datetime=work.dateEnd)=work.dateEndFormated
-				if work.status
-					.uk-overlay.uk-position-top-right
-						span.uk-text-uppercase.uk-text-small.uk-text-warning=work.status
+			.uk-inline
+				.uk-background-secondary.uk-height-large.uk-width-1-1.uk-overflow-hidden.uk-flex.uk-flex-middle
+					p.uk-margin-remove.jh-light(jh-code=work.name+"," jh-size=1700)
+				
+				.uk-position-cover.uk-inline.uk-light
+
+					.uk-overlay.uk-position-top-left
+						h3.uk-text-uppercase.uk-margin-remove=work.title
+						h4.uk-text-muted.uk-text-uppercase.uk-text-small.uk-margin-remove=work.subtitle
+				
+					.uk-overlay.uk-position-bottom-left
+						time.uk-text-uppercase.uk-text-small.uk-text-muted(datetime=work.dateEnd)=work.dateEndFormated
+				
+					if work.status
+						.uk-overlay.uk-position-top-right
+							span.uk-text-uppercase.uk-text-small.uk-text-warning=work.status
 
 	div(id="modal-"+work.name uk-modal)
 		.uk-modal-dialog.uk-margin-auto-vertical
@@ -29,7 +27,7 @@ mixin card-work(work)
 			.uk-modal-body
 				.uk-grid-small.uk-flex-between.uk-child-width-auto(uk-grid class="uk-child-width-1-1@s")
 					div
-						p.uk-margin-remove.uk-text-uppercase.uk-text-small.uk-text-meta=work.category
+						p.uk-margin-remove.uk-text-uppercase.uk-text-small.uk-text-muted=work.category
 						h3.uk-card-title.uk-text-primary.uk-margin-remove.uk-text-uppercase=work.title
 					.uk-margin-remove-top
 						p.uk-text-uppercase.uk-text-small.uk-text-muted.uk-margin-remove
