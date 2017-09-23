@@ -6,7 +6,7 @@
             "type": "danger",
             "href": "#contact",
             "scroll": true,
-            "text": "Besoin d'un développeur"
+            "text": "Besoin de moi"
         }]
     },
     "contact": {
@@ -26,10 +26,6 @@
             "href": "mailto:johannhospice.dev@gmail.com",
             "title": "johannhospice.dev@gmail.com",
             "icon": "mail"
-        }, {
-            "href": "tel:+33781700715",
-            "title": "+33 7 81 70 07 15",
-            "icon": "phone"
         }]
     },
     "intro": {
@@ -89,7 +85,10 @@
                 "title": "informatique.univ-paris-diderot.fr",
                 "href": "http://www.informatique.univ-paris-diderot.fr/wiki/doku.php/enseignement/licence"
             },
-            "courses": ["Programmation fonctionnelle", "Outil et logique", "Complément Programmation orientée objet", "algorithmique", "Mathématiques Discrètes", "Systèmes d'exploitation et language c", "Machine virtuelles", "Programmation web", "Langages de script", "Logique", "Programmation réseaux", "Projet Logiciel", "Anglais"]
+            "courses": [
+                ["Programmation fonctionnelle", "Outil et logique", "Complément Programmation orientée objet", "algorithmique", "Mathématiques Discrètes", "Systèmes d'exploitation et language c"],
+                ["Machine virtuelles", "Programmation web", "Langages de script", "Logique", "Programmation réseaux", "Projet Logiciel", "Anglais"]
+            ]
         }, {
             "name": "master-informatique",
             "title": "Master",
@@ -102,7 +101,10 @@
                 "title": "informatique.univ-paris-diderot.fr",
                 "href": "http://www.informatique.univ-paris-diderot.fr/wiki/doku.php/enseignement/master"
             },
-            "courses": ["Programmation des composants mobiles", "Circuits et architecture", "Interprétation des programmes", "Programmation fonctionnelle avancée", "Langages à objets avancés", "Infographie", "Anglais", "Algorithmique", "Protocoles réseaux", "Théorie et pratique de la concurrence", "Algorithmique avancée", "Compilation", "Interfaces graphiques", "Introduction aux logiciels libres", "Génie logiciel avancé", "Programmation système avancée", "Bases de données avancées", "Projets de programmation"],
+            "courses": [
+                ["Programmation des composants mobiles", "Circuits et architecture", "Interprétation des programmes", "Programmation fonctionnelle avancée", "Langages à objets avancés", "Infographie", "Anglais", "Algorithmique", "Protocoles réseaux", "Projets de programmation"],
+                ["Théorie et pratique de la concurrence", "Algorithmique avancée", "Compilation", "Interfaces graphiques", "Introduction aux logiciels libres", "Génie logiciel avancé", "Programmation système avancée", "Bases de données avancées", "Projets de programmation"]
+            ],
             "status": "en cours"
         }],
         "experiences": [{
