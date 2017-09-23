@@ -10,8 +10,8 @@ style.
 mixin card-work(work)
 	a.uk-link-reset(uk-toggle="target:#modal-"+work.name)
 		.uk-card.uk-card-default.uk-card-hover(id=work.name)
-			.uk-inline
-				.uk-background-secondary.uk-height-large.uk-width-large
+			.uk-inline.uk-width
+				.uk-background-secondary.uk-height-large.uk-width-1-1
 				//.uk-overflow-hidden.uk-flex.uk-flex-center.uk-flex-middle
 					p.uk-h2.uk-text-uppercase.jh-code=work.name
 				.uk-overlay.uk-position-top
