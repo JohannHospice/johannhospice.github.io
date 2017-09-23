@@ -5,16 +5,19 @@
     fill: #999;
     transition: fill .2s
 }
+
 .uk-dark .jh-logo:hover,
 .jh-logo:hover {
     fill: #666
 }
+
 .uk-light .jh-logo,
 .uk-offcanvas-bar .jh-logo,
 .uk-section-secondary:not(.uk-preserve-color) .jh-logo {
     fill: rgba(255, 255, 255, .5);
     transition: fill .2s
 }
+
 .uk-light .jh-logo:hover,
 .uk-offcanvas-bar .jh-logo:hover,
 .uk-section-secondary:not(.uk-preserve-color) .jh-logo:hover {
@@ -25,19 +28,37 @@
     height: 48px;
     width: 48px;
 }
-.jh-icon-container{
+
+.jh-icon-container {
     transition: .2s ease-in-out;
     transition-property: color, fill;
 }
+
 .jh-icon-container:hover {
     fill: #1e87f0;
     color: #1e87f0;
 }
 
-.jh-light{
+.jh-light {
+    color: rgba(255, 255, 255, .1)
+}
+
+.jh-light-soft {
+    color: rgba(255, 255, 255, .06)
+}
+
+.jh-light-hard {
     color: rgba(255, 255, 255, .04)
 }
 
-.jh-dark{
+.jh-dark {
+    color: rgba(0, 0, 0, .1)
+}
+
+.jh-dark-soft {
     color: rgba(0, 0, 0, .06)
+}
+
+.jh-dark-hard {
+    color: rgba(0, 0, 0, .04)
 }

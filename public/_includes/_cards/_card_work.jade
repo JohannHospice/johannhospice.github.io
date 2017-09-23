@@ -3,10 +3,10 @@ include /_includes/_mixins
 
 mixin card-work(work)
 	a.uk-link-reset(uk-toggle="target:#modal-"+work.name)
-		.uk-card.uk-card-default.uk-card-hover(id=work.name)
+		.uk-card.uk-card-secondary.uk-card-hover(id=work.name)
 			.uk-inline
-				.uk-background-secondary.uk-height-large.uk-width-1-1.uk-overflow-hidden.uk-flex.uk-flex-middle
-					p.uk-margin-remove.jh-light(jh-code=work.name+"," jh-size=1700)
+				.uk-height-large.uk-width-1-1.uk-overflow-hidden.uk-flex.uk-flex-middle
+					p.uk-margin-remove.jh-light-hard(jh-code=work.name+"," jh-size=1700)
 				
 				.uk-position-cover.uk-inline.uk-light
 
