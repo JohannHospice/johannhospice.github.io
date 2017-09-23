@@ -13,8 +13,8 @@ section.uk-section.uk-section-large.uk-section-default
 			p.uk-text-lead.uk-text-muted=data.resume
 
 section.uk-section.uk-section-medium.uk-section-muted.uk-preserve-color
-	.uk-container.uk-container-medium
-		.uk-grid-medium(class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid)
+	.uk-container
+		div(class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid)
 			each work in works
 				div
 					+card-work(work)

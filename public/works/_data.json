@@ -5,6 +5,21 @@
     "title": "Mes réalisations",
     "resume": "Voici une sélection de projets informatiques professionnels, universitaires ou personnels auxquels j'ai contribué.",
     "posts": [{
+            "name": "secret",
+            "picture": "",
+            "title": "?",
+            "subtitle": "?",
+            "description": "",
+            "status": "nouveau",
+            "links": [],
+            "dateStart": "25-09-2017",
+            "dateStartFormated": "25 September 2017",
+            "dateEnd": "2018",
+            "dateEndFormated": "2018",
+            "priority": 2,
+            "category": "",
+            "tags": []
+        }, {
             "name": "iportbook",
             "picture": "/assets/works/iportbook.jpg",
             "title": "Iportbook",
@@ -18,6 +33,7 @@
             "dateStartFormated": "25 Mai 2017",
             "dateEnd": "01-06-2017",
             "dateEndFormated": "1 Juin 2017",
+            "priority": 3,
             "category": "logiciel de bureau",
             "tags": [
                 "Java",
@@ -43,6 +59,7 @@
             "dateStartFormated": "15 Janvier 2017",
             "dateEnd": "14-05-2017",
             "dateEndFormated": "14 Mai 2017",
+            "priority": 2,
             "category": "logiciel de bureau",
             "tags": [
                 "C",
@@ -66,6 +83,7 @@
             "dateStartFormated": "11 Avril 2017",
             "dateEnd": "17-04-2017",
             "dateEndFormated": "17 Avril 2017",
+            "priority": 2,
             "category": "Site web",
             "tags": [
                 "Javascript",
@@ -87,6 +105,7 @@
             "dateStartFormated": "1 Novembre 2016",
             "dateEnd": "17-01-2017",
             "dateEndFormated": "17 Janvier 2017",
+            "priority": 2,
             "category": "logiciel de bureau",
             "tags": [
                 "C",
@@ -112,6 +131,7 @@
             "dateStartFormated": "7 Août 2016",
             "dateEnd": "26-07-2016",
             "dateEndFormated": "26 Juillet 2016",
+            "priority": 2,
             "category": "Module node",
             "tags": [
                 "Javascript",
@@ -124,11 +144,13 @@
             "name": "parki",
             "picture": "/assets/works/parki.jpg",
             "title": "Parki",
+            "subtitle": "Application mobile",
             "description": "Parki est une application mettant en relation des particuliers dans un système permettant de trouver des place de parkinge dans de grandes aglomérations.",
             "dateStart": "11-04-2016",
             "dateStartFormated": "11 Avril 2016",
             "dateEnd": "01-07-2016",
             "dateEndFormated": "1 Juillet 2016",
+            "priority": 3,
             "category": "application mobile",
             "links": [{
                 "label": "en savoir plus",
@@ -152,19 +174,21 @@
         {
             "name": "experience_javascript",
             "picture": "/assets/works/experience_javascript.jpg",
-            "title": "Expérience javascript",
+            "title": "Block",
+            "subtitle": "Expérience javascript",
             "description": "Cette experience fut réalisée lors de ma candidature dans l'entreprise netdevices pour un test de compétence en javascript.",
             "dateStart": "13-02-2016",
             "dateStartFormated": "13 Fevrier 2016",
             "dateEnd": "20-02-2016",
             "dateEndFormated": "20 Fevrier 2016",
+            "priority": 1,
             "category": "Application web",
             "links": [{
                 "label": "voir le gist",
                 "target": "_blank",
                 "href": "https://gist.github.com/JohannHospice/9e0d0eb47f0ea730c99e93fd1c2ebfa9"
             }, {
-                "label": "voir la demo",
+                "label": "lancer la demo",
                 "href": "/works/experience_javascript/demo"
             }],
             "tags": [
@@ -176,11 +200,13 @@
         {
             "name": "quizgeek",
             "title": "Quiz Geek",
+            "subtitle": "Site web",
             "description": "Projet universitaire en collaboration avec l’organisation TheGeekSide ayant pour objectif la réalisation d’un site web proposant un jeu de quiz, avec une gestion des utilisateurs. équipe de 16.",
             "dateStart": "13-01-2016",
             "dateStartFormated": "13 Janvier 2016",
             "dateEnd": "20-04-2016",
             "dateEndFormated": "20 Avril 2016",
+            "priority": 2,
             "category": "site web",
             "tags": [
                 "PHP",
@@ -197,11 +223,13 @@
         {
             "name": "the-game",
             "title": "The game",
+            "subtitle": "Jeu d'exploration 2d",
             "description": "The game est un jeu développer durant mon deuxieme semestre à l'IUT d'Orsay, en tant que projet de fin d'année. Il est développé avec le framework libGDX permettant une portabilité de l'application sur de multiples supports (Windows, Web, Mobile, ...).",
             "dateStart": "2015",
             "dateStartFormated": "2015",
             "dateEnd": "2015",
             "dateEndFormated": "2015",
+            "priority": 1,
             "category": "Jeu Video",
             "tags": [
                 "java",

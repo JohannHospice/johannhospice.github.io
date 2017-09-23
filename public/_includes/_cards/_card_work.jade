@@ -9,32 +9,19 @@ style.
 
 mixin card-work(work)
 	a.uk-link-reset(uk-toggle="target:#modal-"+work.name)
-		.uk-card.uk-card-default.uk-card-hover.uk-card-small(id=work.name)
-			.uk-flex.uk-flex-column.uk-flex-between
-
-				.uk-background-default
-					.uk-card-body.uk-overflow-hidden.uk-height-medium
-						.uk-grid-small.uk-flex-between.uk-child-width-auto(uk-grid class="uk-child-width-1-1@s")
-							div
-								p.uk-margin-remove.uk-text-uppercase.uk-text-small.uk-text-meta=work.category
-								h3.uk-card-title.uk-text-primary.uk-margin-remove.uk-text-uppercase=work.title
-							.uk-margin-remove-top
-								p.uk-text-uppercase.uk-text-small.uk-text-muted.uk-margin-remove
-									time(datetime=work.dateBegin)=work.dateStartFormated
-									|  - 
-									time(datetime=work.dateEnd)=work.dateEndFormated
-						p.uk-margin-top.uk-margin-remove-bottom=work.description
-									
-
-				.uk-background-muted
-					hr.uk-divider-small.uk-margin-remove
-					.uk-card-body
-						p.uk-text-lowercase.uk-margin.uk-text-truncate
-							span.uk-margin-small-right(uk-icon="icon:tag")
-							each tag, i in work.tags
-								=tag
-								if i < work.tags.length -1
-									| , 
+		.uk-card.uk-card-default.uk-card-hover(id=work.name)
+			.uk-inline
+				.uk-background-secondary.uk-height-large.uk-width-large
+				//.uk-overflow-hidden.uk-flex.uk-flex-center.uk-flex-middle
+					p.uk-h2.uk-text-uppercase.jh-code=work.name
+				.uk-overlay.uk-position-top
+					h3.uk-text-uppercase.uk-margin-remove.uk-light=work.title
+					h4.uk-text-meta.uk-text-uppercase.uk-text-small.uk-margin-remove=work.subtitle
+				.uk-overlay.uk-position-bottom
+					time.uk-text-uppercase.uk-text-small.uk-text-muted(datetime=work.dateEnd)=work.dateEndFormated
+				if work.status
+					.uk-overlay.uk-position-top-right
+						span.uk-text-uppercase.uk-text-small.uk-text-warning=work.status
 
 	div(id="modal-"+work.name uk-modal)
 		.uk-modal-dialog.uk-margin-auto-vertical
@@ -68,4 +55,3 @@ mixin card-work(work)
 									button.uk-button.uk-button-default.uk-button-small(disabled)=link.label
 								else
 									a.uk-button.uk-button-default.uk-button-small(href=link.href, target="_blank")=link.label
-							
