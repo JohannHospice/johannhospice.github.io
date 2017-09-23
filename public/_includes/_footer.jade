@@ -3,12 +3,10 @@ include /_includes/_mixins
 
 footer.uk-section-secondary
     .uk-section#contact
-        .uk-container(class="uk-flex-middle@m uk-text-center@m")
-            .uk-flex(class="uk-flex-center@m")
-                h3.uk-h2 Contact
-            .uk-flex(class="uk-flex-center@m")
-                p.uk-margin-medium-bottom(class="uk-width-large@s")  Aut qui voluptas labore commodi nihil deserunt. Quaerat inventore possimus tenetur veritatis.
-            .uk-flex(class="uk-flex-center@m")
+        .uk-container.uk-flex-middle.uk-text-center
+            .uk-flex.uk-flex-middle.uk-flex-column
+                h2.uk-margin-remove Contact
+                p(class="uk-width-large@s")  Aut qui voluptas labore commodi nihil deserunt. Quaerat inventore possimus tenetur veritatis.
                 .uk-grid-medium(uk-grid)
                     each link, i in contact.contact_links
                         div
