@@ -1,28 +1,57 @@
 include /_includes/_mixins
 -var skills = public._data.skills
 
+mixin tag(tag)
+	.uk-grid-small.uk-flex.uk-flex-middle(uk-grid)
+		.uk-width-auto
+			img.jh-icon(src="/assets/vendors/devicon/icons/"+tag.icon+".svg" uk-svg)
+		.uk-width-expand
+			h5.uk-text-uppercase.uk-margin-remove=tag.id
+
 section.uk-section.uk-section-large.uk-section-muted
 	.uk-container(id=skills.name)
-		.uk-flex.uk-flex-center
-			.uk-width-xlarge.uk-text-center
-				+header(skills.title, skills.subtitle, skills.description)
-
-		ul(uk-tab).uk-flex-center
-			each value in skills.data
-				li 
-					a=value.title 
-						span(class="uk-hidden@m") ...
-						span(class="uk-visible@m")=value.title_extention
-
-		ul#skills-switcher.uk-switcher.uk-overflow-hidden.uk-margin-medium-top
-			each value in skills.data
-				li
-					.uk-child-width-1-3.uk-flex-center(class="uk-child-width-1-4@s uk-child-width-1-5@m" uk-grid)
-						each tag in value.data
+		.uk-grid-large(uk-height-match uk-grid)
+			.uk-flex.uk-flex-between.uk-flex-column(class="uk-width-1-3@s")
+				div
+					+header(skills.title, skills.subtitle, skills.description)
+				.uk-flex.uk-flex-center(class="uk-flex-left@s")
+					button.uk-button.uk-button-default(uk-toggle="target:#modal-skills") 
+						span En savoir plus
+			div(class="uk-width-2-3@s")
+				.uk-flex.uk-flex-right
+					.uk-text-center.uk-grid-.uk-child-width-1-2(class="uk-width-xxlarge" uk-grid uk-height-match)
+						each thing in [{"icon":"calendar","name":"Gestion de projet"},{"icon":"code","name":"Développement logiciel"},{"icon":"pencil","name":"Conception logiciel"},{"icon":"social","name":"Administration réseaux"}]
 							div
-								a.uk-link-reset
-									.jh-icon-container.uk-text-center.uk-child-width-1-1.uk-grid-small(uk-grid)
+								.uk-card.uk-card-primary.uk-card-small.uk-card-body.uk-height-small.uk-flex.uk-flex-center.uk-flex-middle
+									.uk-flex-middle.uk-child-width-1-1.uk-grid-small(uk-grid)
 										div
-											img.jh-icon(src="/assets/vendors/devicon/icons/"+tag.icon+".svg" uk-svg)
+											span(uk-icon="icon:"+thing.icon+";ratio:1.8")
 										div
-											span.uk-text-uppercase.uk-text-small=tag.id
+											h3.uk-text-uppercase.uk-margin-remove.uk-h4=thing.name
+
+	div(id="modal-skills" uk-modal)
+		.uk-modal-dialog.uk-margin-auto-vertical
+			button.uk-modal-close-default(type="button" uk-close)
+			.uk-modal-body
+				+header(skills.title, skills.subtitle, skills.description)
+				each arr in skills.data
+					h4-=arr.name
+					.uk-grid-large.uk-child-width-1-2(class="uk-width-xxlarge uk-child-width-1-3@m" uk-grid uk-height-match)
+						each tag in arr.data
+							div
+								+tag(tag)
+
+section.uk-section.uk-section-large.uk-section-primary
+	.uk-container(id="works")
+		h1.uk-margin-small-bottom.uk-h6.uk-text-uppercase réalisation
+		h2.uk-h3.uk-text-primary.uk-margin-remove-top Facilis sunt possimus cumque placeat.
+		.uk-margin-small-top(uk-grid)
+			div(class="uk-width-2-3@m")
+				.uk-width-xlarge
+					p Ipsum laborum illum labore. Molestiae tempore quas debitis exercitationem labore iusto tempora. Voluptatibus autem qui sequi fuga. Eum rerum soluta harum id officiis itaque. Qui optio eveniet quam nobis eaque laborum. Hic labore ad.
+			div(class="uk-width-1-3@m")
+				.uk-flex.uk-flex-left(class="uk-flex-center@m")
+					a.uk-button.uk-button-primary(href="/works") 
+						.uk-flex.uk-flex-middle
+							span voir mes réalisations
+							span(uk-icon="icon:chevron-right")
