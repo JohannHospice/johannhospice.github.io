@@ -2,7 +2,7 @@ include /_includes/_mixins
 -var contact = public._data.contact
 
 footer.uk-section-secondary
-    .uk-section#contact
+    section.uk-section#contact
         .uk-container.uk-flex-middle.uk-text-center
             .uk-flex.uk-flex-middle.uk-flex-column
                 h2.uk-margin-remove Contact
@@ -11,8 +11,9 @@ footer.uk-section-secondary
                     each link, i in contact.contact_links
                         div
                             a.uk-button.uk-button-text(href=link.href)
-                                span.uk-margin-small-right(uk-icon="icon:"+link.icon)
-                                span.uk-text-lowercase=link.title
+                                .uk-flex.uk-flex-middle
+                                    span.uk-margin-small-right(uk-icon="icon:"+link.icon)
+                                    span.uk-text-lowercase=link.title
 
     .uk-child-width-expand.uk-flex-middle.uk-grid-small(uk-grid)
         div
