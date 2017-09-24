@@ -6,6 +6,8 @@ var Translator = (function () {
     translator.set('o', '0');
     translator.set('s', '5');
     translator.set('t', '7');
+    translator.set(' ', '_');
+    translator.set(',', '/');
     return {
         code: function (str) {
             return str.toLowerCase().split('').map(function (c) {
@@ -16,7 +18,7 @@ var Translator = (function () {
 })();
 
 document.querySelectorAll("[jh-code]").forEach(function (e) {
-    var text = e.getAttribute("jh-code").split(",").join('/')
+    var text = e.getAttribute("jh-code")
     var size = e.getAttribute("jh-size")
 
     if (size == null)

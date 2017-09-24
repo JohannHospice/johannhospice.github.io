@@ -25,19 +25,12 @@
 }
 
 .jh-icon {
-    height: 48px;
-    width: 48px;
-}
-
-.jh-icon-container {
-    transition: .2s ease-in-out;
-    transition-property: color, fill;
-}
-
-.jh-icon-container:hover {
-    fill: #1e87f0;
+    height: 38px;
+    width: 28px;
     color: #1e87f0;
+    fill: #1e87f0;
 }
+
 
 .jh-light {
     color: rgba(255, 255, 255, .1)
