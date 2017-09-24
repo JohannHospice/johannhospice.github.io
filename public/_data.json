@@ -3,34 +3,67 @@
         "title": "Johann Hospice",
         "subtitle": "Étudiant en Master Informatique à l'Université Paris Diderot",
         "interests": [
+            "serie tv",
             "rick et morty",
+            "the boondocks",
+            "ma famille d'abord",
+            "game of thrones",
+            "the walking dead",
+            "manga",
             "dragon ball",
             "berserk",
             "my hero academia",
             "one piece",
+            "shingeki no kyojin",
+            "fullmetal alchimist",
             "hunter x hunter",
+            "naruto",
             "bleach",
+            "le voyage de chihiro",
+            "film",
+            "studio gibli",
+            "à la recherche du bonheur",
             "star wars",
+
+            "youtube",
             "vsauce",
-            "intelligence artificielle",
-            "génétique",
-            "physique",
+            "kurzgesagt",
+            "dirtybiology",
+            "hacking social",
+            "bloqués",
+
+            "jeux vidéo",
+            "dark souls",
+            "super smash bros.",
+            "rainbow six siege",
+            "the legend of zelda",
+
             "science",
+            "intelligence artificielle",
+            "vie",
+            "conscience",
+            "génétique",
+            "culture",
+            "physique",
+            "sport",
+            "musculation",
             "karaté",
             "boxe",
             "athlétisme",
-            "developper",
+            "nature",
+            "martinique",
+            "developpement",
+            "programmation",
             "design",
             "plage",
             "foret",
-            "calme",
-            "nature"
+            "calme"
         ],
         "buttons": [{
             "type": "danger",
             "href": "#contact",
             "scroll": true,
-            "text": "Besoin de moi"
+            "text": "Me contacter"
         }]
     },
     "contact": {
@@ -257,10 +290,6 @@
             }, {
                 "id": "libgdx",
                 "icon": "libgdx/libgdx-original",
-                "size": 1
-            }, {
-                "id": "sdl",
-                "icon": "sdl/sdl-plain",
                 "size": 1
             }]
         }, {
