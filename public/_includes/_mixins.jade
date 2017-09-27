@@ -99,3 +99,10 @@ mixin grid(size, cols)
 							block
 						-n++
 			-i++
+
+mixin code-background(height, code, codeLength, codeShade)
+	.uk-inline
+		.uk-width-1-1.uk-overflow-hidden(class="uk-height-"+height)
+			p.uk-margin-remove(class="jh-"+codeShade jh-code=code+"," jh-size=codeLength)
+		.uk-position-cover.uk-inline&attributes(attributes)=name
+			block

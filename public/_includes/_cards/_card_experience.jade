@@ -2,28 +2,23 @@ include /_includes/_cards/_card
 include /_includes/_mixins
 
 mixin card-experience(experience)
-	a.uk-link-reset.uk-height-medium.uk-width-medium(uk-toggle="target:#modal-"+experience.name)
-		.uk-card.uk-card-default.uk-card-hover(id=experience.name)
-			.uk-inline
-				.uk-background-secondary.uk-height-medium.uk-overflow-hidden.uk-flex.uk-flex-center.uk-flex-middle
-					p.jh-light-hard(jh-code=experience.name+"," jh-size=600)
-				
-				.uk-position-cover.uk-inline.uk-light
-
-					.uk-overlay.uk-position-top-left
-						h2.uk-h4.uk-text-uppercase=experience.title
-							.uk-text-muted.uk-text-small=experience.subtitle
-				
-					.uk-overlay.uk-position-bottom-left
-						h3.uk-text-uppercase.uk-text-small.uk-margin-remove=experience.place
-						p.uk-text-uppercase.uk-text-small.uk-margin-remove
-							span.uk-text-meta
-								=experience.time.value
-								|  
-								=experience.time.mesure
-					if experience.status
-						.uk-overlay.uk-position-top-right
-							span.uk-text-small.uk-text-uppercase.uk-text-warning=experience.status
+	a.uk-link-reset.uk-width-medium(uk-toggle="target:#modal-"+experience.name)
+		.uk-card.uk-card-secondary.uk-card-hover(id=experience.name)
+			+code-background("medium", experience.name, 600, "light-hard").uk-light
+				.uk-overlay.uk-position-top-left
+					h2.uk-h4.uk-text-uppercase=experience.title
+						.uk-text-muted.uk-text-small=experience.subtitle
+			
+				.uk-overlay.uk-position-bottom-left
+					h3.uk-text-uppercase.uk-text-small.uk-margin-remove=experience.place
+					p.uk-text-uppercase.uk-text-small.uk-margin-remove
+						span.uk-text-meta
+							=experience.time.value
+							|  
+							=experience.time.mesure
+				if experience.status
+					.uk-overlay.uk-position-top-right
+						span.uk-text-small.uk-text-uppercase.uk-text-warning=experience.status
 
 	div(id="modal-"+experience.name uk-modal)
 		.uk-modal-dialog.uk-margin-auto-vertical

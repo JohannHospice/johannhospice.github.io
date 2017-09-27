@@ -1,28 +1,20 @@
 include /_includes/_cards/_card
 include /_includes/_mixins
 
-mixin code-background(height, code, codeLength, codeShade)
-	.uk-inline
-		.uk-width-1-1.uk-overflow-hidden(class="uk-height-"+height)
-			p.uk-margin-remove(class="jh-"+codeShade jh-code=code+"," jh-size=codeLength)
-		.uk-position-cover.uk-inline
-			block
-
 mixin card-work(work)
 	a.uk-link-reset(uk-toggle="target:#modal-"+work.name)
 		.uk-card.uk-card-secondary.uk-card-hover(id=work.name)
-			+code-background("large", work.name, 1700, "light-hard")
-				.uk-light
-					.uk-overlay.uk-position-top-left
-						h3.uk-text-uppercase.uk-margin-remove=work.title
-						h4.uk-text-muted.uk-text-uppercase.uk-text-small.uk-margin-remove=work.subtitle
-				
-					.uk-overlay.uk-position-bottom-left
-						time.uk-text-uppercase.uk-text-small.uk-text-muted(datetime=work.dateEnd)=work.dateEndFormated
-				
-					if work.status
-						.uk-overlay.uk-position-top-right
-							span.uk-text-uppercase.uk-text-small.uk-text-warning=work.status
+			+code-background("large", work.name, 1700, "light-hard").uk-light
+				.uk-overlay.uk-position-top-left
+					h3.uk-text-uppercase.uk-margin-remove=work.title
+					h4.uk-text-muted.uk-text-uppercase.uk-text-small.uk-margin-remove=work.subtitle
+			
+				.uk-overlay.uk-position-bottom-left
+					time.uk-text-uppercase.uk-text-small.uk-text-muted(datetime=work.dateEnd)=work.dateEndFormated
+			
+				if work.status
+					.uk-overlay.uk-position-top-right
+						span.uk-text-uppercase.uk-text-small.uk-text-warning=work.status
 
 	div(id="modal-"+work.name uk-modal)
 		.uk-modal-dialog.uk-margin-auto-vertical

@@ -20,21 +20,16 @@ section.uk-section.uk-section-large.uk-section-muted
 						span En savoir plus
 			div(class="uk-width-1-2@m uk-flex-first@m")
 				.uk-text-center.uk-child-width-1-1.uk-flex-center(class="uk-child-width-1-2@s" uk-grid)
-					each thing,i in skills.main
+					each thing, i in skills.main
 						.uk-flex.uk-flex-center(class=(i%2==0?"uk-flex-right@s":"uk-flex-left@s"))
 							.uk-card.uk-card-primary.uk-height-small.uk-width-medium
-								.uk-inline
-									.uk-height-small.uk-overflow-hidden.uk-flex.uk-flex-center.uk-flex-middle
-										p.jh-light(jh-code=thing.name+"," jh-size=600)
-									
-									.uk-position-cover.uk-inline
-										.uk-inline
-										.uk-overlay.uk-position-center
-											.uk-child-width-1-1.uk-grid-small(uk-grid)
-												div
-													span(uk-icon="icon:"+thing.icon+";ratio:1.8")
-												div
-													h3.uk-text-uppercase.uk-margin-remove.uk-h4=thing.name
+								+code-background("small", thing.name, 600, "light")
+									.uk-overlay.uk-position-center
+										.uk-child-width-1-1.uk-grid-small(uk-grid)
+											div
+												span(uk-icon="icon:"+thing.icon+";ratio:1.8")
+											div
+												h3.uk-text-uppercase.uk-margin-remove.uk-h4=thing.name
 
 	div(id="modal-skills" uk-modal)
 		.uk-modal-dialog.uk-margin-auto-vertical

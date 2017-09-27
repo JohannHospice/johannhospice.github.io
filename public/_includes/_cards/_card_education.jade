@@ -2,31 +2,26 @@ include /_includes/_cards/_card
 include /_includes/_mixins
 
 mixin card-education(diplome)
-	a.uk-link-reset.uk-height-medium.uk-width-medium(uk-toggle="target:#modal-"+diplome.name)
+	a.uk-link-reset.uk-width-medium(uk-toggle="target:#modal-"+diplome.name)
 		.uk-card.uk-card-default.uk-card-hover(id=diplome.name)
-			.uk-inline
-				.uk-background-default.uk-height-medium.uk-overflow-hidden.uk-flex.uk-flex-center.uk-flex-middle
-					p.jh-dark-hard(jh-code=diplome.name+"," jh-size=600)
-				
-				.uk-position-cover.uk-inline
-
-					.uk-overlay.uk-position-top-left
-						h2.uk-h4.uk-text-uppercase.uk-text-primary=diplome.title
-							.uk-text-small=diplome.subtitle
-				
-					.uk-overlay.uk-position-bottom-left
-						h3.uk-text-uppercase.uk-text-small.uk-margin-remove=diplome.place
-						time.uk-text-uppercase.uk-text-small.uk-text-muted.uk-margin-remove(datetime)=diplome.dateEnd
-				
-					if diplome.status
-						.uk-overlay.uk-position-top-right
-							span.uk-text-small.uk-text-uppercase.uk-text-warning=diplome.status
+			+code-background("medium", diplome.name, 600, "dark-hard")
+				.uk-overlay.uk-position-top-left
+					h2.uk-h4.uk-text-uppercase.uk-text-primary=diplome.title
+						.uk-text-small=diplome.subtitle
+			
+				.uk-overlay.uk-position-bottom-left
+					h3.uk-text-uppercase.uk-text-small.uk-margin-remove=diplome.place
+					time.uk-text-uppercase.uk-text-small.uk-text-muted.uk-margin-remove(datetime)=diplome.dateEnd
+			
+				if diplome.status
+					.uk-overlay.uk-position-top-right
+						span.uk-text-small.uk-text-uppercase.uk-text-warning=diplome.status
 
 	div(id="modal-"+diplome.name uk-modal)
 		.uk-modal-dialog.uk-margin-auto-vertical
 			button.uk-modal-close-default(type="button" uk-close)
 			.uk-modal-body
-				.uk-grid-small.uk-flex-between.uk-child-width-auto(uk-grid class="uk-child-width-1-1@s")
+				.uk-flex.uk-flex-between
 					div
 						h2.uk-text-uppercase.uk-text-muted.uk-text-small.uk-margin-remove=diplome.place
 						h3.uk-card-title.uk-text-primary.uk-margin-remove.uk-text-uppercase=diplome.title
