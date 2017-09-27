@@ -9,6 +9,7 @@
             "ma famille d'abord",
             "game of thrones",
             "the walking dead",
+
             "manga",
             "dragon ball",
             "berserk",
@@ -19,8 +20,9 @@
             "hunter x hunter",
             "naruto",
             "bleach",
-            "le voyage de chihiro",
+
             "film",
+            "le voyage de chihiro",
             "studio gibli",
             "à la recherche du bonheur",
             "star wars",
@@ -45,11 +47,13 @@
             "génétique",
             "culture",
             "physique",
+
             "sport",
             "musculation",
             "karaté",
             "boxe",
             "athlétisme",
+
             "nature",
             "martinique",
             "developpement",
@@ -190,6 +194,19 @@
         "title": "compétences",
         "subtitle": "Id consectetur ut magna enim aute eu.",
         "description": "Cupidatat magna elit laboris culpa deserunt voluptate aliquip. Est eiusmod in incididunt consectetur labore labore id magna Lorem minim deserunt pariatur.",
+        "main": [{
+            "icon": "calendar",
+            "name": "Gestion de projet"
+        }, {
+            "icon": "code",
+            "name": "Développement logiciel"
+        }, {
+            "icon": "pencil",
+            "name": "Conception logiciel"
+        }, {
+            "icon": "social",
+            "name": "Administration réseaux"
+        }],
         "data": [{
             "name": "languages",
             "title": "Langages  ",

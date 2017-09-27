@@ -18,9 +18,9 @@ section.uk-section.uk-section-large.uk-section-muted
 				.uk-flex.uk-flex-center.uk-margin-top(class="uk-flex-left@m")
 					button.uk-button.uk-button-default(uk-toggle="target:#modal-skills") 
 						span En savoir plus
-			div(class="uk-width-1-2@m")
+			div(class="uk-width-1-2@m uk-flex-first@m")
 				.uk-text-center.uk-child-width-1-1.uk-flex-center(class="uk-child-width-1-2@s" uk-grid)
-					each thing in [{"icon":"calendar","name":"Gestion de projet"},{"icon":"code","name":"Développement logiciel"},{"icon":"pencil","name":"Conception logiciel"},{"icon":"social","name":"Administration réseaux"}]
+					each thing in skills.main
 						.uk-flex.uk-flex-center
 							.uk-card.uk-card-primary.uk-height-small.uk-width-medium
 								.uk-inline
