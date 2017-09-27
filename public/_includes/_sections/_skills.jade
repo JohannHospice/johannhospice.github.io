@@ -21,7 +21,7 @@ section.uk-section.uk-section-large.uk-section-muted
 			div(class="uk-width-1-2@m uk-flex-first@m")
 				.uk-text-center.uk-child-width-1-1.uk-flex-center(class="uk-child-width-1-2@s" uk-grid)
 					each thing in skills.main
-						.uk-flex.uk-flex-center
+						.uk-flex.uk-flex-center(class=(i%2==0?"uk-flex-right@s":"uk-flex-left@s"))
 							.uk-card.uk-card-primary.uk-height-small.uk-width-medium
 								.uk-inline
 									.uk-height-small.uk-overflow-hidden.uk-flex.uk-flex-center.uk-flex-middle
