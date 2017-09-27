@@ -1,27 +1,28 @@
 include /_includes/_mixins
 -var home = public._data.home
 
-section.uk-inline.uk-background-primary.uk-width-1-1.uk-overflow-hidden(uk-height-viewport)#home
-	.uk-margin
-		.uk-height-medium
-		.uk-height-medium
-	.uk-position-cover
-		p.jh-light(jh-code=home.interests jh-size=20000)
+section.uk-inline.uk-background-primary.uk-width-1-1(uk-height-viewport)#home
+	
+		.uk-margin
+			.uk-height-medium
+			.uk-height-medium
+		.uk-position-cover.uk-overflow-hidden
+			p.jh-light(jh-code=home.interests jh-size=20000)
 
-	.uk-position-top.uk-position-z-index
-		include /_includes/_header-index
+		.uk-position-top.uk-position-z-index
+			include /_includes/_header-index
 
-	.uk-position-cover.uk-flex.uk-flex-center.uk-flex-middle.uk-light
-		.uk-text-center.uk-flex.uk-flex-column.uk-flex-middle
-			h1.uk-heading-hero=home.title
-			h2.uk-text-muted.uk-margin-small-top(class="uk-width-xlarge@s")!=home.subtitle
-			.uk-child-width-auto.uk-margin-top(uk-grid)
-				each button in home.buttons
-					div
-						if button.scroll
-							a.uk-button.uk-button-large(class="uk-button-"+button.type href=button.href uk-scroll)=button.text
-						else
-							a.uk-button.uk-button-large(class="uk-button-"+button.type href=button.href)=button.text
+		.uk-position-center.uk-light
+			.uk-text-center.uk-flex.uk-flex-column.uk-flex-middle
+				h1.uk-heading-hero=home.title
+				h2.uk-text-muted.uk-margin-small-top(class="uk-width-xlarge@s")!=home.subtitle
+				.uk-child-width-auto.uk-margin-top(uk-grid)
+					each button in home.buttons
+						div
+							if button.scroll
+								a.uk-button.uk-button-large(class="uk-button-"+button.type href=button.href uk-scroll)=button.text
+							else
+								a.uk-button.uk-button-large(class="uk-button-"+button.type href=button.href)=button.text
 
-	.uk-position-bottom-center.uk-position-small.uk-light
-		a.uk-icon-button(href="#content" uk-icon="icon:chevron-down;ratio:1.4" uk-scroll)
+		.uk-position-bottom-center.uk-position-small.uk-light
+			a.uk-icon-button(href="#content" uk-icon="icon:chevron-down;ratio:1.4" uk-scroll)
