@@ -1,10 +1,10 @@
 {
   "name": "johannhospice.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "personnal web site of Johann Hospice",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "harp server"
+    "start": "harp server",
+    "compile": "scripts/compile.js"
   },
   "repository": {
     "type": "git",
@@ -12,11 +12,12 @@
   },
   "author": "Johann Hospice",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JohannHospice/johannhospice.github.io/issues"
-  },
-  "homepage": "https://github.com/JohannHospice/johannhospice.github.io#readme",
+  "homepage": "https://github.com/JohannHospice/johannhospice.github.io",
   "dependencies": {
     "harp": "^0.24.0"
+  },
+  "devDependencies": {
+    "less": "^2.7.2",
+    "uikit": "^3.0.0-beta.30"
   }
 }
