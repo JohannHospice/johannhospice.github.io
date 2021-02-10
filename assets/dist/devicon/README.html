@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="fr"><head><title>Johann Hospice</title><meta charset="utf-8"><link rel="icon" type="image/png" href="/assets/images/favicon.png"><link type="text/css" rel="stylesheet" href="/assets/dist/uikit/css/uikit-theme.css"><script src="/assets/dist/jquery/jquery-3.2.1.min.js"></script><script src="/assets/dist/uikit/js/uikit.min.js"></script><script src="/assets/dist/uikit/js/uikit-icons.min.js"></script></head><body><div class="uk-offcanvas-content"><main uk-height-viewport="offset-bottom: true; offset-top: true"><h1>Devicon v2</h1><p><a href="http://konpa.github.io/devicon/">http://konpa.github.io/devicon/</a></p>
+<p>Devicon aims to gather all logos representing development languages and tools.
+Each icon comes in several versions: font/svg, original/plain/line, colored/not colored, wordmark/no wordmark.</p>
+<p>Devicon it&#39;s 78 icons and 200+ versions. And it&#39;s growing!</p>
+<p>See all available icons on the <a href="http://konpa.github.io/devicon/">new website</a>.</p>
+<h4>Icon requests</h4><p>Please leave a comment <a href="https://github.com/konpa/devicon/issues/11">here</a> in order to request an icon.</p>
+<h2>How to use</h2><p>For a super fast setup go check <a href="http://konpa.github.io/devicon/">devicon.fr</a></p>
+<p><em>2 ways of using devicon:</em></p>
+<h4>SVG icons</h4><ul>
+<li>Copy/paste svg code (from the <a href="https://github.com/konpa/devicon/tree/master/icons">svg folder</a> or the <a href="http://konpa.github.io/devicon/">project page</a> using your dev tool)</li>
+</ul>
+<pre><code class="language-html">&lt;!--  for git plain version --&gt;
+&lt;svg class=&quot;devicon-git-plain&quot; viewBox=&quot;0 0 128 128&quot;&gt;
+  &lt;path fill=&quot;#F34F29&quot; d=&quot;M124.742,58.378L69.625,3.264c-3.172-3.174-8.32-3.174-11.497,0L46.685,14.71l14.518,14.518c3.375-1.139,7.243-0.375,9.932,2.314c2.703,2.706,3.462,6.607,2.293,9.993L87.42,55.529c3.385-1.167,7.292-0.413,9.994,2.295c3.78,3.777,3.78,9.9,0,13.679c-3.78,3.78-9.901,3.78-13.683,0c-2.842-2.844-3.545-7.019-2.105-10.521L68.578,47.933l-0.002,34.341c0.922,0.455,1.791,1.063,2.559,1.828c3.779,3.777,3.779,9.898,0,13.683c-3.779,3.777-9.904,3.777-13.679,0c-3.778-3.784-4.088-9.905-0.311-13.683C58.079,83.169,59,82.464,60,81.992V47.333c-1-0.472-1.92-1.172-2.856-2.111c-2.861-2.86-3.396-7.06-1.928-10.576L40.983,20.333L3.229,58.123c-3.175,3.177-3.155,8.325,0.02,11.5l55.126,55.114c3.173,3.174,8.325,3.174,11.503,0l54.86-54.858C127.913,66.703,127.916,61.552,124.742,58.378z&quot;/&gt;
+&lt;/svg&gt;</code></pre>
+<ul>
+<li>Add css rules in your stylesheet<pre><code class="language-css">.devicon-git-plain {
+max-width: 2em;
+}
+</code></pre>
+</li>
+</ul>
+<p>/* if you want to change the original color */
+.devicon-git-plain path {
+  fill: #4691f6;
+}</p>
+<pre><code>
+#### Icons font
+
+- Upload devicon.css and font files to your project
+
+```html
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;devicon.css&quot;&gt;
+
+  &lt;!--  if you want colored versions --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;devicon-colors.css&quot;&gt;</code></pre><ul>
+<li>Add icon using <i> tag</i></li>
+</ul>
+<pre><code class="language-html">  &lt;!--  for git plain version --&gt;
+  &lt;i class=&quot;devicon-git-plain&quot;&gt;&lt;/i&gt;
+
+  &lt;!--  for git plain version with wordmark --&gt;
+  &lt;i class=&quot;devicon-git-plain-wordmark&quot;&gt;&lt;/i&gt;
+
+  &lt;!--  for git plain version colored with git main color (devicon-color.css or devicon.min.css required) --&gt;
+  &lt;i class=&quot;devicon-git-plain colored&quot;&gt;&lt;/i&gt;
+
+  &lt;!--  for git plain version with wordmark colored with git main color (devicon-color.css or devicon.min.css required) --&gt;
+  &lt;i class=&quot;devicon-git-plain-wordmark colored&quot;&gt;&lt;/i&gt;</code></pre>
+<h5>NPM and Bower packages</h5><p>You can install devicon as a dependency to your project either with NPM or Bower</p>
+<pre><code>  // NPM
+  npm install --save devicon
+
+  // Bower
+  bower install --save devicon</code></pre><p><sub>Final font is build with <a href="https://icomoon.io/">Icomoon app</a></sub></p>
+<h5>See the <a href="https://github.com/konpa/devicon/blob/master/devicon.json">devicon.json file</a> or <a href="http://konpa.github.io/devicon/">devicon website</a> for complete and up to date reference of icon&#39;s available versions.</h5><h2>Contribute</h2><p>Please have a look at the CONTRIBUTING.md file</p>
+<p>Under <a href="https://github.com/konpa/devicon/blob/master/LICENSE">MIT Licence</a></p>
+<p><sub>All product names, logos, and brandsare property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, logos, and brands does not imply endorsement.</sub></p></main><!-- work							--><!--others--><footer class="uk-section-secondary"><section id="contact" class="uk-section"><div class="uk-container uk-flex-middle uk-text-center"><div class="uk-flex uk-flex-middle uk-flex-column"><h2 class="uk-margin-remove">Contact</h2><p class="uk-width-large@s"> Aut qui voluptas labore commodi nihil deserunt. Quaerat inventore possimus tenetur veritatis.</p><div uk-grid class="uk-grid-medium"><div><a href="mailto:johannhospice.dev@gmail.com" class="uk-button uk-button-text"><div class="uk-flex uk-flex-middle"><span uk-icon="icon:mail" class="uk-margin-small-right"></span><span class="uk-text-lowercase">johannhospice.dev@gmail.com</span></div></a></div></div></div></div></section><div uk-grid class="uk-child-width-expand uk-flex-middle uk-grid-small"><div><hr class="uk-margin-remove"></div><div class="uk-width-auto"><a href="/"> <img src="/assets/images/logo/logo.svg" alt="johann hospice" uk-svg class="jh-logo"></a></div><div><hr class="uk-margin-remove"></div></div><div class="uk-section uk-section-small"><div class="uk-container"><div class="uk-flex uk-flex-between uk-flex-middle"><p class="uk-text-small uk-margin-remove">©2017 <a href="/" class="uk-link-muted">Johann Hospice</a> - Tous droits réservés.</p><div class="uk-flex uk-flex-bottom"><div uk-grid class="uk-child-width-auto uk-grid-small"><div><a uk-icon="icon:github" href="https://github.com/johannhospice" target="_blank" class="uk-link-muted"></a></div><div><a uk-icon="icon:linkedin" href="https://www.linkedin.com/in/johannhospice" target="_blank" class="uk-link-muted"></a></div></div></div></div></div></div></footer><div id="offcanvas" uk-offcanvas="overlay: false; mode: push"><div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center"><!--button.uk-offcanvas-close.uk-close-large.uk-icon(type="button" uk-close)--><a href="/"> <img src="/assets/images/logo/logo.svg" alt="johann hospice" uk-svg class="jh-logo"></a><ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical"><li class="uk-parent uk-active"><a href="/">Accueil</a></li><li><a href="/works">Réalisation</a></li></ul><div><div uk-grid class="uk-grid-small uk-child-width-auto uk-flex-inline"><div><a uk-icon="icon: github" href="https://github.com/johannhospice" target="_blank" class="uk-icon-button"></a></div><div><a uk-icon="icon: linkedin" href="https://www.linkedin.com/in/johannhospice" target="_blank" class="uk-icon-button"></a></div></div></div></div></div></div><script src="/assets/main.js"></script></body></html>
