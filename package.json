@@ -4,7 +4,9 @@
   "description": "personnal web site of Johann Hospice",
   "scripts": {
     "start": "harp server",
-    "compile": "scripts/compile.js"
+    "compile": "scripts/compile.js",
+    "build": "harp compile",
+    "deploy": "gh-pages -d www"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
     "harp": "^0.24.0"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "less": "^2.7.2",
     "uikit": "^3.0.0-beta.30"
   }
